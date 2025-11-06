@@ -53,7 +53,7 @@ const TransformationJourney: React.FC = () => {
         'Dziecko samo siada do zadań - bez przypominania',
         'Matematyka stała się jego mocną stroną',
         'Pewność siebie na egzaminach i w życiu',
-        'Wynik 80%+ na maturze/egzaminie ósmoklasisty',
+        'Wynik 80%+ na maturze podstawowej',
         'Oszczędziłaś 3000+ zł na korepetycjach',
         'Jesteś dumna mama/tata - to najlepsze uczucie'
       ],

@@ -18,7 +18,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: 'Czy kurs jest zgodny z aktualną podstawą programową?',
-      answer: 'Tak! Kurs jest zawsze aktualizowany zgodnie z najnowszą podstawą programową CKE. Wszystkie materiały są dostosowane do wymagań egzaminu ósmoklasisty.'
+      answer: 'Tak! Kurs jest zawsze aktualizowany zgodnie z najnowszą podstawą programową CKE. Wszystkie materiały są dostosowane do wymagań matury podstawowej.'
     },
     {
       question: 'Ile czasu dziennie trzeba poświęcić na naukę?',

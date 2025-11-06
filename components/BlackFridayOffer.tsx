@@ -41,12 +41,12 @@ const BlackFridayOffer: React.FC = () => {
   const bonuses = [
     {
       icon: Video,
-      title: 'Kurs Główny - Program Ósmoklasisty 2025',
+      title: 'Kurs Główny - Program Matury Podstawowej 2025/26',
       value: 1997,
       details: [
-        '50h materiału video HD',
-        '>60 lekcji tematycznych',
-        '1500+ zadań z rozwiązaniami',
+        '70h materiału video HD',
+        '>100 lekcji tematycznych',
+        '2000+ zadań z rozwiązaniami',
         '9 arkuszy egzaminacyjnych',
         '30 spotkań live (90 min każde)'
       ]
@@ -77,13 +77,13 @@ const BlackFridayOffer: React.FC = () => {
     },
     {
       icon: Gift,
-      title: 'BONUS #3: Druga Licencja 2026 (do podarowania)',
+      title: 'BONUS #3: Druga Licencja 2027 (do podarowania)',
       value: 1997,
       details: [
         'Kup raz, użyj dwa razy',
         'Dla młodszego rodzeństwa',
         'Lub podaruj znajomemu',
-        'Aktywacja w 2026 roku'
+        'Aktywacja w 2027 roku'
       ],
       badge: 'EKSKLUZYWNE'
     },

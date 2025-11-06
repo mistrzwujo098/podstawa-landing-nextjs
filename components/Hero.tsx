@@ -92,7 +92,7 @@ const Hero: React.FC = () => {
               <AlertCircle className="text-yellow-600 mt-1" size={20} />
               <div>
                 <p className="text-gray-800 font-semibold">
-                  Większość rodziców nie potrafi pomóc dziecku z matematyką w 8 klasie
+                  Większość rodziców nie potrafi pomóc dziecku z matematyką na poziomie matury
                 </p>
                 <p className="text-gray-600 text-sm mt-1">
                   Nie jesteś sam/a - dlatego stworzyłam ten program

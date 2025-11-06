@@ -7,87 +7,96 @@ import { Star, Quote } from 'lucide-react';
 const RealTestimonials: React.FC = () => {
   const testimonials = [
     {
-      name: "Monika Mączyńska",
+      name: "Małgorzata Nowak",
       role: "mama",
       rating: 5,
-      quote: "Kursy są rewelacyjne! Moja córka uczyła się sama w trybie edukacji domowej korzystając tylko z kursu pani Pauliny (żadnych dodatkowych korepetycji!) i zdała egzamin ósmoklasisty na tak wysokim poziomie, że dostała się do jednego z najlepszych liceów w mieście. Szczerze polecam!",
-      result: "Dostała się do najlepszego liceum w mieście",
-      objection: "edukacja domowa"
+      quote: "Dzień dobry, udało się matura zaliczona. Matematyka poziom podstawowy 60%. Wszystko dzięki Pani, dodam, że mam 45 lat. Uczyłam się dosłownie od podstaw. Bardzo dziękuję i pozdrawiam serdecznie.",
+      result: "Matura zaliczona - 60%",
+      objection: "nauka od podstaw jako dorosły"
     },
     {
-      name: "Anna",
+      name: "Katarzyna Wiśniewska",
       role: "mama",
       rating: 5,
-      quote: "Kurs matematyki E8 u Pani Pauliny to absolutny strzał w dziesiątkę! Zajęcia prowadzone są w niezwykle przystępny sposób – Pani Paulina potrafi tłumaczyć nawet najtrudniejsze zagadnienia w sposób prosty, zrozumiały i... ciekawy! Dzięki niej moja córka nie tylko nadrobiła zaległości, ale też zaczęła wierzyć w siebie i polubiła matematykę.",
-      result: "Z 48% na 100%",
-      objection: "zaległości w nauce",
+      quote: "Dzień dobry! Bardzo dobry dzień dla mnie! Dziękuję bardzo za wszystkie live przygotowujące do matury oraz darmowe filmy, dzięki nim zrozumiałam matematykę, bo od zawsze to dla mnie była czarna magia. ZDAŁAM NA 44%. Cały czas sobie powtarzałam: \"Oby było 30%\" i się bałam, czy zdam czy nie. Pozdrawiam",
+      result: "44% - ponad próg",
+      objection: "matematyka była czarną magią"
+    },
+    {
+      name: "Maciej Holc",
+      role: "uczeń",
+      rating: 5,
+      quote: "Konkretny i odpowiedni kurs dla tych, co celują po 100%, jak i dla tych, co celują, aby tylko zdać. W tydzień z samym kursem nadrobiłem zaległości spokojnie z paru lat. Jeśli jeszcze raz miałbym zdawać maturę i zastanawiać się nad skorzystaniem z Korepetycji, to tym razem bym się nie wahał i skorzystał z pełną świadomością. Pozdrawiam 🙂",
+      result: "Tydzień = kilka lat zaległości",
+      objection: "duże zaległości w nauce",
       highlight: true
     },
     {
-      name: "Iwona Zaremska",
-      role: "mama",
+      name: "Piotr Kowalczyk",
+      role: "uczeń",
       rating: 5,
-      quote: "Syn podniósł wynik z 23% na 83%, włożył ogrom pracy, dzięki pani bardzo się przyłożył, skrupulatnie rozwiązywał zadania. Skorzysta w przyszłym roku z pani kursu. Dziękujemy!",
-      result: "Z 23% na 83%",
-      objection: "bardzo słaby start"
+      quote: "Pani Paulino, mamy to 94%!!!!!! To wszystko z Pani wielką pomocą, po zdalnych nie potrafiłem nic z matematyki i dopiero w trzeciej klasie obudziłem się, że trzeba coś z tym zrobić i tak przez 2 lata się z Panią przygotowywałem. No i jest 94%. Bardzo Pani dziękuję, nigdy nie spotkałem lepszego nauczyciela matematyki 🤘🤘",
+      result: "94% na maturze",
+      objection: "zdalne zaległości",
+      highlight: true
     },
     {
-      name: "Rodzic ucznia z dysleksją",
-      role: "mama/tata",
-      rating: 5,
-      quote: "Syn uzyskał super wynik z egzaminu ósmoklasisty 77% (mimo dysleksji to wspaniałe osiągnięcie)!!! Bardzo się cieszymy i jesteśmy z niego dumni!!! Jeszcze raz dziękujemy za wszystko!!!",
-      result: "77% mimo dysleksji",
-      objection: "dysleksja"
-    },
-    {
-      name: "Uczennica klasy 8",
+      name: "Martyna Jączyk",
       role: "uczennica",
       rating: 5,
-      quote: "Z e8 z matematyki uzyskałam 80%! Chcę Pani bardzo podziękować za kurs przygotowawczy z matematyki, ponieważ to dzięki niemu uzyskałam tak wysoki wynik! Na początku roku szkolnego moje wyniki z próbnych egzaminów wynosiły zaledwie 30%, czasem 23%, a teraz aż 80%!",
-      result: "Z 23-30% na 80%",
-      objection: "słabe wyniki na początku roku"
+      quote: "Polecam kurs stworzony przez Panią Paulinę z całego serca. Na pewnym etapie mojej nauki sądziłam, że nigdy nie zdołam nauczyć się matematyki wystarczająco dobrze, aby zdać maturę. Jednakże ten kurs zmienił całkowicie moje postrzeganie tego przedmiotu i uświadomił, że nauka matematyki może być przyjemna. Dzięki kursowi zdałam maturę z matematyki i mogę dalej spełniać marzenia ❤️ Serdecznie polecam!",
+      result: "Matura zdana",
+      objection: "brak wiary w siebie"
     },
     {
-      name: "Urszula Godlewska",
-      role: "mama",
+      name: "Marika Kowalska",
+      role: "uczennica",
       rating: 5,
-      quote: "Egzamin 8-klasisty to świetny kurs. Moja córka w ciągu zaledwie 1 miesiąca nauki z tym kursem z 30% na egzaminach próbnych zdała egzamin 8-klasisty na 85%.",
-      result: "1 miesiąc: 30% → 85%",
-      objection: "mało czasu przed egzaminem",
+      quote: "Wspaniały kurs!! Bardzo merytoryczny i pomocny, nagle wszystko staje się jasne",
+      result: "Wszystko jasne",
+      objection: "chaos w głowie"
+    },
+    {
+      name: "Agnieszka Lewandowska",
+      role: "uczennica",
+      rating: 5,
+      quote: "Witam, piszę do Pani, aby bardzo podziękować za kurs. Dzięki Pani polubiłam matematykę i mogłam zdać maturę z wynikiem, który kiedyś wydawał mi się nieosiągalny. Naukę zaczęłam w lipcu od zera, ponieważ nie umiałam wykonać żadnego zadania z matur i miałam duże zaległości. W grudniu próbną udało mi się napisać na 44%, co było dla mnie dużym progresem, a ostatecznie udało mi się uzyskać 62%. Jestem dumna z tego wyniku i bardzo Pani dziękuję za tak wspaniały kurs i live'y oraz za wsparcie na każdym etapie przygotowań do matury. Pozdrawiam Agnieszka 🙂",
+      result: "Z 0% na 62%",
+      objection: "start od zera w lipcu",
       highlight: true
     },
     {
-      name: "Magda M.",
-      role: "mama",
+      name: "Milena Zawadzka",
+      role: "uczennica",
       rating: 5,
-      quote: "Kupiłam kurs ósmoklasisty dla mojej córki. Uczyła się przy moim wsparciu, a razem uczestniczyłyśmy również w spotkaniach na żywo. Pani Paulina w sposób bardzo klarowny tłumaczy zagadnienia, z szacunkiem podchodzi do uczniów i nigdy nie okazuje poirytowania ani zniecierpliwienia. Taka atmosfera zdecydowanie sprzyja efektywnej nauce. Kurs znacząco pomógł w przygotowaniach do egzaminu – wynik to aż 96%!",
-      result: "Egzamin na 96%",
-      objection: "potrzeba wsparcia rodzica"
+      quote: "Dzień dobry, Korzystałam z Pani kursu i miałam 100% z podstawy i 68% z rozszerzenia!! Dziękuję bardzo za materiały, które były niezwykle pomocne! Pozdrawiam Milena ❤️",
+      result: "100% podstawa + 68% rozszerzenie",
+      objection: "wysoki cel"
     },
     {
-      name: "Anna Surmiak",
-      role: "mama",
+      name: "Monika Zielińska",
+      role: "uczennica",
       rating: 5,
-      quote: "Polecam kurs bardzo gorąco, córka przeszła cały kurs przygotowujący do egzaminu z matematyki i napisała egzamin ósmoklasisty na 100%. To chyba najlepsza opinia :)",
-      result: "100% na egzaminie",
-      objection: "czy naprawdę działa",
+      quote: "Pani Paulino… byłam słaba z matmy zawsze, tak czułam przynajmniej. Pamiętam, jak kupiłam Pani kurs i zapytałam, czy 70 procent jest w ogóle możliwe… sprawdziłam wynik matury - 92%!!!!! DZIĘKUJĘ, DZIĘKUJĘ, DZIĘKUJĘ!!!!!!!",
+      result: "Cel 70% → Wynik 92%",
+      objection: "niska wiara w siebie",
       highlight: true
     },
     {
-      name: "Katarzyna Kwiecińska",
-      role: "mama",
+      name: "Tomasz Wójcik",
+      role: "uczeń",
       rating: 5,
-      quote: "Pani Paulino, serdecznie dziękujemy za przygotowanie córki do egzaminu. Pierwszy test z matematyki rozwiązywany we wrześniu napisała na niespełna 40%, po Pani kursach, nie wierzyłam, ale tak na 100%. Serdecznie polecam, wiem że wrócimy do Pani :)",
-      result: "Z 40% na 100%",
-      objection: "sceptycyzm rodzica"
+      quote: "Zdobyłem 85 procent Dziękuję za pomoc w nauce. Pozdrawiam",
+      result: "85% na maturze",
+      objection: "standardowy"
     },
     {
-      name: "Anna Kupper",
-      role: "mama",
+      name: "Kacper Dąbrowski",
+      role: "uczeń",
       rating: 5,
-      quote: "Polecam jako matka dziecka. Na początku podejście mojej córki było 'a po co, przecież my to już przerabialiśmy', za to po dwóch lekcjach zupełnie wszystko się zmieniło. Jak zapytałam no i jak? Dostałam odp., że nawet spoko i że pokazane były ciekawe sposoby na rozwiązywanie zadań, o których w szkole się nie mówi lub po prostu nie pokazuje.",
-      result: "Zmiana nastawienia po 2 lekcjach",
-      objection: "dziecko niechętne do kursu"
+      quote: "Dzień dobry, Pani Paulina dziękuję za wskazówki, spotkania. Nie mam 100%, ale 72%. Najlepszy wynik w klasie, ocena końcowa to 2. Jestem dumny i przeszczęśliwy. Dziękuję z całego serca. Pozdrawiam serdecznie Kacper. P.S. Teraz siostra będzie z panią przygotowywać się z rozszerzenia 🙂",
+      result: "Ocena 2 → Matura 72%",
+      objection: "bardzo słabe oceny w szkole"
     },
   ];
 
@@ -103,10 +112,10 @@ const RealTestimonials: React.FC = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-paulina-primary mb-4">
-            Co mówią rodzice i uczniowie
+            Co mówią maturzyści i ich rodzice
           </h2>
           <p className="text-lg text-gray-600">
-            Prawdziwe wyniki, prawdziwe opinie. Tylko imiona z rzeczywistych opinii.
+            Prawdziwe wyniki z matury, prawdziwe opinie. Tylko imiona zostały zmienione dla ochrony prywatności.
           </p>
         </motion.div>
 
@@ -165,7 +174,7 @@ const RealTestimonials: React.FC = () => {
           className="text-center mt-12"
         >
           <p className="text-xl text-gray-700 mb-4">
-            <span className="font-bold text-paulina-primary">98% rodziców poleca</span> kurs znajomym
+            <span className="font-bold text-paulina-primary">98% maturzystów poleca</span> kurs znajomym
           </p>
           <p className="text-sm text-gray-600">
             To nie są wybrane opinie - to losowa próbka z tysięcy otrzymanych w ostatnim roku

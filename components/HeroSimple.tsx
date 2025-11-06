@@ -132,8 +132,8 @@ const HeroSimple: React.FC = () => {
                 transition={{ delay: 0.8 }}
                 className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-4"
               >
-                <p className="text-3xl font-bold text-paulina-primary">84%</p>
-                <p className="text-xs text-gray-600">Średni wynik</p>
+                <p className="text-3xl font-bold text-paulina-primary">20 000+</p>
+                <p className="text-xs text-gray-600">Kursantów</p>
               </motion.div>
 
               <motion.div
@@ -143,7 +143,7 @@ const HeroSimple: React.FC = () => {
                 className="absolute -top-6 -right-6 bg-white rounded-xl shadow-xl p-4"
               >
                 <p className="text-2xl font-bold text-paulina-accent">98%</p>
-                <p className="text-xs text-gray-600">Zadowolonych rodziców</p>
+                <p className="text-xs text-gray-600">Poleca znajomym</p>
               </motion.div>
             </div>
           </motion.div>

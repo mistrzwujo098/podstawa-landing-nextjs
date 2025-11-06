@@ -15,7 +15,7 @@ const Testimonials: React.FC = () => {
           className="text-center mb-8"
         >
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            To tylko kilka opinii ósmoklasistów:
+            To tylko kilka opinii maturzystów:
           </h2>
         </motion.div>
         

@@ -83,7 +83,7 @@ const MechanismExplanation: React.FC = () => {
       ],
       parent_sees: 'Dziecko samo opowiada o swoich postępach i prosi o trudniejsze zadania',
       science: 'Teoria samoskuteczności Bandury - wiara we własne możliwości zwiększa rzeczywistą skuteczność.',
-      example: 'Egzamin ósmoklasisty lub matura to już nie stres, ale okazja do pokazania umiejętności'
+      example: 'Matura to już nie stres, ale okazja do pokazania umiejętności'
     }
   ];
 

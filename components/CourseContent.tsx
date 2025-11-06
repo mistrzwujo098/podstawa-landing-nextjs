@@ -175,7 +175,7 @@ const CourseContent: React.FC = () => {
     { icon: '📓', title: '1000 zadań z rozwiązaniami', description: 'Strategicznie dopasowane, aby ułatwić Ci zrozumienie danego zagadnienia', value: '200 zł' },
     { icon: '🛟', title: 'Grupa kursantów', description: 'W każdej chwili możesz zadać nurtujące Cię pytanie ANONIMOWO i szybko uzyskać odpowiedź.', value: '300 zł' },
     { icon: '❤️', title: '30-dniowa gwarancja zwrotu pieniędzy', description: 'Gwarancja 30-dniowa jest bezwarunkowa.', value: 'Bezcenne' },
-    { icon: '🧠', title: 'Dla Rodziców!', description: 'Cykl pięciu spotkań o stresie dla Rodziców ósmoklasistów z fantastyczną Panią psycholog', value: '500 zł' },
+    { icon: '🧠', title: 'Dla Rodziców!', description: 'Cykl pięciu spotkań o stresie dla Rodziców maturzystów z fantastyczną Panią psycholog', value: '500 zł' },
   ];
 
   return (
