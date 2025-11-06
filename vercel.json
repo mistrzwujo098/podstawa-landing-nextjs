@@ -1,0 +1,14 @@
+{
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "outputDirectory": ".next",
+  "env": {
+    "NEXT_PUBLIC_PROJECT_ID": "lamiglowki",
+    "NEXT_PUBLIC_TRACKING_WORKER_URL": "https://tracking-api.kacperczaczyk.workers.dev",
+    "NEXT_PUBLIC_FACEBOOK_PIXEL_ID": "328860071729858",
+    "NEXT_PUBLIC_GOOGLE_ADS_ID": "AW-405660852",
+    "NEXT_PUBLIC_TIKTOK_PIXEL_ID": "CQ762UBC77U6L0AM30HG"
+  }
+}

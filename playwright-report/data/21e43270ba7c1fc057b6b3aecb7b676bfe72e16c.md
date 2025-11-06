@@ -1,0 +1,1079 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e7]:
+      - button "🏠 Start" [ref=e8] [cursor=pointer]:
+        - generic [ref=e9]: 🏠
+        - generic [ref=e10]: Start
+      - button "⭐ Opinie" [ref=e11] [cursor=pointer]:
+        - generic [ref=e12]: ⭐
+        - generic [ref=e13]: Opinie
+      - button "❓ Problem" [ref=e14] [cursor=pointer]:
+        - generic [ref=e15]: ❓
+        - generic [ref=e16]: Problem
+      - button "✅ Rozwiązanie" [ref=e17] [cursor=pointer]:
+        - generic [ref=e18]: ✅
+        - generic [ref=e19]: Rozwiązanie
+      - button "⚙️ Jak działa" [ref=e20] [cursor=pointer]:
+        - generic [ref=e21]: ⚙️
+        - generic [ref=e22]: Jak działa
+      - button "📚 Program" [ref=e23] [cursor=pointer]:
+        - generic [ref=e24]: 📚
+        - generic [ref=e25]: Program
+      - button "💳 Cennik" [ref=e26] [cursor=pointer]:
+        - generic [ref=e27]: 💳
+        - generic [ref=e28]: Cennik
+      - button "💬 FAQ" [ref=e30] [cursor=pointer]:
+        - generic [ref=e31]: 💬
+        - generic [ref=e32]: FAQ
+    - generic [ref=e36]:
+      - generic [ref=e37]:
+        - img [ref=e38]
+        - generic [ref=e40]: Program zgodny z CKE 2026
+      - heading "Jak ponad 20 000 uczniów zdało egzamin ósmoklasisty na średnio 84% bez korepetycji" [level=1] [ref=e41]:
+        - text: Jak ponad 20 000 uczniów zdało egzamin ósmoklasisty
+        - generic [ref=e42]: na średnio 84% bez korepetycji
+      - paragraph [ref=e43]: Metoda LAPS - jedyny system, który sprawia, że Twoje dziecko samo chce się uczyć tylko 15 minut dziennie
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - img [ref=e46]
+          - generic [ref=e51]: 20 000+ uczniów
+        - generic [ref=e52]:
+          - img [ref=e53]
+          - img [ref=e55]
+          - img [ref=e57]
+          - img [ref=e59]
+          - img [ref=e61]
+          - generic [ref=e63]: 4.9/5
+        - generic [ref=e64]:
+          - img [ref=e65]
+          - generic [ref=e67]: 30 dni gwarancji
+      - generic [ref=e68]:
+        - generic [ref=e69]:
+          - img [ref=e70]
+          - generic [ref=e73]: Dziecko uczy się SAMO - koniec z wieczornymi kłótniami
+        - generic [ref=e74]:
+          - img [ref=e75]
+          - generic [ref=e78]: Zaoszczędzisz 3600 zł (vs 6 miesięcy korepetycji)
+        - generic [ref=e79]:
+          - img [ref=e80]
+          - generic [ref=e83]: 30-dniowa gwarancja zwrotu bez pytań
+      - button "Zobacz pakiety i ceny" [ref=e84] [cursor=pointer]:
+        - generic [ref=e85]: Zobacz pakiety i ceny
+        - img [ref=e86]
+      - paragraph [ref=e88]:
+        - text: ⚠️ Do egzaminu zostało tylko
+        - generic [ref=e89]: 188 dni
+    - generic [ref=e91]:
+      - generic [ref=e92]:
+        - heading "Ponad 20 000 rodziców już pomogło swoim dzieciom" [level=2] [ref=e93]
+        - paragraph [ref=e94]: "Zobacz, co mówią po 2-3 miesiącach kursu:"
+      - generic [ref=e95]:
+        - generic [ref=e96]:
+          - generic [ref=e97]: Najlepsze liceum
+          - img [ref=e98]
+          - generic [ref=e101]:
+            - generic [ref=e102]:
+              - img [ref=e103]
+              - img [ref=e105]
+              - img [ref=e107]
+              - img [ref=e109]
+              - img [ref=e111]
+            - blockquote [ref=e113]: "\"Kursy są rewelacyjne! Moja córka uczyła się sama w trybie edukacji domowej korzystając tylko z kursu pani Pauliny (żadnych dodatkowych korepetycji!) i zdała egzamin ósmoklasisty na tak wysokim poziomie, że dostała się do jednego z najlepszych liceów w mieście. Szczerze polecam!\""
+            - generic [ref=e115]:
+              - paragraph [ref=e116]: Monika Mączyńska
+              - paragraph [ref=e117]: Rodzic
+          - generic [ref=e118]:
+            - button "Poprzednia opinia" [ref=e119] [cursor=pointer]:
+              - img [ref=e120]
+            - generic [ref=e122]:
+              - button "Opinia 1" [ref=e123] [cursor=pointer]
+              - button "Opinia 2" [ref=e124] [cursor=pointer]
+              - button "Opinia 3" [ref=e125] [cursor=pointer]
+              - button "Opinia 4" [ref=e126] [cursor=pointer]
+              - button "Opinia 5" [ref=e127] [cursor=pointer]
+              - button "Opinia 6" [ref=e128] [cursor=pointer]
+              - button "Opinia 7" [ref=e129] [cursor=pointer]
+              - button "Opinia 8" [ref=e130] [cursor=pointer]
+            - button "Następna opinia" [ref=e131] [cursor=pointer]:
+              - img [ref=e132]
+        - generic [ref=e134]:
+          - generic [ref=e135]:
+            - heading "Statystyki, które mówią same za siebie:" [level=3] [ref=e136]
+            - generic [ref=e137]:
+              - generic [ref=e138]:
+                - generic [ref=e139]: Średnia poprawa wyniku
+                - generic [ref=e140]: +43%
+              - generic [ref=e141]:
+                - generic [ref=e142]: Zadowolonych rodziców
+                - generic [ref=e143]: 98%
+              - generic [ref=e144]:
+                - generic [ref=e145]: Uczniów z wynikiem 80%+
+                - generic [ref=e146]: 84%
+              - generic [ref=e147]:
+                - generic [ref=e148]: Oszczędność na korepetycjach
+                - generic [ref=e149]: 3000+ zł
+          - generic [ref=e150]:
+            - heading "Dołącz do społeczności szczęśliwych rodziców" [level=3] [ref=e151]
+            - paragraph [ref=e152]: Każdego dnia otrzymujesz raporty o postępach dziecka. Zero stresu, zero konfliktów o naukę.
+            - generic [ref=e153]:
+              - img [ref=e154]
+              - generic [ref=e157]: 100% gwarancja satysfakcji
+    - generic [ref=e159]:
+      - generic [ref=e160]:
+        - 'heading "UWAGA: Czy Twoje dziecko też..." [level=2] [ref=e161]'
+        - paragraph [ref=e162]:
+          - text: Większość rodziców nie umie pomóc dziecku z matematyką.
+          - generic [ref=e163]: Każdy dzień zwlekania to większy stres przed egzaminem.
+      - generic [ref=e164]:
+        - generic [ref=e165]:
+          - heading "Przed egzaminem:" [level=3] [ref=e166]
+          - list [ref=e167]:
+            - listitem [ref=e168]:
+              - generic [ref=e169]: ❌
+              - generic [ref=e170]: Odkładanie nauki „na później”
+            - listitem [ref=e171]:
+              - generic [ref=e172]: ❌
+              - generic [ref=e173]: Nieefektywne metody uczenia się
+            - listitem [ref=e174]:
+              - generic [ref=e175]: ❌
+              - generic [ref=e176]: Problemy z organizacją materiału
+            - listitem [ref=e177]:
+              - generic [ref=e178]: ❌
+              - generic [ref=e179]: Narastający stres i presja
+            - listitem [ref=e180]:
+              - generic [ref=e181]: ❌
+              - generic [ref=e182]: Konflikty rodzic-dziecko o naukę
+            - listitem [ref=e183]:
+              - generic [ref=e184]: ❌
+              - generic [ref=e185]: Brak systematyczności
+            - listitem [ref=e186]:
+              - generic [ref=e187]: ❌
+              - generic [ref=e188]: Marnowanie czasu na złe metody
+            - listitem [ref=e189]:
+              - generic [ref=e190]: ❌
+              - generic [ref=e191]: Rosnąca frustracja
+            - listitem [ref=e192]:
+              - generic [ref=e193]: ❌
+              - generic [ref=e194]: Chaos w notatkach
+            - listitem [ref=e195]:
+              - generic [ref=e196]: ❌
+              - generic [ref=e197]: Brak planu działania
+        - generic [ref=e198]:
+          - heading "W trakcie egzaminu:" [level=3] [ref=e199]
+          - list [ref=e200]:
+            - listitem [ref=e201]:
+              - generic [ref=e202]: ❌
+              - generic [ref=e203]: Paraliżujący stres
+            - listitem [ref=e204]:
+              - generic [ref=e205]: ❌
+              - generic [ref=e206]: „Pusty umysł” przy zadaniach
+            - listitem [ref=e207]:
+              - generic [ref=e208]: ❌
+              - generic [ref=e209]: Złe zarządzanie czasem
+            - listitem [ref=e210]:
+              - generic [ref=e211]: ❌
+              - generic [ref=e212]: Panika przy trudnych zadaniach
+            - listitem [ref=e213]:
+              - generic [ref=e214]: ❌
+              - generic [ref=e215]: Problemy z koncentracją
+            - listitem [ref=e216]:
+              - generic [ref=e217]: ❌
+              - generic [ref=e218]: Niezrozumienie poleceń
+            - listitem [ref=e219]:
+              - generic [ref=e220]: ❌
+              - generic [ref=e221]: Gubienie punktów na głupich błędach
+            - listitem [ref=e222]:
+              - generic [ref=e223]: ❌
+              - generic [ref=e224]: Zapominanie wzorów
+            - listitem [ref=e225]:
+              - generic [ref=e226]: ❌
+              - generic [ref=e227]: Problemy z liczeniem
+            - listitem [ref=e228]:
+              - generic [ref=e229]: ❌
+              - generic [ref=e230]: Brak pewności przy odpowiedziach
+        - generic [ref=e231]:
+          - heading "Po egzaminie:" [level=3] [ref=e232]
+          - list [ref=e233]:
+            - listitem [ref=e234]:
+              - generic [ref=e235]: ❌
+              - generic [ref=e236]: Rozczarowanie wynikiem
+            - listitem [ref=e237]:
+              - generic [ref=e238]: ❌
+              - generic [ref=e239]: Żal do siebie i innych
+            - listitem [ref=e240]:
+              - generic [ref=e241]: ❌
+              - generic [ref=e242]: Stracone szanse
+            - listitem [ref=e243]:
+              - generic [ref=e244]: ❌
+              - generic [ref=e245]: Gorszy start w liceum
+            - listitem [ref=e246]:
+              - generic [ref=e247]: ❌
+              - generic [ref=e248]: Nadszarpnięte relacje w rodzinie
+    - generic [ref=e250]:
+      - heading "Co Twoje dziecko osiągnie z kursem 🏆" [level=2] [ref=e252]
+      - generic [ref=e253]:
+        - generic [ref=e254]:
+          - heading "Po pierwszych kilku lekcjach:" [level=3] [ref=e255]
+          - generic [ref=e256]:
+            - generic [ref=e257]:
+              - generic [ref=e258]: ✓
+              - generic [ref=e259]: Zaczyna rozumieć matematykę, nie tylko pamięta wzory
+            - generic [ref=e260]:
+              - generic [ref=e261]: ✓
+              - generic [ref=e262]: Widzi logiczne połączenia między tematami
+            - generic [ref=e263]:
+              - generic [ref=e264]: ✓
+              - generic [ref=e265]: Przestaje bać się pytać
+            - generic [ref=e266]:
+              - generic [ref=e267]: ✓
+              - generic [ref=e268]: Odzyskuje wiarę w swoje możliwości
+            - generic [ref=e269]:
+              - generic [ref=e270]: ✓
+              - generic [ref=e271]: Zaczyna systematycznie pracować
+            - generic [ref=e272]:
+              - generic [ref=e273]: ✓
+              - generic [ref=e274]: Pierwszy raz czuje, że „matematyka może być prosta”
+            - generic [ref=e275]:
+              - generic [ref=e276]: ✓
+              - generic [ref=e277]: Zauważa pierwsze sukcesy
+            - generic [ref=e278]:
+              - generic [ref=e279]: ✓
+              - generic [ref=e280]: Lepiej radzi sobie na klasówkach
+            - generic [ref=e281]:
+              - generic [ref=e282]: ✓
+              - generic [ref=e283]: Ma uporządkowane notatki
+            - generic [ref=e284]:
+              - generic [ref=e285]: ✓
+              - generic [ref=e286]: Czuje wsparcie grupy
+        - generic [ref=e287]:
+          - heading "Po przerobieniu całego kursu:" [level=3] [ref=e288]
+          - generic [ref=e289]:
+            - generic [ref=e290]:
+              - generic [ref=e291]: ✓
+              - generic [ref=e292]: Opanowało wszystkie kluczowe zagadnienia
+            - generic [ref=e293]:
+              - generic [ref=e294]: ✓
+              - generic [ref=e295]: Ma wypracowany system nauki
+            - generic [ref=e296]:
+              - generic [ref=e297]: ✓
+              - generic [ref=e298]: Potrafi rozwiązać każdy typ zadania
+            - generic [ref=e299]:
+              - generic [ref=e300]: ✓
+              - generic [ref=e301]: Zna wszystkie wymagane wzory
+            - generic [ref=e302]:
+              - generic [ref=e303]: ✓
+              - generic [ref=e304]: Umie zarządzać czasem podczas nauki
+            - generic [ref=e305]:
+              - generic [ref=e306]: ✓
+              - generic [ref=e307]: Ma pewność siebie w matematyce
+            - generic [ref=e308]:
+              - generic [ref=e309]: ✓
+              - generic [ref=e310]: Rozumie gdzie może stracić punkty
+            - generic [ref=e311]:
+              - generic [ref=e312]: ✓
+              - generic [ref=e313]: Wie jak sprawdzać swoje rozwiązania
+            - generic [ref=e314]:
+              - generic [ref=e315]: ✓
+              - generic [ref=e316]: Ma techniki na radzenie sobie ze stresem
+            - generic [ref=e317]:
+              - generic [ref=e318]: ✓
+              - generic [ref=e319]: Jest przygotowane na każdą sytuację
+        - generic [ref=e320]:
+          - heading "W trakcie i po egzaminie:" [level=3] [ref=e321]
+          - generic [ref=e322]:
+            - generic [ref=e323]:
+              - generic [ref=e324]: ✓
+              - generic [ref=e325]: Spokojnie podchodzi do arkusza
+            - generic [ref=e326]:
+              - generic [ref=e327]: ✓
+              - generic [ref=e328]: Wie od czego zacząć
+            - generic [ref=e329]:
+              - generic [ref=e330]: ✓
+              - generic [ref=e331]: Rozpoznaje wszystkie typy zadań
+            - generic [ref=e332]:
+              - generic [ref=e333]: ✓
+              - generic [ref=e334]: Efektywnie zarządza czasem
+            - generic [ref=e335]:
+              - generic [ref=e336]: ✓
+              - generic [ref=e337]: Sprawnie rozwiązuje zadania
+            - generic [ref=e338]:
+              - generic [ref=e339]: ✓
+              - generic [ref=e340]: Ma czas na sprawdzenie
+            - generic [ref=e341]:
+              - generic [ref=e342]: ✓
+              - generic [ref=e343]: Wychodzi z uśmiechem
+            - generic [ref=e344]:
+              - generic [ref=e345]: ✓
+              - generic [ref=e346]: Osiąga wynik powyżej 80%
+            - generic [ref=e347]:
+              - generic [ref=e348]: ✓
+              - generic [ref=e349]: Dostaje się do wymarzonej szkoły
+            - generic [ref=e350]:
+              - generic [ref=e351]: ✓
+              - generic [ref=e352]: Czuje dumę z osiągniętego sukcesu
+      - generic [ref=e353]:
+        - heading "W skrócie." [level=3] [ref=e354]
+        - paragraph [ref=e355]: Wysoki wynik na egzaminie.
+        - paragraph [ref=e356]: Gwarantowany.
+    - generic [ref=e358]:
+      - generic [ref=e359]:
+        - heading "Co dokładnie odkryje Twoje dziecko?" [level=2] [ref=e360]
+        - paragraph [ref=e361]: "Oto tylko niektóre z 67 technik i trików, które sprawiają, że uczniowie mówią: \"Czemu nikt wcześniej mi tego nie pokazał?!\""
+      - generic [ref=e362]:
+        - generic [ref=e364]:
+          - img [ref=e367]
+          - generic [ref=e375]:
+            - heading "Metodę 'Szybkich Ułamków'" [level=3] [ref=e376]
+            - paragraph [ref=e377]: która sprawia, że najtrudniejsze działania stają się proste jak dodawanie
+        - generic [ref=e379]:
+          - img [ref=e382]
+          - generic [ref=e384]:
+            - heading "Trik '3 Kroki do Procentów'" [level=3] [ref=e385]
+            - paragraph [ref=e386]: dzięki któremu każde zadanie z procentami zajmie max 2 minuty
+        - generic [ref=e388]:
+          - img [ref=e391]
+          - generic [ref=e395]:
+            - heading "System 'Pewniaki na Start'" [level=3] [ref=e396]
+            - paragraph [ref=e397]: 10 typów zadań, które ZAWSZE są na egzaminie (i jak je rozwiązać)
+        - generic [ref=e399]:
+          - img [ref=e402]
+          - generic [ref=e405]:
+            - heading "Technikę 'Time-Boxing'" [level=3] [ref=e406]
+            - paragraph [ref=e407]: jak zarządzać czasem na egzaminie, żeby starczyło na sprawdzenie
+        - generic [ref=e409]:
+          - img [ref=e412]
+          - generic [ref=e418]:
+            - heading "Algorytm 'Zero Błędów'" [level=3] [ref=e419]
+            - paragraph [ref=e420]: sprawdzony sposób na unikanie głupich pomyłek (strata 20% punktów!)
+        - generic [ref=e422]:
+          - img [ref=e425]
+          - generic [ref=e427]:
+            - heading "Metodę 'Anty-Stres'" [level=3] [ref=e428]
+            - paragraph [ref=e429]: 3 techniki oddechowe, które działają nawet podczas egzaminu
+        - generic [ref=e431]:
+          - img [ref=e434]
+          - generic [ref=e437]:
+            - heading "Wzory w 'Pamięci Długotrwałej'" [level=3] [ref=e438]
+            - paragraph [ref=e439]: system zapamiętywania, dzięki któremu wzory zostają w głowie na zawsze
+        - generic [ref=e441]:
+          - img [ref=e444]
+          - generic [ref=e448]:
+            - 'heading "BONUS: ''Ściąga Legalna''" [level=3] [ref=e449]'
+            - paragraph [ref=e450]: jak zorganizować kartkę z obliczeniami, żeby nie zgubić punktów
+      - generic [ref=e451]:
+        - paragraph [ref=e452]: "To nie wszystko! W kursie znajdziesz jeszcze:"
+        - generic [ref=e453]:
+          - generic [ref=e454]: 📊 10 arkuszy egzaminacyjnych
+          - generic [ref=e455]: 🎯 1000+ zadań z rozwiązaniami
+          - generic [ref=e456]: 🎬 60+ lekcji video HD
+          - generic [ref=e457]: 📱 Aplikacja mobilna
+          - generic [ref=e458]: 👥 Grupa wsparcia
+        - paragraph [ref=e459]: "Wartość dodatków: 2794 zł"
+    - generic [ref=e460]:
+      - img [ref=e463]
+      - generic [ref=e465]:
+        - generic [ref=e466]:
+          - heading "Jak działa system LAPS?" [level=2] [ref=e467]
+          - paragraph [ref=e468]:
+            - text: To nie jest magia - to nauka o tym, jak mózg dziecka najłatwiej przyswaja matematykę.
+            - text: 15 minut dziennie. 4 proste kroki. Gwarantowany efekt.
+          - generic [ref=e469]:
+            - button "Zobacz jak to działa" [ref=e470] [cursor=pointer]:
+              - img [ref=e471]
+              - text: Zobacz jak to działa
+            - button "Reset" [ref=e474] [cursor=pointer]:
+              - img [ref=e475]
+              - text: Reset
+        - generic [ref=e478]:
+          - generic [ref=e479]:
+            - generic [ref=e480]:
+              - generic [ref=e481]: L
+              - generic [ref=e482]:
+                - heading "LEARN" [level=3] [ref=e483]
+                - paragraph [ref=e484]: Uczenie przez Zrozumienie
+                - generic [ref=e485]:
+                  - img [ref=e486]
+                  - generic [ref=e489]: 5 min
+            - generic [ref=e490]:
+              - heading "Jak to działa?" [level=4] [ref=e491]:
+                - img [ref=e492]
+                - text: Jak to działa?
+              - paragraph [ref=e500]: Zamiast suchego tłumaczenia wzorów, Paulina pokazuje DLACZEGO tak się dzieje. Dziecko nie uczy się "a² + b² = c²" - rozumie, dlaczego pitagorejczyk to odkrył.
+            - generic [ref=e501]:
+              - heading "Co czuje dziecko?" [level=4] [ref=e502]:
+                - img [ref=e503]
+                - text: Co czuje dziecko?
+              - list [ref=e511]:
+                - listitem [ref=e512]:
+                  - img [ref=e513]
+                  - generic [ref=e516]: Moment "AHA!" gdy wszystko staje się jasne
+                - listitem [ref=e517]:
+                  - img [ref=e518]
+                  - generic [ref=e521]: Widzenie logicznych połączeń między tematami
+                - listitem [ref=e522]:
+                  - img [ref=e523]
+                  - generic [ref=e526]: Pewność, że matematyka ma sens
+                - listitem [ref=e527]:
+                  - img [ref=e528]
+                  - generic [ref=e531]: Radość z odkrywania, nie męczenie się
+            - generic [ref=e532]:
+              - heading "Co widzisz jako rodzic?" [level=4] [ref=e533]:
+                - img [ref=e534]
+                - text: Co widzisz jako rodzic?
+              - paragraph [ref=e539]: "\"Dziecko mówi \"teraz rozumiem!\" zamiast \"nie wiem jak\"\""
+            - generic [ref=e540]:
+              - heading "Nauka stojąca za tym" [level=4] [ref=e541]:
+                - img [ref=e542]
+                - text: Nauka stojąca za tym
+              - paragraph [ref=e544]: Neuroplastyczność mózgu - gdy rozumiemy mechanizm, tworzymy silniejsze połączenia neuronowe.
+          - generic [ref=e545]:
+            - generic [ref=e546]:
+              - img [ref=e547]:
+                - generic [ref=e552]: L
+                - generic [ref=e555]: A
+                - generic [ref=e558]: P
+                - generic [ref=e561]: S
+              - generic [ref=e563]:
+                - img [ref=e565]
+                - generic [ref=e573]: LEARN
+                - generic [ref=e574]: 5 min
+            - generic [ref=e575]:
+              - button "L" [ref=e576] [cursor=pointer]
+              - button "A" [ref=e577] [cursor=pointer]
+              - button "P" [ref=e578] [cursor=pointer]
+              - button "S" [ref=e579] [cursor=pointer]
+            - generic [ref=e580]:
+              - heading "Przykład w praktyce" [level=4] [ref=e581]:
+                - img [ref=e582]
+                - text: Przykład w praktyce
+              - paragraph [ref=e586]: Równania nie są już zagadką - to logiczny puzzle, który dziecko potrafi ułożyć krok po kroku
+        - generic [ref=e587]:
+          - heading "Dlaczego system LAPS działa lepiej niż tradycyjne metody?" [level=3] [ref=e588]
+          - generic [ref=e589]:
+            - generic [ref=e590]:
+              - img [ref=e592]
+              - heading "Tylko 15 minut dziennie" [level=4] [ref=e595]
+              - paragraph [ref=e596]: Mózg dziecka może się skupić maksymalnie 15-20 minut. Wykorzystujemy to okno na maksimum.
+              - paragraph [ref=e597]: Dziecko nie ma czasu się znudzić czy zgubić
+            - generic [ref=e598]:
+              - img [ref=e600]
+              - heading "Respektuje sposób uczenia się mózgu" [level=4] [ref=e608]
+              - paragraph [ref=e609]: Każdy krok LAPS odpowiada naturalnym procesom neurologicznym uczenia się.
+              - paragraph [ref=e610]: Nauka jest łatwa, bo jest naturalna
+            - generic [ref=e611]:
+              - img [ref=e613]
+              - heading "Sprawdzone na 20,847 dzieciach" [level=4] [ref=e618]
+              - paragraph [ref=e619]: Każda reakcja dziecka została przewidziana i przetestowana przez lata.
+              - paragraph [ref=e620]: Nie ma niespodzianek - system po prostu działa
+        - generic [ref=e622]:
+          - heading "Teraz rozumiesz mechanizm" [level=3] [ref=e623]
+          - paragraph [ref=e624]:
+            - text: System LAPS to nie przypadek - to efekt 5 lat badań nad tym, jak dzieci najłatwiej uczą się matematyki.
+            - text: Sprawdzone na 20,847 uczniach. 84% sukcesu. Gwarantowane.
+          - button "Chcę, żeby moje dziecko skorzystało z systemu LAPS" [ref=e625] [cursor=pointer]:
+            - text: Chcę, żeby moje dziecko skorzystało z systemu LAPS
+            - img [ref=e626]
+          - paragraph [ref=e628]: 30-dniowa gwarancja zwrotu • Bez ryzyka • Natychmiastowy dostęp
+    - generic [ref=e630]:
+      - generic [ref=e631]:
+        - heading "Dlaczego ponad 20 000 rodziców wybrało właśnie nas?" [level=2] [ref=e632]
+        - paragraph [ref=e633]: Porównaj sam i zobacz, dlaczego tradycyjne metody nie działają, a nasz system gwarantuje sukces
+      - generic [ref=e634]:
+        - generic [ref=e635]:
+          - generic [ref=e636]: Co porównujemy?
+          - generic [ref=e637]: ❌ Korepetycje / Inne kursy
+          - generic [ref=e638]: ✅ Kurs Pauliny (LAPS)
+        - generic [ref=e639]:
+          - generic [ref=e640]: Czas nauki dziennie
+          - generic [ref=e641]:
+            - img [ref=e642]
+            - generic [ref=e645]: 2-3 godziny męczarni
+          - generic [ref=e646]:
+            - img [ref=e647]
+            - generic [ref=e650]: 15 minut efektywnej nauki
+        - generic [ref=e651]:
+          - generic [ref=e652]: Koszt miesięczny
+          - generic [ref=e653]:
+            - img [ref=e654]
+            - generic [ref=e657]: 600 zł (4 korepetycje)
+          - generic [ref=e658]:
+            - img [ref=e659]
+            - generic [ref=e662]: 250 zł (lub jednorazowo taniej)
+        - generic [ref=e663]:
+          - generic [ref=e664]: Kto się uczy
+          - generic [ref=e665]:
+            - img [ref=e666]
+            - generic [ref=e669]: Rodzic musi pomagać
+          - generic [ref=e670]:
+            - img [ref=e671]
+            - generic [ref=e674]: Dziecko uczy się SAMO
+        - generic [ref=e675]:
+          - generic [ref=e676]: Motywacja
+          - generic [ref=e677]:
+            - img [ref=e678]
+            - generic [ref=e681]: Kłótnie i przymus
+          - generic [ref=e682]:
+            - img [ref=e683]
+            - generic [ref=e686]: System nagród jak w grze
+        - generic [ref=e687]:
+          - generic [ref=e688]: Postępy
+          - generic [ref=e689]:
+            - img [ref=e690]
+            - generic [ref=e693]: Nie wiesz co się dzieje
+          - generic [ref=e694]:
+            - img [ref=e695]
+            - generic [ref=e698]: Stały dostęp rodziców do kursu
+        - generic [ref=e699]:
+          - generic [ref=e700]: Dostępność
+          - generic [ref=e701]:
+            - img [ref=e702]
+            - generic [ref=e705]: Trzeba jeździć/czekać
+          - generic [ref=e706]:
+            - img [ref=e707]
+            - generic [ref=e710]: 24/7 z każdego miejsca
+        - generic [ref=e711]:
+          - generic [ref=e712]: Gwarancja
+          - generic [ref=e713]:
+            - img [ref=e714]
+            - generic [ref=e717]: Żadnej gwarancji
+          - generic [ref=e718]:
+            - img [ref=e719]
+            - generic [ref=e722]: 30 dni zwrotu pieniędzy
+      - generic [ref=e723]:
+        - img [ref=e724]
+        - heading "To NIE jest kolejny kurs online!" [level=3] [ref=e726]
+        - paragraph [ref=e727]: To kompletny SYSTEM TRANSFORMACJI, który zamienia dziecko przerażone matematyką w pewnego siebie ucznia z wynikiem 80%+
+        - generic [ref=e728]:
+          - generic [ref=e729]:
+            - heading "🧠 Metoda LAPS" [level=4] [ref=e730]
+            - paragraph [ref=e731]: Jedyna metoda oparta na neurobiologii, która gwarantuje zapamiętywanie 95% materiału
+          - generic [ref=e732]:
+            - heading "🎮 Gamifikacja" [level=4] [ref=e733]
+            - paragraph [ref=e734]: System nagród jak w grze - dziecko CHCE się uczyć, nie musisz go zmuszać
+          - generic [ref=e735]:
+            - heading "📊 Sprawdzone wyniki" [level=4] [ref=e736]
+            - paragraph [ref=e737]: Ponad 95% kursantów zdało ze świetnym wynikiem w przeszłości.
+    - generic [ref=e739]:
+      - generic [ref=e740]:
+        - heading "Wszystko, co otrzymasz w kursie" [level=2] [ref=e741]
+        - paragraph [ref=e742]: (kliknij by rozwijać)
+      - generic [ref=e743]:
+        - generic [ref=e744]:
+          - button "MODUŁ 1. Działania na ułamkach i liczbach" [ref=e746] [cursor=pointer]:
+            - generic [ref=e747]: MODUŁ 1. Działania na ułamkach i liczbach
+            - img [ref=e748]
+          - button "MODUŁ 2. Potęgi i pierwiastki" [ref=e751] [cursor=pointer]:
+            - generic [ref=e752]: MODUŁ 2. Potęgi i pierwiastki
+            - img [ref=e753]
+          - button "MODUŁ 3. Wyrażenia algebraiczne i równania, procenty" [ref=e756] [cursor=pointer]:
+            - generic [ref=e757]: MODUŁ 3. Wyrażenia algebraiczne i równania, procenty
+            - img [ref=e758]
+          - button "MODUŁ 4. Matematyka w życiu, statystyka, prawdopodobieństwo" [ref=e761] [cursor=pointer]:
+            - generic [ref=e762]: MODUŁ 4. Matematyka w życiu, statystyka, prawdopodobieństwo
+            - img [ref=e763]
+          - button "MODUŁ 5. Geometria" [ref=e766] [cursor=pointer]:
+            - generic [ref=e767]: MODUŁ 5. Geometria
+            - img [ref=e768]
+          - button "MODUŁ 6. Układ współrzędnych" [ref=e771] [cursor=pointer]:
+            - generic [ref=e772]: MODUŁ 6. Układ współrzędnych
+            - img [ref=e773]
+          - button "MODUŁ 7. Bryły" [ref=e776] [cursor=pointer]:
+            - generic [ref=e777]: MODUŁ 7. Bryły
+            - img [ref=e778]
+        - generic [ref=e780]:
+          - generic [ref=e781]:
+            - img "Widok platformy kursu" [ref=e782]
+            - button [ref=e783] [cursor=pointer]:
+              - img [ref=e784]
+            - button [ref=e786] [cursor=pointer]:
+              - img [ref=e787]
+            - generic [ref=e789]:
+              - button [ref=e790] [cursor=pointer]
+              - button [ref=e791] [cursor=pointer]
+              - button [ref=e792] [cursor=pointer]
+              - button [ref=e793] [cursor=pointer]
+              - button [ref=e794] [cursor=pointer]
+          - paragraph [ref=e795]: "Widok z wnętrza platformy do której dostajesz dostęp od razu po dołączeniu:"
+          - paragraph [ref=e796]: 👉 Kliknij strzałki lub kropki aby zobaczyć więcej zdjęć platformy
+      - generic [ref=e797]:
+        - heading "Co jeszcze znajdę w kursie?" [level=3] [ref=e798]
+        - generic [ref=e799]:
+          - generic [ref=e800]:
+            - generic [ref=e801]: 🔴
+            - heading "Aplikacja na smartfony" [level=4] [ref=e802]
+            - paragraph [ref=e803]: Możesz przyjść z dowolnym zadaniem matematycznym z którym masz problem
+            - paragraph [ref=e804]: "Wartość: 797 zł"
+          - generic [ref=e805]:
+            - generic [ref=e806]: 🎬
+            - heading "Ponad 60 lekcji" [level=4] [ref=e807]
+            - paragraph [ref=e808]: W formie video, masz do nich dostęp cały czas, 24 godziny na dobę 7 dni w tygodniu.
+            - paragraph [ref=e809]: "Wartość: 997 zł"
+          - generic [ref=e810]:
+            - generic [ref=e811]: 📓
+            - heading "1000 zadań z rozwiązaniami" [level=4] [ref=e812]
+            - paragraph [ref=e813]: Strategicznie dopasowane, aby ułatwić Ci zrozumienie danego zagadnienia
+            - paragraph [ref=e814]: "Wartość: 200 zł"
+          - generic [ref=e815]:
+            - generic [ref=e816]: 🛟
+            - heading "Grupa kursantów" [level=4] [ref=e817]
+            - paragraph [ref=e818]: W każdej chwili możesz zadać nurtujące Cię pytanie ANONIMOWO i szybko uzyskać odpowiedź.
+            - paragraph [ref=e819]: "Wartość: 300 zł"
+          - generic [ref=e820]:
+            - generic [ref=e821]: ❤️
+            - heading "30-dniowa gwarancja zwrotu pieniędzy" [level=4] [ref=e822]
+            - paragraph [ref=e823]: Gwarancja 30-dniowa jest bezwarunkowa.
+            - paragraph [ref=e824]: "Wartość: Bezcenne"
+          - generic [ref=e825]:
+            - generic [ref=e826]: 🧠
+            - heading "Dla Rodziców!" [level=4] [ref=e827]
+            - paragraph [ref=e828]: Cykl pięciu spotkań o stresie dla Rodziców ósmoklasistów z fantastyczną Panią psycholog
+            - paragraph [ref=e829]: "Wartość: 500 zł"
+    - generic [ref=e831]:
+      - heading "To tylko kilka opinii ósmoklasistów:" [level=2] [ref=e833]
+      - img "Opinie uczniów" [ref=e835]
+    - generic [ref=e837]:
+      - generic [ref=e838]:
+        - heading "Wybierz pakiet dla swojego dziecka" [level=2] [ref=e839]
+        - paragraph [ref=e840]: 98% rodziców wybiera pakiet Optymalny
+        - generic [ref=e841]:
+          - generic [ref=e842]:
+            - img [ref=e843]
+            - generic [ref=e845]: 30 dni gwarancji
+          - generic [ref=e846]:
+            - img [ref=e847]
+            - generic [ref=e850]: Bezpieczna płatność
+          - generic [ref=e851]:
+            - img [ref=e852]
+            - generic [ref=e854]: 4.9/5 ocena
+      - generic [ref=e855]:
+        - generic [ref=e856]:
+          - generic [ref=e857]:
+            - heading "Standard" [level=3] [ref=e858]
+            - generic [ref=e859]:
+              - generic [ref=e860]: 1497 zł
+              - generic [ref=e861]: 999 zł
+              - paragraph [ref=e862]: Oszczędzasz 498 zł
+            - paragraph [ref=e863]:
+              - text: lub
+              - generic [ref=e864]: 200 zł/mies.
+              - text: (5 rat 0%)
+          - generic [ref=e865]:
+            - generic [ref=e866]:
+              - img [ref=e867]
+              - generic [ref=e870]: Ponad 50h materiału video
+            - generic [ref=e871]:
+              - img [ref=e872]
+              - generic [ref=e875]: ">60 lekcji video HD"
+            - generic [ref=e876]:
+              - img [ref=e877]
+              - generic [ref=e880]: ">1500 zadań z rozwiązaniami"
+            - generic [ref=e881]:
+              - img [ref=e882]
+              - generic [ref=e885]: 9 próbnych arkuszy egzaminacyjnych
+            - generic [ref=e886]:
+              - img [ref=e887]
+              - generic [ref=e890]: 9 spotkań online z rozwiązywaniem
+            - generic [ref=e891]:
+              - img [ref=e892]
+              - generic [ref=e895]: 30 x 90-minutowych spotkań na żywo
+            - generic [ref=e896]:
+              - img [ref=e897]
+              - generic [ref=e900]: Dostęp na 12 miesięcy
+            - generic [ref=e901]:
+              - img [ref=e902]
+              - generic [ref=e905]: Gwarancja satysfakcji 30 dni
+            - generic [ref=e906]:
+              - generic [ref=e907]: ✗
+              - generic [ref=e908]: Konsultacje indywidualne
+            - generic [ref=e909]:
+              - generic [ref=e910]: ✗
+              - generic [ref=e911]: Dostęp na 24 miesiące
+          - button "Wybierz pakiet" [ref=e912] [cursor=pointer]
+        - generic [ref=e913]:
+          - generic [ref=e915]: NAJCZĘŚCIEJ WYBIERANY
+          - generic [ref=e916]:
+            - heading "Premium" [level=3] [ref=e917]
+            - generic [ref=e918]:
+              - generic [ref=e919]: 2297 zł
+              - generic [ref=e920]: 1499 zł
+              - paragraph [ref=e921]: Oszczędzasz 798 zł
+            - paragraph [ref=e922]:
+              - text: lub
+              - generic [ref=e923]: 300 zł/mies.
+              - text: (5 rat 0%)
+          - generic [ref=e924]:
+            - generic [ref=e925]:
+              - img [ref=e926]
+              - generic [ref=e929]: Wszystko z pakietu Standard
+            - generic [ref=e930]:
+              - img [ref=e931]
+              - generic [ref=e934]: 10 autorskich arkuszy z rozwiązaniami
+            - generic [ref=e935]:
+              - img [ref=e936]
+              - generic [ref=e939]: Kurs "10 pewniaków na egzamin"
+            - generic [ref=e940]:
+              - img [ref=e941]
+              - generic [ref=e944]: Wielka Powtórka Mistrzów
+            - generic [ref=e945]:
+              - img [ref=e946]
+              - generic [ref=e949]: 30 x 90-minutowych spotkań na żywo
+            - generic [ref=e950]:
+              - img [ref=e951]
+              - generic [ref=e954]: Dostęp na 24 miesiące
+            - generic [ref=e955]:
+              - img [ref=e956]
+              - generic [ref=e959]: Ebook z ubiegłorocznymi zadaniami
+            - generic [ref=e960]:
+              - generic [ref=e961]: ✗
+              - generic [ref=e962]: Konsultacje indywidualne
+          - button "Wybieram ten pakiet" [ref=e963] [cursor=pointer]
+        - generic [ref=e964]:
+          - generic [ref=e965]:
+            - heading "Expert" [level=3] [ref=e966]
+            - generic [ref=e967]:
+              - generic [ref=e968]: 3497 zł
+              - generic [ref=e969]: 2499 zł
+              - paragraph [ref=e970]: Oszczędzasz 998 zł
+            - paragraph [ref=e971]:
+              - text: lub
+              - generic [ref=e972]: 500 zł/mies.
+              - text: (5 rat 0%)
+          - generic [ref=e973]:
+            - generic [ref=e974]:
+              - img [ref=e975]
+              - generic [ref=e978]: Wszystko z pakietu Premium
+            - generic [ref=e979]:
+              - img [ref=e980]
+              - generic [ref=e983]: Konsultacja indywidualna 45 min
+            - generic [ref=e984]:
+              - img [ref=e985]
+              - generic [ref=e988]: Analiza 3 egzaminów z wskazówkami
+            - generic [ref=e989]:
+              - img [ref=e990]
+              - generic [ref=e993]: Nagrania 30 lekcji z ubiegłego roku
+            - generic [ref=e994]:
+              - img [ref=e995]
+              - generic [ref=e998]: 30 x 90-minutowych spotkań na żywo
+            - generic [ref=e999]:
+              - img [ref=e1000]
+              - generic [ref=e1003]: Priorytetowe wsparcie
+            - generic [ref=e1004]:
+              - img [ref=e1005]
+              - generic [ref=e1008]: Dostęp na 24 miesiące
+          - button "Wybierz pakiet" [ref=e1009] [cursor=pointer]
+      - generic [ref=e1011]:
+        - heading "💰 Zaoszczędź 3600 zł na korepetycjach" [level=3] [ref=e1012]
+        - generic [ref=e1013]:
+          - generic [ref=e1014]:
+            - generic [ref=e1015]: "👨‍🏫 Korepetycje (6 mies. x 4h x 150zł):"
+            - generic [ref=e1016]: 3600 zł
+          - generic [ref=e1017]:
+            - generic [ref=e1018]: "🎓 Mój kurs (dostęp 24 mies.):"
+            - generic [ref=e1019]: 1499 zł
+          - generic [ref=e1020]:
+            - generic [ref=e1021]: "Twoja oszczędność:"
+            - generic [ref=e1022]: 2101 zł!
+        - button "Zapisz dziecko teraz" [ref=e1023] [cursor=pointer]:
+          - generic [ref=e1024]: Zapisz dziecko teraz
+          - img [ref=e1025]
+    - generic [ref=e1028]:
+      - generic [ref=e1029]:
+        - heading "Szczegółowe porównanie pakietów" [level=2] [ref=e1030]
+        - paragraph [ref=e1031]: Wybierz pakiet idealny dla Twojego dziecka
+      - table [ref=e1034]:
+        - rowgroup [ref=e1035]:
+          - row "📦 Zawartość pakietu Standard 999 zł Premium 1499 zł POPULARNY Expert 2499 zł" [ref=e1036]:
+            - cell "📦 Zawartość pakietu" [ref=e1037]
+            - cell "Standard 999 zł" [ref=e1038]:
+              - generic [ref=e1039]: Standard
+              - generic [ref=e1040]: 999 zł
+            - cell "Premium 1499 zł POPULARNY" [ref=e1041]:
+              - generic [ref=e1042]: Premium
+              - generic [ref=e1043]: 1499 zł
+              - generic [ref=e1044]: POPULARNY
+            - cell "Expert 2499 zł" [ref=e1045]:
+              - generic [ref=e1046]: Expert
+              - generic [ref=e1047]: 2499 zł
+        - rowgroup [ref=e1048]:
+          - row "Ponad 50h materiału video" [ref=e1049]:
+            - cell "Ponad 50h materiału video" [ref=e1050]
+            - cell [ref=e1051]:
+              - img [ref=e1052]
+            - cell [ref=e1055]:
+              - img [ref=e1056]
+            - cell [ref=e1059]:
+              - img [ref=e1060]
+          - row ">60 lekcji video" [ref=e1063]:
+            - cell ">60 lekcji video" [ref=e1064]
+            - cell [ref=e1065]:
+              - img [ref=e1066]
+            - cell [ref=e1069]:
+              - img [ref=e1070]
+            - cell [ref=e1073]:
+              - img [ref=e1074]
+          - row ">1500 zadań z rozwiązaniami" [ref=e1077]:
+            - cell ">1500 zadań z rozwiązaniami" [ref=e1078]
+            - cell [ref=e1079]:
+              - img [ref=e1080]
+            - cell [ref=e1083]:
+              - img [ref=e1084]
+            - cell [ref=e1087]:
+              - img [ref=e1088]
+          - row "Ściągi z działów" [ref=e1091]:
+            - cell "Ściągi z działów" [ref=e1092]
+            - cell [ref=e1093]:
+              - img [ref=e1094]
+            - cell [ref=e1097]:
+              - img [ref=e1098]
+            - cell [ref=e1101]:
+              - img [ref=e1102]
+          - row "Rozwiązane zadania ze wszystkich egzaminów CKE" [ref=e1105]:
+            - cell "Rozwiązane zadania ze wszystkich egzaminów CKE" [ref=e1106]
+            - cell [ref=e1107]:
+              - img [ref=e1108]
+            - cell [ref=e1111]:
+              - img [ref=e1112]
+            - cell [ref=e1115]:
+              - img [ref=e1116]
+          - row "Nagroda + certyfikat za 100%" [ref=e1119]:
+            - cell "Nagroda + certyfikat za 100%" [ref=e1120]
+            - cell [ref=e1121]:
+              - img [ref=e1122]
+            - cell [ref=e1125]:
+              - img [ref=e1126]
+            - cell [ref=e1129]:
+              - img [ref=e1130]
+          - row "Ebook ze wzorami do egzaminu" [ref=e1133]:
+            - cell "Ebook ze wzorami do egzaminu" [ref=e1134]
+            - cell [ref=e1135]:
+              - img [ref=e1136]
+            - cell [ref=e1139]:
+              - img [ref=e1140]
+            - cell [ref=e1143]:
+              - img [ref=e1144]
+          - row "Pakiet 5 nagrań z psychologiem" [ref=e1147]:
+            - cell "Pakiet 5 nagrań z psychologiem" [ref=e1148]
+            - cell [ref=e1149]:
+              - img [ref=e1150]
+            - cell [ref=e1153]:
+              - img [ref=e1154]
+            - cell [ref=e1157]:
+              - img [ref=e1158]
+          - row "3 Masterclass (stres, motywacja, planowanie)" [ref=e1161]:
+            - cell "3 Masterclass (stres, motywacja, planowanie)" [ref=e1162]
+            - cell [ref=e1163]:
+              - img [ref=e1164]
+            - cell [ref=e1167]:
+              - img [ref=e1168]
+            - cell [ref=e1171]:
+              - img [ref=e1172]
+          - row "Aplikacja iOS/Android" [ref=e1175]:
+            - cell "Aplikacja iOS/Android" [ref=e1176]
+            - cell [ref=e1177]:
+              - img [ref=e1178]
+            - cell [ref=e1181]:
+              - img [ref=e1182]
+            - cell [ref=e1185]:
+              - img [ref=e1186]
+          - row "9 próbnych arkuszy egzaminacyjnych" [ref=e1189]:
+            - cell "9 próbnych arkuszy egzaminacyjnych" [ref=e1190]
+            - cell [ref=e1191]:
+              - img [ref=e1192]
+            - cell [ref=e1195]:
+              - img [ref=e1196]
+            - cell [ref=e1199]:
+              - img [ref=e1200]
+          - row "9 spotkań online z rozwiązywaniem" [ref=e1203]:
+            - cell "9 spotkań online z rozwiązywaniem" [ref=e1204]
+            - cell [ref=e1205]:
+              - img [ref=e1206]
+            - cell [ref=e1209]:
+              - img [ref=e1210]
+            - cell [ref=e1213]:
+              - img [ref=e1214]
+          - row "30 x 90-minutowych spotkań na żywo" [ref=e1217]:
+            - cell "30 x 90-minutowych spotkań na żywo" [ref=e1218]
+            - cell [ref=e1219]:
+              - img [ref=e1220]
+            - cell [ref=e1223]:
+              - img [ref=e1224]
+            - cell [ref=e1227]:
+              - img [ref=e1228]
+          - row "Nagrania wszystkich spotkań" [ref=e1231]:
+            - cell "Nagrania wszystkich spotkań" [ref=e1232]
+            - cell [ref=e1233]:
+              - img [ref=e1234]
+            - cell [ref=e1237]:
+              - img [ref=e1238]
+            - cell [ref=e1241]:
+              - img [ref=e1242]
+          - row "Dostęp na 12 miesięcy" [ref=e1245]:
+            - cell "Dostęp na 12 miesięcy" [ref=e1246]
+            - cell [ref=e1247]:
+              - img [ref=e1248]
+            - cell [ref=e1251]:
+              - img [ref=e1252]
+            - cell [ref=e1255]:
+              - img [ref=e1256]
+          - row "Gwarancja satysfakcji 30 dni" [ref=e1259]:
+            - cell "Gwarancja satysfakcji 30 dni" [ref=e1260]
+            - cell [ref=e1261]:
+              - img [ref=e1262]
+            - cell [ref=e1265]:
+              - img [ref=e1266]
+            - cell [ref=e1269]:
+              - img [ref=e1270]
+          - row "Dostęp na 24 miesiące" [ref=e1273]:
+            - cell "Dostęp na 24 miesiące" [ref=e1274]
+            - cell [ref=e1275]:
+              - img [ref=e1276]
+            - cell [ref=e1279]:
+              - img [ref=e1280]
+            - cell [ref=e1283]:
+              - img [ref=e1284]
+          - row "Kurs 10 pewniaków" [ref=e1287]:
+            - cell "Kurs 10 pewniaków" [ref=e1288]
+            - cell [ref=e1289]:
+              - img [ref=e1290]
+            - cell [ref=e1293]:
+              - img [ref=e1294]
+            - cell [ref=e1297]:
+              - img [ref=e1298]
+          - row "10 autorskich arkuszy z rozwiązaniami" [ref=e1301]:
+            - cell "10 autorskich arkuszy z rozwiązaniami" [ref=e1302]
+            - cell [ref=e1303]:
+              - img [ref=e1304]
+            - cell [ref=e1307]:
+              - img [ref=e1308]
+            - cell [ref=e1311]:
+              - img [ref=e1312]
+          - row "Wielka Powtórka Mistrzów" [ref=e1315]:
+            - cell "Wielka Powtórka Mistrzów" [ref=e1316]
+            - cell [ref=e1317]:
+              - img [ref=e1318]
+            - cell [ref=e1321]:
+              - img [ref=e1322]
+            - cell [ref=e1325]:
+              - img [ref=e1326]
+          - row "Ebook z ubiegłorocznymi zadaniami" [ref=e1329]:
+            - cell "Ebook z ubiegłorocznymi zadaniami" [ref=e1330]
+            - cell [ref=e1331]:
+              - img [ref=e1332]
+            - cell [ref=e1335]:
+              - img [ref=e1336]
+            - cell [ref=e1339]:
+              - img [ref=e1340]
+          - row "Nagrania 30 lekcji z ubiegłego roku" [ref=e1343]:
+            - cell "Nagrania 30 lekcji z ubiegłego roku" [ref=e1344]
+            - cell [ref=e1345]:
+              - img [ref=e1346]
+            - cell [ref=e1349]:
+              - img [ref=e1350]
+            - cell [ref=e1353]:
+              - img [ref=e1354]
+          - row "Konsultacja indywidualna 45 min" [ref=e1357]:
+            - cell "Konsultacja indywidualna 45 min" [ref=e1358]
+            - cell [ref=e1359]:
+              - img [ref=e1360]
+            - cell [ref=e1363]:
+              - img [ref=e1364]
+            - cell [ref=e1367]:
+              - img [ref=e1368]
+          - row "Analiza 3 egzaminów z wskazówkami" [ref=e1371]:
+            - cell "Analiza 3 egzaminów z wskazówkami" [ref=e1372]
+            - cell [ref=e1373]:
+              - img [ref=e1374]
+            - cell [ref=e1377]:
+              - img [ref=e1378]
+            - cell [ref=e1381]:
+              - img [ref=e1382]
+      - button "Wybierz swój pakiet teraz →" [ref=e1386] [cursor=pointer]
+    - generic [ref=e1388]:
+      - generic [ref=e1389]:
+        - heading "Rozumiem Twoje wątpliwości" [level=2] [ref=e1390]
+        - paragraph [ref=e1391]: "Każdy rodzic ma podobne obawy. Oto odpowiedzi na najczęstsze z nich:"
+      - generic [ref=e1392]:
+        - button "Motywacja dziecka Co jeśli moje dziecko nie będzie chciało się uczyć?" [ref=e1394] [cursor=pointer]:
+          - generic [ref=e1395]:
+            - img [ref=e1397]
+            - generic [ref=e1399]:
+              - heading "Motywacja dziecka" [level=3] [ref=e1400]
+              - paragraph [ref=e1401]: Co jeśli moje dziecko nie będzie chciało się uczyć?
+            - img [ref=e1402]
+        - button "Brak czasu rodzica Nie mam czasu, żeby siedzieć z dzieckiem nad lekcjami" [ref=e1405] [cursor=pointer]:
+          - generic [ref=e1406]:
+            - img [ref=e1408]
+            - generic [ref=e1411]:
+              - heading "Brak czasu rodzica" [level=3] [ref=e1412]
+              - paragraph [ref=e1413]: Nie mam czasu, żeby siedzieć z dzieckiem nad lekcjami
+            - img [ref=e1414]
+        - button "Cena kursu To za drogo, nie stać mnie na taki wydatek" [ref=e1417] [cursor=pointer]:
+          - generic [ref=e1418]:
+            - img [ref=e1420]
+            - generic [ref=e1423]:
+              - heading "Cena kursu" [level=3] [ref=e1424]
+              - paragraph [ref=e1425]: To za drogo, nie stać mnie na taki wydatek
+            - img [ref=e1426]
+        - button "Złe doświadczenia Już próbowaliśmy innych kursów i nie działały" [ref=e1429] [cursor=pointer]:
+          - generic [ref=e1430]:
+            - img [ref=e1432]
+            - generic [ref=e1440]:
+              - heading "Złe doświadczenia" [level=3] [ref=e1441]
+              - paragraph [ref=e1442]: Już próbowaliśmy innych kursów i nie działały
+            - img [ref=e1443]
+        - button "Wiarygodność Skąd mam wiedzieć, że to nie oszustwo?" [ref=e1446] [cursor=pointer]:
+          - generic [ref=e1447]:
+            - img [ref=e1449]
+            - generic [ref=e1451]:
+              - heading "Wiarygodność" [level=3] [ref=e1452]
+              - paragraph [ref=e1453]: Skąd mam wiedzieć, że to nie oszustwo?
+            - img [ref=e1454]
+        - button "Poziom dziecka Moje dziecko jest bardzo słabe z matmy, czy sobie poradzi?" [ref=e1457] [cursor=pointer]:
+          - generic [ref=e1458]:
+            - img [ref=e1460]
+            - generic [ref=e1463]:
+              - heading "Poziom dziecka" [level=3] [ref=e1464]
+              - paragraph [ref=e1465]: Moje dziecko jest bardzo słabe z matmy, czy sobie poradzi?
+            - img [ref=e1466]
+      - generic [ref=e1469]:
+        - heading "Wciąż masz wątpliwości?" [level=3] [ref=e1470]
+        - paragraph [ref=e1471]: Porozmawiaj ze mną! Osobiście odpowiem na wszystkie Twoje pytania.
+        - link "✉️ Napisz do mnie" [ref=e1473] [cursor=pointer]:
+          - /url: mailto:paulina@skutecznekorepetycje.com
+        - paragraph
+    - generic [ref=e1475]:
+      - heading "Najczęściej zadawane pytania" [level=2] [ref=e1477]
+      - generic [ref=e1478]:
+        - button "Jak długo mam dostęp do kursu?" [ref=e1480] [cursor=pointer]:
+          - heading "Jak długo mam dostęp do kursu?" [level=3] [ref=e1481]
+          - img [ref=e1482]
+        - button "Co jeśli kurs mi się nie spodoba?" [ref=e1485] [cursor=pointer]:
+          - heading "Co jeśli kurs mi się nie spodoba?" [level=3] [ref=e1486]
+          - img [ref=e1487]
+        - button "Czy kurs jest zgodny z aktualną podstawą programową?" [ref=e1490] [cursor=pointer]:
+          - heading "Czy kurs jest zgodny z aktualną podstawą programową?" [level=3] [ref=e1491]
+          - img [ref=e1492]
+        - button "Ile czasu dziennie trzeba poświęcić na naukę?" [ref=e1495] [cursor=pointer]:
+          - heading "Ile czasu dziennie trzeba poświęcić na naukę?" [level=3] [ref=e1496]
+          - img [ref=e1497]
+        - button "Czy mogę płacić w ratach?" [ref=e1500] [cursor=pointer]:
+          - heading "Czy mogę płacić w ratach?" [level=3] [ref=e1501]
+          - img [ref=e1502]
+        - button "Czy dostęp do kursu jest natychmiastowy?" [ref=e1505] [cursor=pointer]:
+          - heading "Czy dostęp do kursu jest natychmiastowy?" [level=3] [ref=e1506]
+          - img [ref=e1507]
+    - contentinfo [ref=e1509]:
+      - generic [ref=e1510]:
+        - paragraph [ref=e1511]: © 2025 Paulina od Matematyki. Wszelkie prawa zastrzeżone.
+        - generic [ref=e1512]:
+          - link "Regulamin" [ref=e1513] [cursor=pointer]:
+            - /url: https://skutecznekorepetycje.com/regulamin
+          - link "Polityka prywatności" [ref=e1514] [cursor=pointer]:
+            - /url: https://skutecznekorepetycje.com/polityka-prywatnosci
+  - button "Open Next.js Dev Tools" [ref=e1520] [cursor=pointer]:
+    - img [ref=e1521]
+  - alert [ref=e1524]
+```
