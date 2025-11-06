@@ -97,7 +97,7 @@ const PossibilityInWorld: React.FC = () => {
         >
           <div className="max-w-4xl mx-auto">
             <h3 className="text-2xl md:text-3xl font-bold text-paulina-primary mb-6">
-              Czemu tradycyjna nauka "na pamięć" NIE działa?
+              Dlaczego nauka na ostatnią chwilę nie działa?
             </h3>
 
             <div className="space-y-6 mb-8">
@@ -110,7 +110,7 @@ const PossibilityInWorld: React.FC = () => {
                     Uczenie się "na ostatnią chwilę"
                   </h4>
                   <p className="text-gray-700">
-                    Badania CKE pokazują: intensywna nauka tydzień przed egzaminem daje średnio <span className="font-bold text-red-600">max 65% skuteczności</span>. Wiedza ulotna, stres wysoki.
+                    Widziałam setki uczniów, którzy zaczynali naukę miesiąc przed maturą. <span className="font-bold text-red-600">Stres ogromny, efekty słabe</span>. Wiedza "wpycha się" do głowy, ale nie zostaje na długo. Po maturze - puste.
                   </p>
                 </div>
               </div>
@@ -121,10 +121,10 @@ const PossibilityInWorld: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-lg text-paulina-primary mb-2">
-                    Metoda małych kroków (15 min/dzień)
+                    Systematyczna nauka małymi krokami
                   </h4>
                   <p className="text-gray-700">
-                    Te same badania: systematyczna nauka krótkimi sesjami przez kilka miesięcy daje <span className="font-bold text-green-600">84-92% skuteczności</span>. Wiedza trwała, stres niski.
+                    15 minut dziennie przez 6-8 miesięcy. <span className="font-bold text-green-600">Mózg ma czas na zrozumienie</span>. Wiedza buduje się powoli, ale zostaje na lata. Większość moich uczniów po roku pamięta więcej niż ci, którzy wkuwali na ostatnią chwilę.
                   </p>
                 </div>
               </div>
@@ -132,24 +132,24 @@ const PossibilityInWorld: React.FC = () => {
 
             <div className="bg-paulina-bg-purple rounded-xl p-6 mb-6">
               <h4 className="font-bold text-lg text-paulina-primary mb-3">
-                Co się zmieniło w ostatnich latach?
+                Co daje kurs online vs tradycyjne korepetycje?
               </h4>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start gap-2">
                   <CheckCircle className="text-paulina-accent flex-shrink-0 mt-0.5" size={20} />
-                  <span><span className="font-bold">Dostęp 24/7:</span> Dziecko uczy się WTEDY kiedy CHCE, nie czeka tydzień na korepetycje</span>
+                  <span><span className="font-bold">Dostęp 24/7:</span> Dziecko uczy się WTEDY kiedy ma ochotę, nie czeka tydzień na korepetycje</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="text-paulina-accent flex-shrink-0 mt-0.5" size={20} />
-                  <span><span className="font-bold">Natychmiastowy feedback:</span> Rozwiązujesz zadanie → od razu wiesz czy dobrze (nie czekasz 3 dni na sprawdzone)</span>
+                  <span><span className="font-bold">Natychmiastowa odpowiedź:</span> Rozwiązujesz zadanie → od razu wiesz czy dobrze (nie czekasz 3 dni na sprawdzone)</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="text-paulina-accent flex-shrink-0 mt-0.5" size={20} />
-                  <span><span className="font-bold">Tracking postępu:</span> Widzisz jak rośniesz → motywacja rośnie → uczysz się więcej</span>
+                  <span><span className="font-bold">Śledzenie postępów:</span> Widzisz co już umiesz → motywacja rośnie → chce Ci się więcej</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="text-paulina-accent flex-shrink-0 mt-0.5" size={20} />
-                  <span><span className="font-bold">Gamifikacja:</span> Nauka staje się "grą" którą chcesz wygrać, nie obowiązkiem</span>
+                  <span><span className="font-bold">Nauka jak gra:</span> Odhaczanie kolejnych tematów daje satysfakcję. To nie obowiązek, to wyzwanie które chcesz ukończyć.</span>
                 </li>
               </ul>
             </div>
