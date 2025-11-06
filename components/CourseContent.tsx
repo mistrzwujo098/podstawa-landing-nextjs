@@ -9,11 +9,10 @@ const CourseContent: React.FC = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
   const platformImages = [
-    'https://paulinaodmatematyki.com/wp-content/uploads/2024/12/e8-okladka.webp',
-    'https://paulinaodmatematyki.com/wp-content/uploads/2024/07/CleanShot-2024-07-18-at-16.03.35.png',
+    'https://paulinaodmatematyki.com/wp-content/uploads/2024/07/CleanShot-2024-07-23-at-17.32.47.png',
+    'https://paulinaodmatematyki.com/wp-content/uploads/2024/12/Paulina-od-Matematyki-5-2048x1300.webp',
     'https://paulinaodmatematyki.com/wp-content/uploads/2024/12/11fe3aae32f1e20994207d29fef4679257073333.webp',
-    'https://paulinaodmatematyki.com/wp-content/uploads/2024/12/Paulina-od-Matematyki-2-1.webp',
-    'https://paulinaodmatematyki.com/wp-content/uploads/2024/12/Paulina-od-Matematyki-1-1.webp'
+    'https://paulinaodmatematyki.com/wp-content/uploads/2024/12/Paulina-od-Matematyki-10.webp'
   ];
 
   const modules = [
@@ -172,7 +171,7 @@ const CourseContent: React.FC = () => {
   const additionalContent = [
     { icon: '🔴', title: 'Aplikacja na smartfony', description: 'Możesz przyjść z dowolnym zadaniem matematycznym z którym masz problem', value: '797 zł' },
     { icon: '🎬', title: 'Ponad 60 lekcji', description: 'W formie video, masz do nich dostęp cały czas, 24 godziny na dobę 7 dni w tygodniu.', value: '997 zł' },
-    { icon: '📓', title: '1000 zadań z rozwiązaniami', description: 'Strategicznie dopasowane, aby ułatwić Ci zrozumienie danego zagadnienia', value: '200 zł' },
+    { icon: '📓', title: '2000+ zadań z rozwiązaniami', description: 'Strategicznie dopasowane, od podstaw do matury. 1000 obowiązkowych + 1000 dodatkowych dla ambitnych.', value: '200 zł' },
     { icon: '🛟', title: 'Grupa kursantów', description: 'W każdej chwili możesz zadać nurtujące Cię pytanie ANONIMOWO i szybko uzyskać odpowiedź.', value: '300 zł' },
     { icon: '❤️', title: '30-dniowa gwarancja zwrotu pieniędzy', description: 'Gwarancja 30-dniowa jest bezwarunkowa.', value: 'Bezcenne' },
     { icon: '🧠', title: 'Dla Rodziców!', description: 'Cykl pięciu spotkań o stresie dla Rodziców maturzystów z fantastyczną Panią psycholog', value: '500 zł' },

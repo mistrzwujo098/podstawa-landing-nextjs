@@ -34,7 +34,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: 'Czy to dla dziecka, które ma słabą ocenę z matematyki (2-3)?',
-      answer: 'TAK! 40% moich uczniów zaczynało z oceną 2-3. Metoda LAPS jest stworzona właśnie dla dzieci, które "nie kumają matmy". Zaczynasz od podstaw, małymi krokami. Przykład: Kasia miała 2.5 przez cały rok. Po 5 miesiącach w kursie - egzamin na 78%. Możliwe? Tak, bo rozumie MECHANIZM, nie wkuwa na pamięć.'
+      answer: 'TAK! Kurs działa nawet z oceną 2-3. Zobacz prawdziwe wyniki z matur 2024:\n\n• Kacper (ocena końcowa 2) → matura 72%\n• Agnieszka (zero od lipca, duże zaległości) → matura 62%\n• Małgorzata (45 lat, nauka od podstaw) → matura 60%\n\nDlaczego to działa? Bo uczysz się przez ZROZUMIENIE, nie wkuwanie wzorów. Zaczynasz od podstaw, małymi krokami. A jeśli po 30 dniach uznasz że nie dla Ciebie - zwrot bez pytań.'
     },
     {
       question: 'Jak to się ma do korepetycji?',
@@ -42,7 +42,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: 'Co jeśli dziecko nie skończy kursu?',
-      answer: 'Szczerze: 20% uczniów nie kończy kursu w 100%. ALE - ci 80% którzy kończą >80% materiału osiągają średnio 89% na egzaminie.\n\nJak zwiększyć szansę że dziecko skończy? 1) Wspólne oglądanie pierwszych 3 lekcji (nie naciskaj, obserwuj), 2) Progress tracker do odhaczania (satysfakcja!), 3) Spotkania live co tydzień (poczucie wspólnoty).\n\nA jeśli nie działa? 30-dniowa gwarancja zwrotu - bez pytań.'
+      answer: 'Szczerze: 20% uczniów nie kończy kursu w 100%. ALE - ci 80% którzy kończą >80% materiału osiągają średnio 89% na maturze (dane z 2024 roku).\n\nJak zwiększyć szansę że dziecko skończy? 1) Wspólne oglądanie pierwszych 3 lekcji (nie naciskaj, obserwuj), 2) Progress tracker do odhaczania (satysfakcja!), 3) Spotkania live co tydzień (poczucie wspólnoty).\n\nA jeśli nie działa? 30-dniowa gwarancja zwrotu - bez pytań.'
     }
   ];
 

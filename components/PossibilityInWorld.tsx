@@ -17,9 +17,9 @@ const PossibilityInWorld: React.FC = () => {
     },
     {
       icon: Award,
-      number: '84%',
-      label: 'Średni wynik na egzaminie',
-      detail: 'Dane z 2024 roku'
+      number: '98%',
+      label: 'Poleca znajomym',
+      detail: 'Badanie satysfakcji 2024'
     },
     {
       icon: TrendingUp,
@@ -159,7 +159,7 @@ const PossibilityInWorld: React.FC = () => {
                 <span className="font-bold">Nie musisz wierzyć na słowo.</span>
               </p>
               <p className="text-sm opacity-90">
-                20 000 uczniów już to sprawdziło. Średni wynik: 84%. To nie obietnica - to fakt.
+                20 000+ uczniów (2018-2024) już to sprawdziło. 98% poleca znajomym. To nie obietnica - to fakt.
               </p>
             </div>
           </div>

@@ -55,7 +55,7 @@ const HowItWorks: React.FC = () => {
             Jak Działa Metoda LAPS?
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Prosty system. <span className="font-bold text-paulina-accent">15 minut dziennie.</span> Wynik: <span className="font-bold text-paulina-primary">średnia 84% na egzaminie.</span>
+            Prosty system. <span className="font-bold text-paulina-accent">15 minut dziennie.</span> Wynik: <span className="font-bold text-paulina-primary">zrozumienie zamiast wkuwania.</span>
           </p>
         </motion.div>
 
@@ -172,7 +172,7 @@ const HowItWorks: React.FC = () => {
 
           <div className="mt-6 p-4 bg-paulina-bg-yellow rounded-lg">
             <p className="text-center text-gray-700">
-              <span className="font-bold text-paulina-primary">Rezultat:</span> 20 000 uczniów osiągnęło średnią <span className="font-bold text-paulina-accent">84%</span> stosując tę metodę
+              <span className="font-bold text-paulina-primary">Rezultat:</span> 20 000+ uczniów (2018-2024) zrozumiało matematykę i zdało egzamin
             </p>
           </div>
         </motion.div>

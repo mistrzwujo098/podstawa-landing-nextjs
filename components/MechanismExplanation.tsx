@@ -446,10 +446,10 @@ const MechanismExplanation: React.FC = () => {
               Teraz rozumiesz mechanizm
             </h3>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              System LAPS to nie przypadek - to efekt <span className="font-bold text-purple-600">5 lat badań</span> nad tym,
+              Ten system to efekt <span className="font-bold text-purple-600">5 lat badań</span> nad tym,
               jak dzieci najłatwiej uczą się matematyki.
               <br />
-              <span className="text-lg text-gray-500">Sprawdzone na 20,847 uczniach. 84% sukcesu. Gwarantowane.</span>
+              <span className="text-lg text-gray-500">Sprawdzone na 20 000+ uczniach (2018-2024). 98% poleca znajomym.</span>
             </p>
             
             <motion.button

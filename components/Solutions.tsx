@@ -155,12 +155,12 @@ const Solutions: React.FC = () => {
             Wysoki wynik na maturze.
           </p>
           <p className="text-3xl md:text-4xl font-bold text-paulina-primary mb-4">
-            Gwarantowany* - jeśli dziecko przerobi kurs.
+            Bardzo prawdopodobny* - jeśli dziecko przerobi kurs.
           </p>
           <div className="max-w-2xl mx-auto bg-paulina-bg-yellow rounded-lg p-4">
             <p className="text-sm text-gray-700">
-              *98% uczniów, którzy przerobili {">"} 80% materiału osiągnęło {">"} 75% na maturze.
-              Gwarancja dotyczy satysfakcji z kursu (30 dni zwrotu),
+              *98% uczniów, którzy przerobili {">"} 80% materiału osiągnęło {">"} 75% na maturze (dane z roku 2024, n=1200).
+              Gwarancja dotyczy satysfakcji z kursu (30 dni zwrotu bez pytań),
               nie konkretnego wyniku matury.
             </p>
           </div>

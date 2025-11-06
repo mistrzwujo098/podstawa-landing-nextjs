@@ -102,7 +102,7 @@ const Hero: React.FC = () => {
           </motion.div>
           
           <p className="text-lg md:text-xl text-gray-700 mb-6">
-            Sprawdzony system <span className="font-bold text-paulina-primary">20 000+ uczniów</span>, który
+            Sprawdzony system <span className="font-bold text-paulina-primary">20 000+ uczniów (2018-2024)</span>, który
             zamienia matematykę w przygodę, którą Twoje dziecko{' '}
             <span className="underline decoration-paulina-accent decoration-2">naprawdę zrozumie</span>.
           </p>
@@ -183,9 +183,9 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="relative"
         >
-          <img 
-            src="https://paulinaodmatematyki.com/wp-content/uploads/2025/06/hero-1.webp"
-            alt="Paulina od Matematyki"
+          <img
+            src="https://paulinaodmatematyki.com/wp-content/uploads/2024/12/podstawa-okladka.webp"
+            alt="Paulina od Matematyki - Kurs Matura Podstawowa"
             className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
           />
           
@@ -197,10 +197,10 @@ const Hero: React.FC = () => {
             className="absolute -top-4 -right-4 bg-white rounded-xl shadow-xl p-4"
           >
             <div className="flex items-center gap-2">
-              <TrendingUp className="text-green-500" size={24} />
+              <Users className="text-paulina-primary" size={24} />
               <div>
-                <p className="text-2xl font-bold text-gray-900">84%</p>
-                <p className="text-xs text-gray-600">Średni wynik</p>
+                <p className="text-2xl font-bold text-gray-900">20 000+</p>
+                <p className="text-xs text-gray-600">Kursantów</p>
               </div>
             </div>
           </motion.div>

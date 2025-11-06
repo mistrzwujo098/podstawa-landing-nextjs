@@ -168,8 +168,8 @@ const PricingSimple: React.FC = () => {
 
                   const urls = [
                     'https://kurs.skutecznekorepetycje.com/zamowienie/?add-to-cart=195091&price-id=1',
-                    'https://kurs.skutecznekorepetycje.com/zamowienie/?add-to-cart=195826',
-                    'https://kurs.skutecznekorepetycje.com/zamowienie/?add-to-cart=195828'
+                    'https://kurs.skutecznekorepetycje.com/zamowienie/?add-to-cart=195826&price-id=2',
+                    'https://kurs.skutecznekorepetycje.com/zamowienie/?add-to-cart=195828&price-id=3'
                   ];
 
                   // Małe opóźnienie dla trackingu

@@ -20,7 +20,7 @@ const TopBar: React.FC = () => {
         </span>
         <span className="flex items-center gap-2">
           <span className="text-paulina-primary font-semibold">✓</span>
-          <span>Średni wynik: 84%</span>
+          <span>4.9/5 ocena</span>
         </span>
       </div>
     </div>

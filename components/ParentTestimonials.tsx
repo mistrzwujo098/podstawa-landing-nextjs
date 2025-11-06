@@ -263,9 +263,9 @@ const ParentTestimonials: React.FC = () => {
               </h3>
               <div className="space-y-3">
                 {[
-                  { label: 'Średnia poprawa wyniku', value: '+43%', color: 'text-green-600' },
-                  { label: 'Zadowolonych rodziców', value: '98%', color: 'text-blue-600' },
-                  { label: 'Oszczędność na korepetycjach', value: '3000+ zł', color: 'text-paulina-accent' },
+                  { label: 'Średnia poprawa wyniku', value: '+43pp', color: 'text-green-600' },
+                  { label: 'Poleca znajomym', value: '98%', color: 'text-blue-600' },
+                  { label: 'Oszczędność vs korepetycje', value: '3600 zł', color: 'text-paulina-accent' },
                 ].map((stat, index) => (
                   <motion.div
                     key={index}

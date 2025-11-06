@@ -76,14 +76,14 @@ const BlackFridayOffer: React.FC = () => {
       badge: 'NOWY'
     },
     {
-      icon: Gift,
-      title: 'BONUS #3: Druga Licencja 2027 (do podarowania)',
-      value: 1997,
+      icon: Users,
+      title: 'BONUS #3: Dostęp dla młodszego rodzeństwa',
+      value: 0,
       details: [
-        'Kup raz, użyj dwa razy',
-        'Dla młodszego rodzeństwa',
-        'Lub podaruj znajomemu',
-        'Aktywacja w 2027 roku'
+        'Jedno konto, dwa lata dostępu',
+        'Jeśli młodsze dziecko będzie zdawało w 2027',
+        'Materiały aktualizowane zgodnie z CKE',
+        'Bez dodatkowych kosztów'
       ],
       badge: 'EKSKLUZYWNE'
     },
@@ -168,12 +168,35 @@ const BlackFridayOffer: React.FC = () => {
           </div>
         </motion.div>
 
-        {/* Value Stacking */}
+        {/* Transparent Urgency - Reason Why */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
+          className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-8"
+        >
+          <h4 className="font-bold text-xl mb-3 flex items-center gap-2">
+            <Clock className="text-paulina-accent" size={24} />
+            Dlaczego deadline 30 listopada?
+          </h4>
+          <p className="text-white/90 mb-2">
+            Szczerze: po Black Friday przez cały grudzień skupiam się na <span className="font-bold text-paulina-accent">wsparciu obecnych kursantów</span> - odpowiadam na pytania, pomagam z trudnymi zadaniami, prowadzę dodatkowe spotkania live.
+          </p>
+          <p className="text-white/90">
+            Nie mogę jednocześnie wspierać setek nowych osób i setki już zapisanych. <span className="font-bold text-white">To nie marketing - to logistyka.</span>
+          </p>
+          <p className="text-sm text-paulina-accent mt-3">
+            Kolejna możliwość zapisu: styczeń 2025 (wtedy bez tych bonusów i w wyższej cenie)
+          </p>
+        </motion.div>
+
+        {/* Value Stacking */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4 }}
           className="bg-white text-gray-900 rounded-2xl p-8 md:p-12 shadow-2xl mb-8"
         >
           <h3 className="text-3xl font-bold text-paulina-primary mb-8 text-center">
@@ -241,29 +264,6 @@ const BlackFridayOffer: React.FC = () => {
               </span>
             </div>
           </div>
-        </motion.div>
-
-        {/* Transparent Urgency */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-8"
-        >
-          <h4 className="font-bold text-xl mb-3 flex items-center gap-2">
-            <Clock className="text-paulina-accent" size={24} />
-            Dlaczego deadline 30 listopada?
-          </h4>
-          <p className="text-white/90 mb-2">
-            Szczerze: po Black Friday przez cały grudzień skupiam się na <span className="font-bold text-paulina-accent">wsparciu obecnych kursantów</span> - odpowiadam na pytania, pomagam z trudnymi zadaniami, prowadzę dodatkowe spotkania live.
-          </p>
-          <p className="text-white/90">
-            Nie mogę jednocześnie wspierać setek nowych osób i setki już zapisanych. <span className="font-bold text-white">To nie marketing - to logistyka.</span>
-          </p>
-          <p className="text-sm text-paulina-accent mt-3">
-            Kolejna możliwość zapisu: styczeń 2025 (wtedy bez tych bonusów i w wyższej cenie)
-          </p>
         </motion.div>
 
         {/* CTA */}
