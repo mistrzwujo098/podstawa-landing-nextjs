@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: '/matura',
+  basePath: '/matura-bf',
   images: {
     remotePatterns: [
       {
