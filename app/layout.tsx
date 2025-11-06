@@ -28,8 +28,8 @@ export const metadata: Metadata = {
   title: 'Matura Podstawowa 2026 - Paulina od Matematyki',
   description: 'Zdaj Maturę Podstawową z Matmy na ponad 80% bez stresu i drogich korepetycji',
   icons: {
-    icon: '/favicon.ico',
-    apple: '/icon.png',
+    icon: '/matura/favicon.ico',
+    apple: '/matura/icon.png',
   },
 }
 
@@ -56,14 +56,14 @@ export default function RootLayout({
         {/* Preload critical fonts */}
         <link
           rel="preload"
-          href="/_next/static/media/d2eebaa28f8365b1-s.06c05dc1.woff2"
+          href="/matura/_next/static/media/d2eebaa28f8365b1-s.06c05dc1.woff2"
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"
         />
         <link
           rel="preload"
-          href="/_next/static/media/9068cf02accee9f5-s.093f0f19.woff2"
+          href="/matura/_next/static/media/9068cf02accee9f5-s.093f0f19.woff2"
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"
