@@ -39,7 +39,7 @@ const Solutions: React.FC = () => {
     'Ma czas na sprawdzenie',
     'Wychodzi z uśmiechem',
     'Osiąga wynik powyżej 80%',
-    'Dostaje się do wymarzonej szkoły',
+    'Dostaje się na wymarzone studia',
     'Czuje dumę z osiągniętego sukcesu'
   ];
 
@@ -121,7 +121,7 @@ const Solutions: React.FC = () => {
             className="bg-gradient-to-r from-paulina-primary to-paulina-purple text-white rounded-xl p-8 shadow-lg"
           >
             <h3 className="font-bold text-2xl mb-6">
-              W trakcie i po egzaminie:
+              W trakcie i po maturze:
             </h3>
             <div className="grid md:grid-cols-2 gap-3">
               {duringAfterExam.map((item, index) => (
@@ -152,16 +152,16 @@ const Solutions: React.FC = () => {
             W skrócie.
           </h3>
           <p className="text-2xl font-semibold text-paulina-accent mb-4">
-            Wysoki wynik na egzaminie.
+            Wysoki wynik na maturze.
           </p>
           <p className="text-3xl md:text-4xl font-bold text-paulina-primary mb-4">
             Gwarantowany* - jeśli dziecko przerobi kurs.
           </p>
           <div className="max-w-2xl mx-auto bg-paulina-bg-yellow rounded-lg p-4">
             <p className="text-sm text-gray-700">
-              *98% uczniów, którzy przerobili {">"} 80% materiału osiągnęło {">"} 75% na egzaminie.
+              *98% uczniów, którzy przerobili {">"} 80% materiału osiągnęło {">"} 75% na maturze.
               Gwarancja dotyczy satysfakcji z kursu (30 dni zwrotu),
-              nie konkretnego wyniku egzaminu.
+              nie konkretnego wyniku matury.
             </p>
           </div>
         </motion.div>

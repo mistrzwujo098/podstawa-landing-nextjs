@@ -34,7 +34,7 @@ const Problems: React.FC = () => {
     'Rozczarowanie wynikiem',
     'Żal do siebie i innych',
     'Stracone szanse',
-    'Gorszy start w liceum',
+    'Gorszy start na studiach',
     'Nadszarpnięte relacje w rodzinie'
   ];
 
@@ -53,7 +53,7 @@ const Problems: React.FC = () => {
           </h2>
           <p className="text-lg text-gray-700">
             <span className="font-bold">Większość rodziców nie umie pomóc</span> dziecku z matematyką.
-            <span className="block text-base mt-2">Każdy dzień zwlekania to większy stres przed egzaminem.</span>
+            <span className="block text-base mt-2">Każdy dzień zwlekania to większy stres przed maturą.</span>
           </p>
         </motion.div>
 
@@ -65,7 +65,7 @@ const Problems: React.FC = () => {
             transition={{ duration: 0.6 }}
             className="bg-white rounded-xl p-6 shadow-lg"
           >
-            <h3 className="font-bold text-xl mb-4 text-gray-900">Przed egzaminem:</h3>
+            <h3 className="font-bold text-xl mb-4 text-gray-900">Przed maturą:</h3>
             <ul className="space-y-2">
               {beforeExam.map((item, index) => (
                 <li key={index} className="flex items-start gap-2">
@@ -83,7 +83,7 @@ const Problems: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="bg-white rounded-xl p-6 shadow-lg"
           >
-            <h3 className="font-bold text-xl mb-4 text-gray-900">W trakcie egzaminu:</h3>
+            <h3 className="font-bold text-xl mb-4 text-gray-900">W trakcie matury:</h3>
             <ul className="space-y-2">
               {duringExam.map((item, index) => (
                 <li key={index} className="flex items-start gap-2">
@@ -101,7 +101,7 @@ const Problems: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="bg-white rounded-xl p-6 shadow-lg"
           >
-            <h3 className="font-bold text-xl mb-4 text-gray-900">Po egzaminie:</h3>
+            <h3 className="font-bold text-xl mb-4 text-gray-900">Po maturze:</h3>
             <ul className="space-y-2">
               {afterExam.map((item, index) => (
                 <li key={index} className="flex items-start gap-2">

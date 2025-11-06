@@ -265,7 +265,6 @@ const ParentTestimonials: React.FC = () => {
                 {[
                   { label: 'Średnia poprawa wyniku', value: '+43%', color: 'text-green-600' },
                   { label: 'Zadowolonych rodziców', value: '98%', color: 'text-blue-600' },
-                  { label: 'Uczniów z wynikiem 80%+', value: '84%', color: 'text-purple-600' },
                   { label: 'Oszczędność na korepetycjach', value: '3000+ zł', color: 'text-paulina-accent' },
                 ].map((stat, index) => (
                   <motion.div
