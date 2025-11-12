@@ -116,8 +116,8 @@ const HeroSimple: React.FC = () => {
           >
             <div className="relative">
               <Image
-                src="https://paulinaodmatematyki.com/wp-content/uploads/2025/06/hero-1.webp"
-                alt="Paulina od Matematyki"
+                src="https://paulinaodmatematyki.com/wp-content/uploads/2024/12/podstawa-okladka.webp"
+                alt="Paulina od Matematyki - Kurs Matura Podstawowa"
                 width={800}
                 height={800}
                 priority
