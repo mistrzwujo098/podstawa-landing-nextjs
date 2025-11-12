@@ -183,17 +183,11 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="relative"
         >
-          <a
-            href="https://paulinaodmatematyki.com/wp-content/uploads/2024/12/podstawa-okladka.webp"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="https://paulinaodmatematyki.com/wp-content/uploads/2024/12/podstawa-okladka.webp"
-              alt="Paulina od Matematyki - Kurs Matura Podstawowa"
-              className="rounded-2xl shadow-2xl w-full max-w-md mx-auto cursor-pointer hover:opacity-90 transition-opacity"
-            />
-          </a>
+          <img
+            src="https://paulinaodmatematyki.com/wp-content/uploads/2024/12/podstawa-okladka.webp"
+            alt="Paulina od Matematyki - Kurs Matura Podstawowa"
+            className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
+          />
           
           {/* Success metric card */}
           <motion.div
