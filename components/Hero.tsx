@@ -186,6 +186,10 @@ const Hero: React.FC = () => {
           <img
             src="https://paulinaodmatematyki.com/wp-content/uploads/2024/12/podstawa-okladka.webp"
             alt="Paulina od Matematyki - Kurs Matura Podstawowa"
+            width="800"
+            height="800"
+            loading="eager"
+            decoding="async"
             className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
           />
           
