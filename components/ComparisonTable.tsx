@@ -7,7 +7,7 @@ import { CheckCircle, X } from 'lucide-react';
 const ComparisonTable: React.FC = () => {
   const features = [
     { name: 'Ponad 50h materiału video', standard: true, premium: true, expert: true },
-    { name: '>60 lekcji video', standard: true, premium: true, expert: true },
+    { name: '>100 lekcji video', standard: true, premium: true, expert: true },
     { name: '>1500 zadań z rozwiązaniami', standard: true, premium: true, expert: true },
     { name: 'Ściągi z działów', standard: true, premium: true, expert: true },
     { name: 'Rozwiązane zadania ze wszystkich egzaminów CKE', standard: true, premium: true, expert: true },

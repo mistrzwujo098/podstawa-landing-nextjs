@@ -166,7 +166,7 @@ const CourseContent: React.FC = () => {
 
   const additionalContent = [
     { icon: '🔴', title: 'Aplikacja na smartfony', description: 'Możesz przyjść z dowolnym zadaniem matematycznym z którym masz problem', value: '797 zł' },
-    { icon: '🎬', title: 'Ponad 60 lekcji', description: 'W formie video, masz do nich dostęp cały czas, 24 godziny na dobę 7 dni w tygodniu.', value: '997 zł' },
+    { icon: '🎬', title: 'Ponad 100 lekcji', description: 'W formie video, masz do nich dostęp cały czas, 24 godziny na dobę 7 dni w tygodniu.', value: '997 zł' },
     { icon: '📓', title: '2000+ zadań z rozwiązaniami', description: 'Strategicznie dopasowane, od podstaw do matury. 1000 obowiązkowych + 1000 dodatkowych dla ambitnych.', value: '200 zł' },
     { icon: '🛟', title: 'Grupa kursantów', description: 'W każdej chwili możesz zadać nurtujące Cię pytanie ANONIMOWO i szybko uzyskać odpowiedź.', value: '300 zł' },
     { icon: '❤️', title: '30-dniowa gwarancja zwrotu pieniędzy', description: 'Gwarancja 30-dniowa jest bezwarunkowa.', value: 'Bezcenne' },

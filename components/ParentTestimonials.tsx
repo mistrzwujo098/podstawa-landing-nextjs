@@ -294,7 +294,7 @@ const ParentTestimonials: React.FC = () => {
                 Dołącz do społeczności szczęśliwych rodziców
               </h3>
               <p className="mb-4 opacity-90">
-                Każdego dnia otrzymujesz raporty o postępach dziecka. 
+                Każdego dnia możesz śledzić postępy dziecka. 
                 Zero stresu, zero konfliktów o naukę.
               </p>
               <div className="flex items-center gap-2">

@@ -48,7 +48,7 @@ const Pricing: React.FC = () => {
       spots: 15,
       features: [
         { name: 'Ponad 50h materiału video', included: true },
-        { name: '>60 lekcji video', included: true },
+        { name: '>100 lekcji video', included: true },
         { name: '>1500 zadań z rozwiązaniami', included: true },
         { name: 'Ściągi z działów', included: true },
         { name: 'Rozwiązane zadania ze wszystkich egzaminów CKE', included: true },
@@ -83,7 +83,7 @@ const Pricing: React.FC = () => {
       bestValue: true,
       features: [
         { name: 'Ponad 50h materiału video', included: true },
-        { name: '>60 lekcji video', included: true },
+        { name: '>100 lekcji video', included: true },
         { name: '>1500 zadań z rozwiązaniami', included: true },
         { name: 'Ściągi z działów', included: true },
         { name: 'Rozwiązane zadania ze wszystkich egzaminów CKE', included: true },
@@ -118,7 +118,7 @@ const Pricing: React.FC = () => {
       exclusive: true,
       features: [
         { name: 'Ponad 50h materiału video', included: true },
-        { name: '>60 lekcji video', included: true },
+        { name: '>100 lekcji video', included: true },
         { name: '>1500 zadań z rozwiązaniami', included: true },
         { name: 'Ściągi z działów', included: true },
         { name: 'Rozwiązane zadania ze wszystkich egzaminów CKE', included: true },

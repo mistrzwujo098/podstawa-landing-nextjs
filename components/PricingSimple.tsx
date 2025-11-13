@@ -16,7 +16,7 @@ const PricingSimple: React.FC = () => {
       popular: false,
       features: [
         'Ponad 50h materiału video',
-        '>60 lekcji video HD',
+        '>100 lekcji video HD',
         '>1500 zadań z rozwiązaniami',
         '9 próbnych arkuszy egzaminacyjnych',
         '9 spotkań online z rozwiązywaniem',
