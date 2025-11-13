@@ -167,9 +167,9 @@ const PricingSimple: React.FC = () => {
                   tracking.initiateCheckout(pkg.price, `Pakiet ${pkg.name}`)
 
                   const urls = [
-                    'https://kurs.skutecznekorepetycje.com/zamowienie/?add-to-cart=195091&price-id=1',
-                    'https://kurs.skutecznekorepetycje.com/zamowienie/?add-to-cart=195826&price-id=2',
-                    'https://kurs.skutecznekorepetycje.com/zamowienie/?add-to-cart=195828&price-id=3'
+                    'https://kurs.skutecznekorepetycje.com/zamowienie/?add-to-cart=195229&price-id=1',
+                    'https://kurs.skutecznekorepetycje.com/zamowienie/?add-to-cart=192945',
+                    'https://kurs.skutecznekorepetycje.com/zamowienie/?add-to-cart=195824'
                   ];
 
                   // Małe opóźnienie dla trackingu
