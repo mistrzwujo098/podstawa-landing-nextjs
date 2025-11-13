@@ -23,7 +23,7 @@ const ObjectionHandling: React.FC = () => {
       question: 'Co jeśli moje dziecko nie będzie chciało się uczyć?',
       concern: 'Motywacja dziecka',
       icon: Heart,
-      answer: 'System LAPS został zaprojektowany jak gra - z poziomami, nagrodami i wyzwaniami. Dziecko samo będzie chciało wracać do nauki! Dodatkowo, lekcje trwają tylko 15 minut, więc nie zdążą się znudzić.',
+      answer: 'System LAPS został zaprojektowany jak gra - z poziomami, nagrodami i wyzwaniami. Dziecko samo będzie chciało wracać do nauki! Dodatkowo, lekcje trwają tylko 20 minut, więc nie zdążą się znudzić.',
       proof: '93% dzieci kończy cały kurs bez przypominania rodziców',
       guarantee: '30-dniowa gwarancja zwrotu bez pytań'
     },

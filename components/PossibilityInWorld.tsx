@@ -124,7 +124,7 @@ const PossibilityInWorld: React.FC = () => {
                     Systematyczna nauka małymi krokami
                   </h4>
                   <p className="text-gray-700">
-                    15 minut dziennie przez 6-8 miesięcy. <span className="font-bold text-green-600">Mózg ma czas na zrozumienie</span>. Wiedza buduje się powoli, ale zostaje na lata. Większość moich uczniów po roku pamięta więcej niż ci, którzy wkuwali na ostatnią chwilę.
+                    20 minut dziennie przez 6-8 miesięcy. <span className="font-bold text-green-600">Mózg ma czas na zrozumienie</span>. Wiedza buduje się powoli, ale zostaje na lata. Większość moich uczniów po roku pamięta więcej niż ci, którzy wkuwali na ostatnią chwilę.
                   </p>
                 </div>
               </div>

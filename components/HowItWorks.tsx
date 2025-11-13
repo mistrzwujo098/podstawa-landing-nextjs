@@ -55,7 +55,7 @@ const HowItWorks: React.FC = () => {
             Jak Działa Metoda LAPS?
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Prosty system. <span className="font-bold text-paulina-accent">15 minut dziennie.</span> Wynik: <span className="font-bold text-paulina-primary">zrozumienie zamiast wkuwania.</span>
+            Prosty system. <span className="font-bold text-paulina-accent">20 minut dziennie.</span> Wynik: <span className="font-bold text-paulina-primary">zrozumienie zamiast wkuwania.</span>
           </p>
         </motion.div>
 

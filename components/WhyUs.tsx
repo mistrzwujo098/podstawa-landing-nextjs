@@ -9,12 +9,12 @@ const WhyUs: React.FC = () => {
     {
       feature: "Czas nauki dziennie",
       others: "2-3 godziny męczarni",
-      us: "15 minut efektywnej nauki"
+      us: "20 minut efektywnej nauki"
     },
     {
       feature: "Koszt miesięczny",
       others: "600 zł (4 korepetycje)",
-      us: "250 zł (lub jednorazowo taniej)"
+      us: "150 zł (lub jednorazowo taniej)"
     },
     {
       feature: "Kto się uczy",

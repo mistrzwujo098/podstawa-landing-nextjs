@@ -22,7 +22,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: 'Ile czasu dziennie trzeba poświęcić na naukę?',
-      answer: 'Wystarczy 15 minut dziennie systematycznej nauki. Oczywiście, jeśli masz więcej czasu, możesz uczyć się dłużej i szybciej przerobić materiał.'
+      answer: 'Wystarczy 20 minut dziennie systematycznej nauki. Oczywiście, jeśli masz więcej czasu, możesz uczyć się dłużej i szybciej przerobić materiał.'
     },
     {
       question: 'Czy mogę płacić w ratach?',

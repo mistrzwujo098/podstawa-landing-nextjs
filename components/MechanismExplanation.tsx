@@ -17,7 +17,7 @@ const MechanismExplanation: React.FC = () => {
       icon: Brain,
       duration: '5 min',
       description: 'Nie pamięci, ale głębokiego rozumienia',
-      how_it_works: 'Zamiast suchego tłumaczenia wzorów, Paulina pokazuje DLACZEGO tak się dzieje. Dziecko nie uczy się "a² + b² = c²" - rozumie, dlaczego pitagorejczyk to odkrył.',
+      how_it_works: 'Zamiast suchego tłumaczenia wzorów, Pokazuję DLACZEGO tak się dzieje. Dziecko nie uczy się "a² + b² = c²" - rozumie, dlaczego Pitagoras to odkrył.',
       what_child_experiences: [
         'Moment "AHA!" gdy wszystko staje się jasne',
         'Widzenie logicznych połączeń między tematami',
@@ -26,7 +26,7 @@ const MechanismExplanation: React.FC = () => {
       ],
       parent_sees: 'Dziecko mówi "teraz rozumiem!" zamiast "nie wiem jak"',
       science: 'Neuroplastyczność mózgu - gdy rozumiemy mechanizm, mózg tworzy silniejsze połączenia neuronowe.',
-      example: 'Równania nie są już zagadką - to logiczny puzzle, który dziecko potrafi ułożyć krok po kroku'
+      example: 'Równania nie są już zagadką - to logiczne puzzle, które dziecko potrafi ułożyć krok po kroku'
     },
     {
       letter: 'A',
@@ -90,7 +90,7 @@ const MechanismExplanation: React.FC = () => {
   const whyItWorks = [
     {
       icon: Clock,
-      title: 'Tylko 15 minut dziennie',
+      title: 'Tylko 20 minut dziennie',
       description: 'Mózg dziecka może się skupić maksymalnie 15-20 minut. Wykorzystujemy to okno na maksimum.',
       benefit: 'Dziecko nie ma czasu się znudzić czy zgubić'
     },
@@ -164,7 +164,7 @@ const MechanismExplanation: React.FC = () => {
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
             To nie jest magia - to nauka o tym, jak mózg dziecka najłatwiej przyswaja matematykę.
             <br />
-            <span className="font-bold text-purple-600">15 minut dziennie. 4 proste kroki. Gwarantowany efekt.</span>
+            <span className="font-bold text-purple-600">20 minut dziennie. 4 proste kroki. Gwarantowany efekt.</span>
           </p>
 
           {/* Animation Controls */}
