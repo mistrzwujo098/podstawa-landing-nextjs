@@ -107,7 +107,7 @@ const WhatYouDiscover: React.FC = () => {
           <div className="flex flex-wrap justify-center gap-4 text-sm">
             <span className="px-3 py-1 bg-white rounded-full">📊 10 arkuszy egzaminacyjnych</span>
             <span className="px-3 py-1 bg-white rounded-full">🎯 1000+ zadań z rozwiązaniami</span>
-            <span className="px-3 py-1 bg-white rounded-full">🎬 60+ lekcji video HD</span>
+            <span className="px-3 py-1 bg-white rounded-full">🎬 100+ lekcji video HD</span>
             <span className="px-3 py-1 bg-white rounded-full">📱 Aplikacja mobilna</span>
             <span className="px-3 py-1 bg-white rounded-full">👥 Grupa wsparcia</span>
           </div>
