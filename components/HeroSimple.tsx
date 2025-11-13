@@ -46,8 +46,7 @@ const HeroSimple: React.FC = () => {
 
             {/* Subheadline - Rozszerzony */}
             <p className="text-base sm:text-lg text-gray-700 mb-8">
-              Sprawdzona przez <span className="font-bold text-paulina-primary">20 000 uczniów</span> metoda, która sprawia, że
-              <span className="font-bold text-paulina-accent">Wystarczy 20 minut dziennie</span>
+              Sprawdzona przez <span className="font-bold text-paulina-primary">20 000 uczniów</span> metoda, która sprawia, że dziecko samo siada do nauki. <span className="font-bold text-paulina-accent">Wystarczy 20 minut dziennie</span>
             </p>
 
             {/* Social Proof */}
