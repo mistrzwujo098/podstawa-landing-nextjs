@@ -121,9 +121,9 @@ const WhyUs: React.FC = () => {
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-4">
-              <h4 className="font-bold mb-2">🎮 Gamifikacja</h4>
+              <h4 className="font-bold mb-2">📈 Śledzenie postępów i grupa wsparcia kursantów</h4>
               <p className="text-sm">
-                System nagród jak w grze - dziecko CHCE się uczyć, nie musisz go zmuszać
+                Monitoruj postępy dziecka w czasie rzeczywistym i dołącz do społeczności wspierających się kursantów
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-4">

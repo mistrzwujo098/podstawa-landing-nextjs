@@ -98,6 +98,18 @@ const BlackFridayOffer: React.FC = () => {
         'Jak rozpoznać kiedy dziecko potrzebuje pomocy'
       ],
       badge: 'NOWY'
+    },
+    {
+      icon: Users,
+      title: 'BONUS #5: Wielka Powtórka Mistrzów - Kwiecień 2026',
+      value: 397,
+      details: [
+        'Zaproszenie na intensywną sesję powtórkową',
+        'Przypomnienie w pigułce całego materiału',
+        'Tuż przed egzaminem - kwiecień 2026',
+        'Live spotkanie z najważniejszymi zagadnieniami'
+      ],
+      badge: 'EKSKLUZYWNE'
     }
   ];
 
