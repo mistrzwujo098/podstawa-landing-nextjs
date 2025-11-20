@@ -78,7 +78,7 @@ const BlackFridayOffer: React.FC = () => {
     {
       icon: Users,
       title: 'BONUS #3: Dostęp dla młodszego rodzeństwa',
-      value: 0,
+      value: 1997,
       details: [
         'Jedno konto, dwa lata dostępu',
         'Jeśli młodsze dziecko będzie zdawało w 2027',
