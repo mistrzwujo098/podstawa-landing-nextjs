@@ -199,7 +199,7 @@ const BlackFridayOffer: React.FC = () => {
             Nie mogę jednocześnie wspierać setek nowych osób i setki już zapisanych. <span className="font-bold text-white">To nie marketing - to logistyka.</span>
           </p>
           <p className="text-sm text-paulina-accent mt-3">
-            Kolejna możliwość zapisu: styczeń 2026 (wtedy bez tych bonusów i w wyższej cenie)
+            Kolejna możliwość zapisu: styczeń 2026 (wtedy bez bonusów z Black Week)
           </p>
         </motion.div>
 
