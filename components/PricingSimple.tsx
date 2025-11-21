@@ -79,7 +79,7 @@ const PricingSimple: React.FC = () => {
             Wybierz pakiet dla swojego dziecka
           </h2>
           <p className="text-lg text-gray-600">
-            <span className="text-paulina-accent font-bold">98% rodziców</span> wybiera pakiet Optymalny
+            <span className="text-paulina-accent font-bold">80% rodziców</span> wybiera pakiet Premium
           </p>
           
           {/* Trust badges */}
