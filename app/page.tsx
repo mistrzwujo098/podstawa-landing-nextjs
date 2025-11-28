@@ -3,6 +3,7 @@
 import { useEffect } from 'react'
 import dynamic from 'next/dynamic'
 import HeroSimple from '@/components/HeroSimple'
+import CountdownBanner from '@/components/CountdownBanner'
 import RegistrationDeadline from '@/components/RegistrationDeadline'
 import ParentTestimonials from '@/components/ParentTestimonials'
 import Problems from '@/components/Problems'
@@ -46,6 +47,9 @@ export default function Home() {
 
   return (
     <div className="App">
+      {/* Black Friday Countdown Banner - Above the Fold */}
+      <CountdownBanner />
+
       {/* Scroll Progress & Navigation */}
       <ScrollProgress />
 
