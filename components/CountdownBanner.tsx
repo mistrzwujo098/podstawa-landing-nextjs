@@ -14,7 +14,7 @@ const CountdownBanner: React.FC = () => {
   const [isExpired, setIsExpired] = useState(false);
 
   useEffect(() => {
-    const deadline = new Date('2025-11-30T23:59:59').getTime();
+    const deadline = new Date('2025-12-01T22:00:00').getTime();
 
     const updateCountdown = () => {
       const now = new Date().getTime();
@@ -56,7 +56,7 @@ const CountdownBanner: React.FC = () => {
           {/* Left side - Icon and message */}
           <div className="flex items-center gap-2 flex-shrink-0">
             <Gift className="hidden sm:block" size={24} />
-            <span className="font-bold text-sm sm:text-base">BLACK FRIDAY 2025</span>
+            <span className="font-bold text-sm sm:text-base">🔒 NIEPUBLICZNA DOGRYWKA</span>
           </div>
 
           {/* Center - Countdown */}
@@ -109,8 +109,15 @@ const CountdownBanner: React.FC = () => {
             onClick={scrollToPricing}
             className="w-full bg-white text-paulina-primary font-bold text-sm py-2 rounded-full hover:bg-paulina-accent hover:text-white transition-all duration-300"
           >
-            Zobacz ofertę Black Friday
+            Zobacz ofertę - tylko do dziś 22:00
           </button>
+        </div>
+
+        {/* Warning message */}
+        <div className="mt-2 text-center">
+          <p className="text-xs sm:text-sm text-yellow-300 font-semibold animate-pulse">
+            ⚠️ Właśnie trwa niepubliczna dogrywka dla wąskiego grona. Tylko do dziś do 22:00. Proszę, nie wysyłaj tej strony nikomu. ⚠️
+          </p>
         </div>
       </div>
 
