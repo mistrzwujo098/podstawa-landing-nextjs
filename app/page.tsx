@@ -3,8 +3,6 @@
 import { useEffect } from 'react'
 import dynamic from 'next/dynamic'
 import HeroSimple from '@/components/HeroSimple'
-import CountdownBanner from '@/components/CountdownBanner'
-import RegistrationDeadline from '@/components/RegistrationDeadline'
 import ParentTestimonials from '@/components/ParentTestimonials'
 import Problems from '@/components/Problems'
 import MechanismExplanation from '@/components/MechanismExplanation'
@@ -20,7 +18,6 @@ import PossibilityInWorld from '@/components/PossibilityInWorld'
 
 // Lazy load components below fold for better LCP
 const RealTestimonials = dynamic(() => import('@/components/RealTestimonials'))
-const BlackFridayOffer = dynamic(() => import('@/components/BlackFridayOffer'))
 const RiskReversal = dynamic(() => import('@/components/RiskReversal'))
 const ComparisonTable = dynamic(() => import('@/components/ComparisonTable'))
 const ObjectionHandling = dynamic(() => import('@/components/ObjectionHandling'))
@@ -47,14 +44,8 @@ export default function Home() {
 
   return (
     <div className="App">
-      {/* Black Friday Countdown Banner - Above the Fold */}
-      <CountdownBanner />
-
       {/* Scroll Progress & Navigation */}
       <ScrollProgress />
-
-      {/* Registration Deadline Notice */}
-      <RegistrationDeadline />
 
       {/* Hero Section */}
       <HeroSimple />
@@ -86,9 +77,6 @@ export default function Home() {
 
       {/* Real Testimonials - 11 authentic reviews */}
       <RealTestimonials />
-
-      {/* Black Friday Offer - Value Stacking + Countdown */}
-      <BlackFridayOffer />
 
       {/* Risk Reversal - 30 Day Guarantee */}
       <RiskReversal />
