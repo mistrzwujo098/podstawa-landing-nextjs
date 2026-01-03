@@ -42,7 +42,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: 'Co jeśli dziecko nie skończy kursu?',
-      answer: 'Szczerze: 20% uczniów nie kończy kursu w 100%. ALE - ci 80% którzy kończą >80% materiału osiągają średnio 89% na maturze (dane z 2024 roku).\n\nJak zwiększyć szansę że dziecko skończy? 1) Wspólne oglądanie pierwszych 3 lekcji (nie naciskaj, obserwuj), 2) Progress tracker do odhaczania (satysfakcja!), 3) Spotkania live co tydzień (poczucie wspólnoty).\n\nA jeśli nie działa? 30-dniowa gwarancja zwrotu - bez pytań.'
+      answer: 'Nie każdy kończy kurs w 100% - to normalne. Ale kluczowe jest systematyczne przerabianie materiału - im więcej przerobisz, tym lepszy wynik.\n\nJak zwiększyć szansę że dziecko skończy? 1) Wspólne oglądanie pierwszych 3 lekcji (nie naciskaj, obserwuj), 2) Progress tracker do odhaczania (satysfakcja!), 3) Spotkania live co tydzień (poczucie wspólnoty).\n\nA jeśli nie działa? 30-dniowa gwarancja zwrotu - bez pytań.'
     }
   ];
 

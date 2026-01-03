@@ -24,7 +24,7 @@ const ObjectionHandling: React.FC = () => {
       concern: 'Motywacja dziecka',
       icon: Heart,
       answer: 'System LAPS został zaprojektowany jak gra - z poziomami, nagrodami i wyzwaniami. Dziecko samo będzie chciało wracać do nauki! Dodatkowo, lekcje trwają tylko 20 minut, więc nie zdążą się znudzić.',
-      proof: '93% dzieci kończy cały kurs bez przypominania rodziców',
+      proof: 'Większość dzieci kończy kurs samodzielnie dzięki angażującemu systemowi LAPS',
       guarantee: '30-dniowa gwarancja zwrotu bez pytań'
     },
     {
@@ -51,7 +51,7 @@ const ObjectionHandling: React.FC = () => {
       concern: 'Złe doświadczenia',
       icon: Brain,
       answer: 'Większość kursów to suche tłumaczenie teorii. Mój system LAPS uczy przez zabawę i praktykę. Każde dziecko uczy się inaczej - dlatego kurs dostosowuje się do tempa ucznia.',
-      proof: '89% moich uczniów wcześniej nie radziło sobie z innymi kursami',
+      proof: 'Wielu moich uczniów wcześniej próbowało innych metod bez sukcesu',
       guarantee: 'Jeśli nie zobaczysz poprawy w 30 dni, zwrócimy pieniądze'
     },
     {
@@ -69,7 +69,7 @@ const ObjectionHandling: React.FC = () => {
       concern: 'Poziom dziecka',
       icon: Award,
       answer: 'Kurs zaczyna od absolutnych podstaw i stopniowo buduje wiedzę. Nie zakładamy żadnej wiedzy wstępnej. Tempo jest dostosowane do dziecka - może powtarzać lekcje tyle razy, ile potrzebuje.',
-      proof: 'Uczniowie z początkowym wynikiem 30% osiągają średnio 75% na egzaminie',
+      proof: 'Uczniowie znacząco poprawiają swoje wyniki dzięki systematycznej pracy z kursem',
       guarantee: '30-dniowa gwarancja zwrotu bez pytań'
     }
   ];
