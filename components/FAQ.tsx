@@ -26,7 +26,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: 'Czy mogę płacić w ratach?',
-      answer: 'Tak! Oferuję możliwość rozpłaty na 5 rat 0% (200 zł miesięcznie przez 5 miesięcy). Nie płacisz żadnych dodatkowych odsetek.'
+      answer: 'Tak! Oferuję możliwość rozpłaty na 10 rat 0% (od 100 zł miesięcznie). Nie płacisz żadnych dodatkowych odsetek.'
     },
     {
       question: 'Czy dostęp do kursu jest natychmiastowy?',

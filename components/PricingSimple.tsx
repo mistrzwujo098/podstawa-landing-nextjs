@@ -138,7 +138,7 @@ const PricingSimple: React.FC = () => {
                 
                 {/* Payment options */}
                 <p className="text-xs text-gray-600">
-                  lub <span className="font-bold">{Math.round(pkg.price / 5)} zł/mies.</span> (5 rat 0%)
+                  lub <span className="font-bold">{Math.round(pkg.price / 10)} zł/mies.</span> (10 rat 0%)
                 </p>
               </div>
               

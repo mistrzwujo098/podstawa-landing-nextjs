@@ -148,7 +148,7 @@ const ParentTestimonials: React.FC = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            <span className="text-paulina-accent">Ponad 20 000 rodziców</span> już pomogło swoim dzieciom
+            <span className="text-paulina-accent">Ponad 24 000 rodziców</span> już pomogło swoim dzieciom
           </h2>
           <p className="text-xl text-gray-700 font-semibold">
             Zobacz, co mówią po <span className="text-paulina-primary">2-3 miesiącach</span> kursu:

@@ -11,7 +11,7 @@ const PossibilityInWorld: React.FC = () => {
   const stats = [
     {
       icon: Users,
-      number: '20 000+',
+      number: '24 000+',
       label: 'Uczniów przeszło przez kurs',
       detail: 'Od 2019 roku'
     },
@@ -159,7 +159,7 @@ const PossibilityInWorld: React.FC = () => {
                 <span className="font-bold">Nie musisz wierzyć na słowo.</span>
               </p>
               <p className="text-sm opacity-90">
-                20 000+ uczniów (2018-2024) już to sprawdziło. 98% poleca znajomym. To nie obietnica - to fakt.
+                24 000+ uczniów już to sprawdziło. 98% poleca znajomym. To nie obietnica - to fakt.
               </p>
             </div>
           </div>

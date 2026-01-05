@@ -46,14 +46,14 @@ const HeroSimple: React.FC = () => {
 
             {/* Subheadline - Rozszerzony */}
             <p className="text-base sm:text-lg text-gray-700 mb-8">
-              Sprawdzona przez <span className="font-bold text-paulina-primary">20 000 uczniów</span> metoda, która sprawia, że dziecko samo siada do nauki. <span className="font-bold text-paulina-accent">Wystarczy 20 minut dziennie</span>
+              Sprawdzona przez <span className="font-bold text-paulina-primary">24 000 uczniów</span> metoda, która sprawia, że dziecko samo siada do nauki. <span className="font-bold text-paulina-accent">Wystarczy 20 minut dziennie</span>
             </p>
 
             {/* Social Proof */}
             <div className="flex flex-wrap gap-6 mb-8">
               <div className="flex items-center gap-2">
                 <Users className="text-paulina-primary" size={20} />
-                <span className="text-sm font-semibold">20 000+ uczniów</span>
+                <span className="text-sm font-semibold">24 000+ uczniów</span>
               </div>
               <div className="flex items-center gap-1">
                 {[...Array(5)].map((_, i) => (
@@ -131,7 +131,7 @@ const HeroSimple: React.FC = () => {
                 transition={{ delay: 0.8 }}
                 className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-4"
               >
-                <p className="text-3xl font-bold text-paulina-primary">20 000+</p>
+                <p className="text-3xl font-bold text-paulina-primary">24 000+</p>
                 <p className="text-xs text-gray-600">Kursantów</p>
               </motion.div>
 

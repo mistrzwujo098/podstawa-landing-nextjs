@@ -26,7 +26,7 @@ const About: React.FC = () => {
             Kim ja w ogóle jestem?
           </h2>
           <p className="text-xl text-gray-600">
-            Zaufało mi już ponad 20 000 uczniów i się nie zawiedli!
+            Zaufało mi już ponad 24 000 uczniów i się nie zawiedli!
           </p>
         </motion.div>
 
@@ -78,7 +78,7 @@ const About: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-12 text-center"
         >
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">A Tutaj mnie widzieli:</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-4">A tutaj mnie widzieli:</h3>
           <div className="flex flex-wrap justify-center gap-4 text-gray-600">
             <span>TVP Opole</span>
             <span>•</span>
