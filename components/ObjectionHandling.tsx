@@ -59,7 +59,7 @@ const ObjectionHandling: React.FC = () => {
       question: 'Skąd mam wiedzieć, że to nie oszustwo?',
       concern: 'Wiarygodność',
       icon: Shield,
-      answer: 'Posiadam 15-letnie doświadczenie w nauczaniu matematyki. Co roku zdobywam 1 miejsce w Orłach Edukacji. Mam ponad 24 000 zadowolonych uczniow oraz setki opinii na Facebooku i Google.',
+      answer: 'Posiadam 15-letnie doświadczenie w nauczaniu matematyki. Co roku zdobywam 1 miejsce w Orłach Edukacji. Mam ponad 24 000 zadowolonych uczniów oraz setki opinii na Facebooku i Google.',
       proof: 'Średnia ocena 4.9/5 z ponad 1000 opinii',
       guarantee: 'Płatność przez bezpieczny system, faktura VAT, pełna gwarancja'
     },
