@@ -17,6 +17,7 @@ import WhyUs from '@/components/WhyUs'
 import PossibilityInWorld from '@/components/PossibilityInWorld'
 import JanuaryCountdownBanner from '@/components/JanuaryCountdownBanner'
 import JanuaryOffer from '@/components/JanuaryOffer'
+import WhosItFor from '@/components/WhosItFor'
 
 // Lazy load components below fold for better LCP
 const RealTestimonials = dynamic(() => import('@/components/RealTestimonials'))
@@ -85,6 +86,9 @@ export default function Home() {
 
       {/* Risk Reversal - 30 Day Guarantee */}
       <RiskReversal />
+
+      {/* Who Is It For - Self-Belief */}
+      <WhosItFor />
 
       {/* January Offer - Value Stacking */}
       <JanuaryOffer />

@@ -83,7 +83,7 @@ const PricingSimple: React.FC = () => {
             Wybierz pakiet dla swojego dziecka
           </h2>
           <p className="text-lg text-gray-600">
-            <span className="text-paulina-accent font-bold">80% rodziców</span> wybiera pakiet Premium
+            Wybierz pakiet dopasowany do potrzeb Twojego dziecka
           </p>
           
           {/* Trust badges */}
@@ -210,20 +210,20 @@ const PricingSimple: React.FC = () => {
         >
           <div className="bg-white rounded-xl p-8 shadow-md max-w-2xl mx-auto">
             <h3 className="text-xl font-bold text-paulina-primary mb-4">
-              💰 Zaoszczędź 3600 zł na korepetycjach
+              💰 Zaoszczędź na korepetycjach
             </h3>
             <div className="space-y-3 mb-6">
               <div className="flex items-center justify-between text-gray-700">
-                <span>👨‍🏫 Korepetycje (6 mies. x 4h x 150zł):</span>
-                <span className="font-bold line-through text-red-500">3600 zł</span>
+                <span>👨‍🏫 Korepetycje (4 mies. x 4h x 150zł):</span>
+                <span className="font-bold line-through text-red-500">2400 zł</span>
               </div>
               <div className="flex items-center justify-between text-gray-700">
-                <span>🎓 Mój kurs (dostęp 24 mies.):</span>
-                <span className="font-bold text-paulina-primary">{packages[1].price} zł</span>
+                <span>🎓 Mój kurs (pakiet Standard):</span>
+                <span className="font-bold text-paulina-primary">{packages[0].price} zł</span>
               </div>
               <div className="border-t pt-3 flex items-center justify-between">
                 <span className="font-bold text-lg">Twoja oszczędność:</span>
-                <span className="font-bold text-2xl text-paulina-accent">{3600 - packages[1].price} zł!</span>
+                <span className="font-bold text-2xl text-paulina-accent">{2400 - packages[0].price} zł!</span>
               </div>
             </div>
             <motion.button

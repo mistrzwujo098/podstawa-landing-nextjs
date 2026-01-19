@@ -71,7 +71,7 @@ const HeroSimple: React.FC = () => {
             <div className="space-y-3 mb-8">
               {[
                 'Uczysz się SAM - koniec z kłótniami o naukę',
-                'Zaoszczędzisz 3600 zł (vs 6 miesięcy korepetycji)',
+                'Zaoszczędzisz 1400 zł (vs 4 miesiące korepetycji)',
                 '30-dniowa gwarancja zwrotu bez pytań'
               ].map((benefit, index) => {
                 const benefitAnimation = shouldReduceMotion
@@ -103,9 +103,10 @@ const HeroSimple: React.FC = () => {
             </motion.button>
 
             {/* Urgency */}
-            <p className="text-sm text-gray-600 mt-4">
-              ⚠️ Do matury zostało tylko <span className="font-bold text-paulina-accent">{Math.ceil((new Date('2026-05-05').getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24))} dni</span>
-            </p>
+            <div className="text-sm text-gray-600 mt-4">
+              <p>⚠️ Do matury zostało tylko <span className="font-bold text-paulina-accent">{Math.ceil((new Date('2026-05-05').getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24))} dni</span></p>
+              <p className="mt-1">Program wymaga minimum 3 miesięcy regularnej nauki. Zapisz się teraz — Twoje dziecko będzie gotowe na czas.</p>
+            </div>
           </motion.div>
 
           {/* Right Column - Image */}
@@ -155,7 +156,7 @@ const HeroSimple: React.FC = () => {
           onClick={scrollToPricing}
           className="w-full py-3 bg-paulina-primary text-white font-bold text-lg rounded-full shadow-xl hover:bg-paulina-accent transition-all duration-300"
         >
-          Zobacz Pakiety (98% wybiera Premium)
+          Zobacz pakiety i ceny
         </button>
       </div>
     </section>

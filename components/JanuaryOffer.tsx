@@ -246,14 +246,17 @@ const JanuaryOffer: React.FC = () => {
         </motion.div>
 
         {/* Trust note */}
-        <motion.p
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="text-center text-sm text-gray-600 mt-6"
+          className="text-center mt-6 bg-white rounded-xl p-4 shadow-sm"
         >
-          30 dni gwarancji satysfakcji - jeśli kurs Ci się nie spodoba, zwrócimy 100% pieniędzy bez pytań
-        </motion.p>
+          <p className="font-bold text-paulina-primary mb-1">30 dni bezwarunkowej gwarancji</p>
+          <p className="text-sm text-gray-600">
+            Jeśli w ciągu 30 dni uznasz, że kurs nie pomaga Twojemu dziecku — oddamy Ci każdą złotówkę. Bez pytań, bez tłumaczeń.
+          </p>
+        </motion.div>
       </div>
     </section>
   );
