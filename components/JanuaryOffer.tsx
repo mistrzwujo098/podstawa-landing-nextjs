@@ -43,31 +43,52 @@ const JanuaryOffer: React.FC = () => {
   const bonuses = [
     {
       name: 'Matura Podstawowa 2026',
-      description: 'Pełny dostęp do kursu z ponad 100 lekcjami video, 1500+ zadaniami i 30 spotkaniami live',
       value: 1997,
       icon: Star,
       highlight: true,
+      features: [
+        'Ponad 100 lekcji video HD z teorią i zadaniami',
+        'Ponad 1500 zadań z rozwiązaniami krok po kroku',
+        '9 próbnych arkuszy maturalnych',
+        '30 spotkań live z rozwiązywaniem zadań',
+        'Dostęp na 12 miesięcy',
+      ],
     },
     {
       name: 'Video Onboarding "Jak zacząć"',
-      description: 'Nagranie video pokazujące krok po kroku jak zacząć naukę i osiągnąć najlepsze wyniki',
       value: 297,
       icon: Gift,
       highlight: false,
+      features: [
+        'Nagranie video z instrukcją krok po kroku',
+        'Jak zaplanować naukę przed maturą',
+        'Najczęstsze błędy i jak ich unikać',
+        'Plan nauki dopasowany do Twojego czasu',
+      ],
     },
     {
       name: 'Progress Tracker PDF',
-      description: 'Interaktywny tracker postępów do wydrukowania - motywacja wizualna dla Twojego dziecka',
       value: 97,
       icon: Gift,
       highlight: false,
+      features: [
+        'Interaktywny tracker postępów do wydrukowania',
+        'Lista wszystkich tematów do opanowania',
+        'Miejsce na notatki i własne cele',
+        'Motywacja wizualna - zaznaczaj postępy',
+      ],
     },
     {
       name: '"Rodzic w Spokoju" Video Guide',
-      description: 'Poradnik video dla rodziców - jak wspierać dziecko bez stresu i kłótni',
       value: 197,
       icon: Gift,
       highlight: false,
+      features: [
+        'Poradnik video dla rodziców',
+        'Jak wspierać dziecko bez stresu i kłótni',
+        'Kiedy pomagać, a kiedy dać spokój',
+        'Jak rozmawiać o wynikach i postępach',
+      ],
     },
   ];
 
@@ -150,11 +171,11 @@ const JanuaryOffer: React.FC = () => {
               }`}
             >
               <div className="flex items-start gap-4">
-                <div className={`p-3 rounded-xl ${bonus.highlight ? 'bg-paulina-accent text-white' : 'bg-paulina-bg-purple text-paulina-primary'}`}>
+                <div className={`p-3 rounded-xl flex-shrink-0 ${bonus.highlight ? 'bg-paulina-accent text-white' : 'bg-paulina-bg-purple text-paulina-primary'}`}>
                   <bonus.icon size={24} />
                 </div>
                 <div className="flex-1">
-                  <div className="flex items-start justify-between gap-2">
+                  <div className="flex items-start justify-between gap-2 mb-3">
                     <div>
                       {bonus.highlight ? (
                         <span className="text-xs font-bold text-paulina-accent uppercase tracking-wide">Kurs Główny</span>
@@ -162,12 +183,20 @@ const JanuaryOffer: React.FC = () => {
                         <span className="text-xs font-bold text-gray-500 uppercase tracking-wide">Bonus #{index}</span>
                       )}
                       <h3 className="text-lg font-bold text-paulina-primary">{bonus.name}</h3>
-                      <p className="text-sm text-gray-600 mt-1">{bonus.description}</p>
                     </div>
                     <div className="text-right flex-shrink-0">
                       <span className="text-lg font-bold text-paulina-accent">{bonus.value} zł</span>
                     </div>
                   </div>
+                  {/* Features list with bullet points */}
+                  <ul className="space-y-1">
+                    {bonus.features.map((feature, idx) => (
+                      <li key={idx} className="flex items-start gap-2 text-sm text-gray-600">
+                        <span className="text-paulina-accent mt-1">-</span>
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </motion.div>
