@@ -14,6 +14,7 @@ const PricingSimple: React.FC = () => {
       price: 999,
       originalPrice: 1497,
       popular: false,
+      januaryBonus: true,
       features: [
         'Ponad 50h materiału video',
         '>100 lekcji video HD',
@@ -23,6 +24,7 @@ const PricingSimple: React.FC = () => {
         '30 x 90-minutowych spotkań na żywo',
         'Dostęp na 12 miesięcy',
         'Gwarancja satysfakcji 30 dni',
+        '+ 3 bonusy styczniowe (591 zł wartości)',
       ],
       notIncluded: [
         'Konsultacje indywidualne',
@@ -34,6 +36,7 @@ const PricingSimple: React.FC = () => {
       price: 1499,
       originalPrice: 2297,
       popular: true,
+      januaryBonus: false,
       features: [
         'Wszystko z pakietu Standard',
         '10 autorskich arkuszy z rozwiązaniami',
@@ -52,6 +55,7 @@ const PricingSimple: React.FC = () => {
       price: 2499,
       originalPrice: 3497,
       popular: false,
+      januaryBonus: false,
       features: [
         'Wszystko z pakietu Premium',
         'Konsultacja indywidualna 45 min',
@@ -118,6 +122,14 @@ const PricingSimple: React.FC = () => {
                 <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 z-10">
                   <div className="bg-paulina-accent text-white px-8 py-2 rounded-full text-xs font-bold shadow-lg whitespace-nowrap">
                     NAJCZĘŚCIEJ WYBIERANY
+                  </div>
+                </div>
+              )}
+              {/* January Bonus Badge for Standard */}
+              {pkg.januaryBonus && (
+                <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 z-10">
+                  <div className="bg-gradient-to-r from-paulina-primary to-paulina-accent text-white px-6 py-2 rounded-full text-xs font-bold shadow-lg whitespace-nowrap">
+                    Z BONUSAMI STYCZNIOWYMI!
                   </div>
                 </div>
               )}

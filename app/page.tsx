@@ -15,6 +15,8 @@ import ScrollProgress from '@/components/ScrollProgress'
 import WhatYouDiscover from '@/components/WhatYouDiscover'
 import WhyUs from '@/components/WhyUs'
 import PossibilityInWorld from '@/components/PossibilityInWorld'
+import JanuaryCountdownBanner from '@/components/JanuaryCountdownBanner'
+import JanuaryOffer from '@/components/JanuaryOffer'
 
 // Lazy load components below fold for better LCP
 const RealTestimonials = dynamic(() => import('@/components/RealTestimonials'))
@@ -44,6 +46,9 @@ export default function Home() {
 
   return (
     <div className="App">
+      {/* January Countdown Banner */}
+      <JanuaryCountdownBanner />
+
       {/* Scroll Progress & Navigation */}
       <ScrollProgress />
 
@@ -80,6 +85,9 @@ export default function Home() {
 
       {/* Risk Reversal - 30 Day Guarantee */}
       <RiskReversal />
+
+      {/* January Offer - Value Stacking */}
+      <JanuaryOffer />
 
       {/* Pricing */}
       <PricingSimple />
