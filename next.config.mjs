@@ -1,10 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
   basePath: '/matura',
-  assetPrefix: '/matura',
   images: {
-    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'paulinaodmatematyki.com',
+        pathname: '/wp-content/uploads/**',
+      },
+    ],
   },
 }
 
