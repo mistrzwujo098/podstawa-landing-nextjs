@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import dynamic from 'next/dynamic'
 import HeroSimple from '@/components/HeroSimple'
 import ParentTestimonials from '@/components/ParentTestimonials'
@@ -15,9 +15,9 @@ import ScrollProgress from '@/components/ScrollProgress'
 import WhatYouDiscover from '@/components/WhatYouDiscover'
 import WhyUs from '@/components/WhyUs'
 import PossibilityInWorld from '@/components/PossibilityInWorld'
-import JanuaryCountdownBanner from '@/components/JanuaryCountdownBanner'
 import JanuaryOffer from '@/components/JanuaryOffer'
 import WhosItFor from '@/components/WhosItFor'
+import QualifierGate from '@/components/QualifierGate'
 
 // Lazy load components below fold for better LCP
 const RealTestimonials = dynamic(() => import('@/components/RealTestimonials'))
@@ -27,6 +27,8 @@ const ObjectionHandling = dynamic(() => import('@/components/ObjectionHandling')
 const Footer = dynamic(() => import('@/components/Footer'))
 
 export default function Home() {
+  const [showFullPage, setShowFullPage] = useState(false)
+
   // Track user engagement
   useEffect(() => {
     // Track time on page
@@ -45,11 +47,13 @@ export default function Home() {
     }
   }, [])
 
+  // Show qualifier gate first
+  if (!showFullPage) {
+    return <QualifierGate onShowFullPage={() => setShowFullPage(true)} courseType="matura" />
+  }
+
   return (
     <div className="App">
-      {/* January Countdown Banner */}
-      <JanuaryCountdownBanner />
-
       {/* Scroll Progress & Navigation */}
       <ScrollProgress />
 
