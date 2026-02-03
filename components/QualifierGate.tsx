@@ -141,7 +141,7 @@ export default function QualifierGate({ onShowFullPage, courseType }: QualifierG
             </div>
 
             <a
-              href="https://paulinaodmatematyki.com/minikursy/"
+              href="https://paulinaodmatematyki.com/"
               className="w-full py-4 px-6 bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold rounded-xl transition-all flex items-center justify-center gap-2 group"
             >
               Sprawdź minikursy
