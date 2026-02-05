@@ -231,7 +231,7 @@ const JanuaryOffer: React.FC = () => {
             <div>
               <motion.button
                 onClick={scrollToPricing}
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.95 }}
                 className="inline-flex items-center gap-2 px-8 py-4 bg-paulina-accent text-white font-bold text-lg rounded-full shadow-xl hover:bg-white hover:text-paulina-primary transition-all duration-300"
               >

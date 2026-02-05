@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const SocialProof: React.FC = () => {
@@ -49,10 +50,12 @@ const SocialProof: React.FC = () => {
               className="flex items-center justify-center"
             >
               {partner.logo ? (
-                <img 
-                  src={partner.logo} 
+                <Image
+                  src={partner.logo}
                   alt={partner.name}
-                  className="h-8 md:h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                  width={96}
+                  height={48}
+                  className="h-8 md:h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
                 />
               ) : (
                 <span className="text-gray-600 font-semibold text-sm md:text-base hover:text-paulina-primary transition-colors duration-300">

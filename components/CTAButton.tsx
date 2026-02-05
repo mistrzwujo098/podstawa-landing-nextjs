@@ -1,27 +1,47 @@
 'use client'
 
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const CTAButton: React.FC = () => {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const pricing = document.getElementById('pricing');
+      if (!pricing) return;
+      const rect = pricing.getBoundingClientRect();
+      // Show only when pricing section is scrolled above viewport
+      setShow(rect.bottom < 0);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const scrollToPricing = () => {
     const element = document.getElementById('pricing');
     element?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
-    <motion.button
-      onClick={scrollToPricing}
-      initial={{ y: 100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5, delay: 1 }}
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
-      className="fixed bottom-8 right-8 bg-paulina-accent hover:bg-paulina-primary text-white font-bold py-4 px-8 rounded-full shadow-2xl z-50 hidden md:flex items-center gap-2 animate-pulse-slow"
-    >
-      Dołączam do programu
-      <span className="text-xl">👉</span>
-    </motion.button>
+    <AnimatePresence>
+      {show && (
+        <motion.button
+          onClick={scrollToPricing}
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: 100, opacity: 0 }}
+          transition={{ duration: 0.3 }}
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.95 }}
+          className="fixed bottom-8 right-8 bg-paulina-accent hover:bg-paulina-primary text-white font-bold py-4 px-8 rounded-full shadow-2xl z-50 hidden md:flex items-center gap-2"
+        >
+          Dołączam do programu
+          <span className="text-xl">👉</span>
+        </motion.button>
+      )}
+    </AnimatePresence>
   );
 };
 

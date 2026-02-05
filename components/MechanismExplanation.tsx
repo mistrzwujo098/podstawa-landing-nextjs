@@ -172,7 +172,7 @@ const MechanismExplanation: React.FC = () => {
             <motion.button
               onClick={startAnimation}
               disabled={isAnimating}
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.95 }}
               className="flex items-center gap-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-4 px-8 rounded-full shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
             >
@@ -182,7 +182,7 @@ const MechanismExplanation: React.FC = () => {
             
             <motion.button
               onClick={resetAnimation}
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.95 }}
               className="flex items-center gap-2 bg-white text-gray-700 font-semibold py-4 px-6 rounded-full border-2 border-gray-300 hover:border-purple-400 transition-all"
             >
@@ -299,7 +299,7 @@ const MechanismExplanation: React.FC = () => {
                   strokeLinecap="round"
                   strokeDasharray={`${2 * Math.PI * 90}`}
                   strokeDashoffset={2 * Math.PI * 90 * (1 - (activeStep + 1) / lapsSteps.length)}
-                  className="transition-all duration-1000"
+                  className="transition-all duration-600"
                 />
                 
                 <defs>
@@ -404,7 +404,7 @@ const MechanismExplanation: React.FC = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-r from-purple-900 to-indigo-900 text-white rounded-3xl p-12 mb-16"
+          className="bg-gradient-to-r from-purple-900 to-indigo-900 text-white rounded-2xl p-12 mb-16"
         >
           <h3 className="text-3xl font-bold text-center mb-12">
             Dlaczego system LAPS działa lepiej niż tradycyjne metody?
@@ -441,7 +441,7 @@ const MechanismExplanation: React.FC = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-3xl p-12 max-w-4xl mx-auto border-2 border-purple-200">
+          <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-12 max-w-4xl mx-auto border-2 border-purple-200">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
               Teraz rozumiesz mechanizm
             </h3>
@@ -453,7 +453,7 @@ const MechanismExplanation: React.FC = () => {
             </p>
             
             <motion.button
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => {
                 const element = document.getElementById('pricing');

@@ -52,7 +52,7 @@ const RiskReversal: React.FC = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="bg-gradient-to-br from-green-50 to-green-100 border-4 border-green-500 rounded-3xl p-8 md:p-12 shadow-2xl"
+          className="bg-gradient-to-br from-green-50 to-green-100 border-4 border-green-500 rounded-2xl p-8 md:p-12 shadow-2xl"
         >
           {/* Main Promise */}
           <div className="text-center mb-10">

@@ -114,7 +114,7 @@ const PricingSimple: React.FC = () => {
               transition={{ delay: index * 0.1 }}
               whileHover={{ y: -5 }}
               className={`relative bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 ${
-                pkg.popular ? 'ring-2 ring-paulina-accent transform scale-105' : ''
+                pkg.popular ? 'ring-2 ring-paulina-accent md:scale-105' : ''
               }`}
             >
               {/* Popular Badge */}
@@ -227,8 +227,8 @@ const PricingSimple: React.FC = () => {
               </div>
             </div>
             <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
               onClick={() => {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}

@@ -177,7 +177,7 @@ const SensoryBenefits: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="max-w-6xl mx-auto"
         >
-          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
+          <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
             {/* Header */}
             <div className="bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 p-8 text-white text-center">
               <div className="flex items-center justify-center gap-4 mb-4">
@@ -278,7 +278,7 @@ const SensoryBenefits: React.FC = () => {
           transition={{ delay: 0.5 }}
           className="mt-16 text-center"
         >
-          <div className="bg-gradient-to-r from-purple-900 to-pink-900 text-white rounded-3xl p-12 max-w-5xl mx-auto shadow-2xl">
+          <div className="bg-gradient-to-r from-purple-900 to-pink-900 text-white rounded-2xl p-12 max-w-5xl mx-auto shadow-2xl">
             <h3 className="text-3xl md:text-4xl font-bold mb-6">
               To nie jest fantazja
             </h3>
@@ -319,7 +319,7 @@ const SensoryBenefits: React.FC = () => {
               className="space-y-4"
             >
               <motion.button
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-gradient-to-r from-yellow-400 to-orange-500 text-purple-900 font-bold py-4 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300 inline-flex items-center gap-2"
               >

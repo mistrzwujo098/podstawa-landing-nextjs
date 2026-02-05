@@ -94,7 +94,7 @@ const HeroSimple: React.FC = () => {
             {/* CTA Button */}
             <motion.button
               onClick={scrollToPricing}
-              whileHover={shouldReduceMotion ? {} : { scale: 1.05 }}
+              whileHover={shouldReduceMotion ? {} : { scale: 1.02 }}
               whileTap={shouldReduceMotion ? {} : { scale: 0.95 }}
               className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-paulina-accent text-white font-bold rounded-full shadow-2xl transform transition-all duration-300 hover:bg-paulina-primary hover:shadow-3xl group"
             >

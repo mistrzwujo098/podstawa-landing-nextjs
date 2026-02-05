@@ -111,7 +111,7 @@ const Hero: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4 mb-8">
             <motion.button
               onClick={scrollToPricing}
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.95 }}
               className="bg-gradient-to-r from-paulina-accent to-paulina-orange text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all duration-300 inline-flex items-center justify-center gap-2 group"
             >

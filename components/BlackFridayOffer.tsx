@@ -291,7 +291,7 @@ const BlackFridayOffer: React.FC = () => {
               const element = document.getElementById('pricing');
               element?.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }}
-            className="inline-flex items-center gap-3 px-12 py-5 bg-paulina-accent text-white font-bold text-xl rounded-full shadow-2xl hover:bg-orange-600 transition-all duration-300 hover:scale-105"
+            className="inline-flex items-center gap-3 px-12 py-5 bg-paulina-accent text-white font-bold text-xl rounded-full shadow-2xl hover:bg-orange-600 transition-all duration-300 hover:scale-[1.02]"
           >
             <Gift size={28} />
             <span>Wybierz Pakiet Black Friday</span>

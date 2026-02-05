@@ -194,7 +194,7 @@ const TransformationJourney: React.FC = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <motion.button
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-white text-paulina-primary font-bold py-4 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300 inline-flex items-center gap-2"
               >

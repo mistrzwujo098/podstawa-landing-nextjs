@@ -227,7 +227,7 @@ const PossibilityFramework: React.FC = () => {
                       </p>
                       <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <motion.button
-                          whileHover={{ scale: 1.05, boxShadow: '0 20px 40px rgba(0,0,0,0.3)' }}
+                          whileHover={{ scale: 1.02, boxShadow: '0 20px 40px rgba(0,0,0,0.3)' }}
                           whileTap={{ scale: 0.95 }}
                           className="bg-white text-paulina-accent font-bold py-4 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300 inline-flex items-center justify-center gap-2"
                         >

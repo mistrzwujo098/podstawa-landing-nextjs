@@ -27,7 +27,7 @@ const TopBarSimple: React.FC = () => {
           {/* CTA Button */}
           <motion.button
             onClick={scrollToPricing}
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.95 }}
             className="px-4 sm:px-6 py-2 bg-paulina-accent text-white font-bold rounded-full shadow-md hover:bg-paulina-primary hover:shadow-lg transition-all duration-300 text-sm sm:text-base"
           >

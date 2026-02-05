@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const Testimonials: React.FC = () => {
@@ -26,9 +27,11 @@ const Testimonials: React.FC = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="flex justify-center"
         >
-          <img 
+          <Image
             src="https://paulinaodmatematyki.com/wp-content/uploads/2024/07/Opinie-8-klasa.png"
             alt="Opinie uczniów"
+            width={672}
+            height={504}
             className="rounded-lg shadow-lg max-w-full md:max-w-2xl"
           />
         </motion.div>
