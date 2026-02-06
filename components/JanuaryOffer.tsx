@@ -1,39 +1,11 @@
 'use client'
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
-import { Gift, Clock, CheckCircle, ChevronRight, Sparkles, Star } from 'lucide-react';
+import { Gift, CheckCircle, ChevronRight, Star } from 'lucide-react';
 import { tracking } from '@/lib/tracking';
 
 const JanuaryOffer: React.FC = () => {
-  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setIsMounted(true);
-
-    const endDate = new Date('2026-01-31T23:59:59');
-
-    const calculateTimeLeft = () => {
-      const now = new Date();
-      const difference = endDate.getTime() - now.getTime();
-
-      if (difference > 0) {
-        setTimeLeft({
-          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-          minutes: Math.floor((difference / (1000 * 60)) % 60),
-          seconds: Math.floor((difference / 1000) % 60),
-        });
-      }
-    };
-
-    calculateTimeLeft();
-    const timer = setInterval(calculateTimeLeft, 1000);
-
-    return () => clearInterval(timer);
-  }, []);
-
   const scrollToPricing = () => {
     tracking.viewContent('January Offer CTA - Zobacz pakiet Standard');
     const element = document.getElementById('pricing');
@@ -97,17 +69,6 @@ const JanuaryOffer: React.FC = () => {
   const savings = totalValue - price;
   const savingsPercent = Math.round((savings / totalValue) * 100);
 
-  const TimeBlock = ({ value, label }: { value: number; label: string }) => (
-    <div className="flex flex-col items-center">
-      <div className="bg-paulina-primary/10 rounded-lg px-3 sm:px-4 py-2 min-w-[50px] sm:min-w-[60px]">
-        <span className="text-xl sm:text-2xl font-bold text-paulina-primary">
-          {value.toString().padStart(2, '0')}
-        </span>
-      </div>
-      <span className="text-xs text-gray-600 mt-1">{label}</span>
-    </div>
-  );
-
   return (
     <section id="january-offer" className="py-16 bg-gradient-to-b from-paulina-bg-yellow via-white to-paulina-bg-purple">
       <div className="max-w-5xl mx-auto px-4">
@@ -120,42 +81,18 @@ const JanuaryOffer: React.FC = () => {
         >
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-paulina-primary to-paulina-accent text-white rounded-full px-6 py-2 shadow-lg mb-6">
-            <Sparkles size={18} />
-            <span className="font-bold text-sm">OFERTA NOWOROCZNA 2026</span>
-            <Sparkles size={18} />
+            <Star size={18} />
+            <span className="font-bold text-sm">ZAWARTOŚĆ PROGRAMU</span>
+            <Star size={18} />
           </div>
 
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-paulina-primary mb-4">
-            Nowy Rok = Nowy Start
+            Co zawiera program?
           </h2>
-          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-            <span className="font-bold text-paulina-accent">Ostatni moment</span> żeby zacząć przygotowania i zdać maturę podstawową
+          <p className="text-lg text-paulina-primary/70 max-w-2xl mx-auto">
+            Kompletny zestaw materiałów, który pomoże Ci zdać maturę podstawową
           </p>
         </motion.div>
-
-        {/* Countdown in section */}
-        {isMounted && (
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="bg-white rounded-2xl shadow-xl p-6 mb-8 text-center"
-          >
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <Clock className="text-paulina-accent" size={24} />
-              <span className="text-lg font-semibold text-gray-700">Oferta wygasa za:</span>
-            </div>
-            <div className="flex items-center justify-center gap-2 sm:gap-4">
-              <TimeBlock value={timeLeft.days} label="dni" />
-              <span className="text-2xl font-bold text-paulina-primary">:</span>
-              <TimeBlock value={timeLeft.hours} label="godzin" />
-              <span className="text-2xl font-bold text-paulina-primary">:</span>
-              <TimeBlock value={timeLeft.minutes} label="minut" />
-              <span className="text-2xl font-bold text-paulina-primary">:</span>
-              <TimeBlock value={timeLeft.seconds} label="sekund" />
-            </div>
-          </motion.div>
-        )}
 
         {/* Bonuses List */}
         <div className="space-y-4 mb-8">
@@ -180,7 +117,7 @@ const JanuaryOffer: React.FC = () => {
                       {bonus.highlight ? (
                         <span className="text-xs font-bold text-paulina-accent uppercase tracking-wide">Kurs Główny</span>
                       ) : (
-                        <span className="text-xs font-bold text-gray-500 uppercase tracking-wide">Bonus #{index}</span>
+                        <span className="text-xs font-bold text-paulina-primary/50 uppercase tracking-wide">Bonus #{index}</span>
                       )}
                       <h3 className="text-lg font-bold text-paulina-primary">{bonus.name}</h3>
                     </div>
@@ -191,7 +128,7 @@ const JanuaryOffer: React.FC = () => {
                   {/* Features list with bullet points */}
                   <ul className="space-y-1">
                     {bonus.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-sm text-gray-600">
+                      <li key={idx} className="flex items-start gap-2 text-sm text-paulina-primary/60">
                         <span className="text-paulina-accent mt-1">-</span>
                         <span>{feature}</span>
                       </li>
@@ -253,7 +190,7 @@ const JanuaryOffer: React.FC = () => {
           className="text-center mt-6 bg-white rounded-xl p-4 shadow-sm"
         >
           <p className="font-bold text-paulina-primary mb-1">30 dni bezwarunkowej gwarancji</p>
-          <p className="text-sm text-gray-600">
+          <p className="text-sm text-paulina-primary/60">
             Jeśli w ciągu 30 dni uznasz, że kurs nie pomaga Twojemu dziecku — oddamy Ci każdą złotówkę. Bez pytań, bez tłumaczeń.
           </p>
         </motion.div>

@@ -11,8 +11,9 @@ const CTAButton: React.FC = () => {
       const pricing = document.getElementById('pricing');
       if (!pricing) return;
       const rect = pricing.getBoundingClientRect();
-      // Show only when pricing section is scrolled above viewport
-      setShow(rect.bottom < 0);
+      const scrollY = window.scrollY;
+      const threshold = window.innerHeight * 0.6;
+      setShow(scrollY > threshold || rect.bottom < 0);
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });

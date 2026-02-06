@@ -83,10 +83,10 @@ const ObjectionHandling: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-paulina-primary mb-4">
             Rozumiem Twoje wątpliwości
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-paulina-primary/70">
             Każdy rodzic ma podobne obawy. Oto odpowiedzi na najczęstsze z nich:
           </p>
         </motion.div>
@@ -112,25 +112,25 @@ const ObjectionHandling: React.FC = () => {
                   className={`w-full text-left p-6 rounded-xl border-2 transition-all ${
                     isSelected 
                       ? 'border-paulina-accent bg-paulina-bg-purple shadow-lg' 
-                      : 'border-gray-200 bg-white hover:border-paulina-accent/50 hover:shadow-md'
+                      : 'border-paulina-primary/20 bg-white hover:border-paulina-accent/50 hover:shadow-md'
                   }`}
                 >
                   <div className="flex items-start gap-4">
                     <div className={`p-3 rounded-full ${
-                      isSelected ? 'bg-paulina-accent text-white' : 'bg-gray-100 text-gray-600'
+                      isSelected ? 'bg-paulina-accent text-white' : 'bg-paulina-bg-purple text-paulina-primary/70'
                     }`}>
                       <Icon size={24} />
                     </div>
                     <div className="flex-1">
-                      <h3 className="font-bold text-gray-900 mb-1">
+                      <h3 className="font-bold text-paulina-primary mb-1">
                         {objection.concern}
                       </h3>
-                      <p className="text-gray-600 text-sm">
+                      <p className="text-paulina-primary/70 text-sm">
                         {objection.question}
                       </p>
                     </div>
                     <ChevronRight 
-                      className={`text-gray-400 transition-transform ${
+                      className={`text-paulina-primary/40 transition-transform ${
                         isSelected ? 'rotate-90' : ''
                       }`} 
                       size={20} 
@@ -147,25 +147,25 @@ const ObjectionHandling: React.FC = () => {
                       transition={{ duration: 0.3 }}
                       className="overflow-hidden"
                     >
-                      <div className="p-6 bg-white border-2 border-t-0 border-gray-200 rounded-b-xl">
+                      <div className="p-6 bg-white border-2 border-t-0 border-paulina-primary/20 rounded-b-xl">
                         {/* Answer */}
-                        <p className="text-gray-700 mb-4">
+                        <p className="text-paulina-primary/80 mb-4">
                           {objection.answer}
                         </p>
                         
                         {/* Proof */}
-                        <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-4">
-                          <p className="text-blue-800 font-semibold">
+                        <div className="bg-paulina-bg-purple border-l-4 border-paulina-accent p-4 mb-4">
+                          <p className="text-paulina-primary font-semibold">
                             📊 {objection.proof}
                           </p>
                         </div>
                         
                         {/* Guarantee */}
                         {objection.guarantee && (
-                          <div className="bg-green-50 border border-green-200 rounded-lg p-3">
+                          <div className="bg-paulina-bg-yellow border border-paulina-accent/30 rounded-lg p-3">
                             <div className="flex items-center gap-2">
-                              <Shield className="text-green-600" size={20} />
-                              <p className="text-green-800 font-semibold">
+                              <Shield className="text-paulina-accent" size={20} />
+                              <p className="text-paulina-primary font-semibold">
                                 {objection.guarantee}
                               </p>
                             </div>

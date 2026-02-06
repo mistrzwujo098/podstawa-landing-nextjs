@@ -14,7 +14,6 @@ const PricingSimple: React.FC = () => {
       price: 999,
       originalPrice: 1497,
       popular: false,
-      januaryBonus: true,
       features: [
         'Ponad 50h materiału video',
         '>100 lekcji video HD',
@@ -24,7 +23,7 @@ const PricingSimple: React.FC = () => {
         '30 x 90-minutowych spotkań na żywo',
         'Dostęp na 12 miesięcy',
         'Gwarancja satysfakcji 30 dni',
-        '+ 3 bonusy styczniowe (591 zł wartości)',
+        '+ 3 bonusy (591 zł wartości)',
       ],
       notIncluded: [
         'Konsultacje indywidualne',
@@ -36,7 +35,6 @@ const PricingSimple: React.FC = () => {
       price: 1499,
       originalPrice: 2297,
       popular: true,
-      januaryBonus: false,
       features: [
         'Wszystko z pakietu Standard',
         '10 autorskich arkuszy z rozwiązaniami',
@@ -55,7 +53,6 @@ const PricingSimple: React.FC = () => {
       price: 2499,
       originalPrice: 3497,
       popular: false,
-      januaryBonus: false,
       features: [
         'Wszystko z pakietu Premium',
         'Konsultacja indywidualna 45 min',
@@ -82,7 +79,7 @@ const PricingSimple: React.FC = () => {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-paulina-primary mb-4">
             Wybierz pakiet dla swojego dziecka
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-paulina-primary/60">
             Wybierz pakiet dopasowany do potrzeb Twojego dziecka
           </p>
           
@@ -125,21 +122,13 @@ const PricingSimple: React.FC = () => {
                   </div>
                 </div>
               )}
-              {/* January Bonus Badge for Standard */}
-              {pkg.januaryBonus && (
-                <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 z-10">
-                  <div className="bg-gradient-to-r from-paulina-primary to-paulina-accent text-white px-6 py-2 rounded-full text-xs font-bold shadow-lg whitespace-nowrap">
-                    Z BONUSAMI STYCZNIOWYMI!
-                  </div>
-                </div>
-              )}
               
               <div className="text-center mb-6">
                 <h3 className="text-xl font-bold text-paulina-primary mb-2">{pkg.name}</h3>
                 
                 {/* Price */}
                 <div className="mb-4">
-                  <span className="text-gray-400 line-through text-lg">{pkg.originalPrice} zł</span>
+                  <span className="text-paulina-primary/40 line-through text-lg">{pkg.originalPrice} zł</span>
                   <div className="text-3xl font-bold text-paulina-primary">
                     {pkg.price} zł
                   </div>
@@ -149,8 +138,11 @@ const PricingSimple: React.FC = () => {
                 </div>
                 
                 {/* Payment options */}
-                <p className="text-xs text-gray-600">
+                <p className="text-xs text-paulina-primary/60">
                   lub <span className="font-bold">{Math.round(pkg.price / 10)} zł/mies.</span> (10 rat 0%)
+                </p>
+                <p className="text-xs text-paulina-accent font-semibold mt-1">
+                  to tylko {(pkg.price / 365).toFixed(2).replace('.', ',')} zł dziennie
                 </p>
               </div>
               
@@ -159,13 +151,13 @@ const PricingSimple: React.FC = () => {
                 {pkg.features.map((feature, idx) => (
                   <div key={idx} className="flex items-start gap-2">
                     <CheckCircle className="text-paulina-accent flex-shrink-0 mt-0.5" size={16} />
-                    <span className="text-sm text-gray-700">{feature}</span>
+                    <span className="text-sm text-paulina-primary/80">{feature}</span>
                   </div>
                 ))}
                 {pkg.notIncluded.map((feature, idx) => (
                   <div key={idx} className="flex items-start gap-2 opacity-50">
-                    <span className="text-gray-300 flex-shrink-0 mt-0.5">✗</span>
-                    <span className="text-sm text-gray-500">{feature}</span>
+                    <span className="text-paulina-primary/30 flex-shrink-0 mt-0.5">✗</span>
+                    <span className="text-sm text-paulina-primary/50">{feature}</span>
                   </div>
                 ))}
               </div>
@@ -192,11 +184,14 @@ const PricingSimple: React.FC = () => {
                 className={`w-full py-3 px-6 rounded-full font-bold transition-all duration-300 ${
                   pkg.popular 
                     ? 'bg-paulina-accent text-white hover:bg-paulina-primary' 
-                    : 'bg-gray-100 text-paulina-primary hover:bg-paulina-accent hover:text-white'
+                    : 'bg-paulina-bg-purple text-paulina-primary hover:bg-paulina-accent hover:text-white'
                 }`}
               >
                 {pkg.popular ? 'Wybieram ten pakiet' : 'Wybierz pakiet'}
               </motion.button>
+              <p className="text-xs text-center text-paulina-primary/60 mt-3 italic">
+                „Najlepsza inwestycja w edukację mojego dziecka"
+              </p>
             </motion.div>
           ))}
         </div>
@@ -213,11 +208,11 @@ const PricingSimple: React.FC = () => {
               💰 Zaoszczędź na korepetycjach
             </h3>
             <div className="space-y-3 mb-6">
-              <div className="flex items-center justify-between text-gray-700">
+              <div className="flex items-center justify-between text-paulina-primary/80">
                 <span>👨‍🏫 Korepetycje (4 mies. x 4h x 150zł):</span>
                 <span className="font-bold line-through text-red-500">2400 zł</span>
               </div>
-              <div className="flex items-center justify-between text-gray-700">
+              <div className="flex items-center justify-between text-paulina-primary/80">
                 <span>🎓 Mój kurs (pakiet Standard):</span>
                 <span className="font-bold text-paulina-primary">{packages[0].price} zł</span>
               </div>

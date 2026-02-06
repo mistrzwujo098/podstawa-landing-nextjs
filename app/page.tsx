@@ -25,6 +25,7 @@ const RiskReversal = dynamic(() => import('@/components/RiskReversal'))
 const ComparisonTable = dynamic(() => import('@/components/ComparisonTable'))
 const ObjectionHandling = dynamic(() => import('@/components/ObjectionHandling'))
 const Footer = dynamic(() => import('@/components/Footer'))
+const ExitPopup = dynamic(() => import('@/components/ExitPopup'))
 
 export default function Home() {
   const [showFullPage, setShowFullPage] = useState(false)
@@ -110,6 +111,7 @@ export default function Home() {
       {/* Footer & Persistent CTA */}
       <Footer />
       <CTAButton />
+      <ExitPopup />
     </div>
   )
 }
