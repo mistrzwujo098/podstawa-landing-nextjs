@@ -196,7 +196,7 @@ const ObjectionHandling: React.FC = () => {
             </p>
             <div className="flex justify-center">
               <motion.a
-                href="mailto:paulina@skutecznekorepetycje.com"
+                href="mailto:kontakt@paulinaodmatematyki.com"
                 whileHover={{ scale: 1.02 }}
                 className="bg-white text-paulina-primary font-bold py-3 px-8 rounded-full inline-flex items-center justify-center gap-2"
               >
