@@ -103,33 +103,6 @@ const ScrollProgress: React.FC = () => {
         </div>
       </div>
 
-      {/* Mobile Bottom Navigation */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 z-[45] md:hidden">
-        <div className="overflow-x-auto">
-          <div className="flex">
-            {sections.map((section) => (
-              <button
-                key={section.id}
-                onClick={() => scrollToSection(section.id)}
-                className={`flex flex-col items-center justify-center px-3 py-2 min-w-[60px] transition-all duration-300 ${
-                  activeSection === section.id
-                    ? 'bg-paulina-bg-purple text-paulina-primary'
-                    : 'text-gray-500'
-                }`}
-              >
-                <span className="text-xs">{section.icon}</span>
-                <span className="text-[9px] mt-0.5">{section.name}</span>
-                {activeSection === section.id && (
-                  <motion.div
-                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-paulina-accent"
-                    layoutId="activeTab"
-                  />
-                )}
-              </button>
-            ))}
-          </div>
-        </div>
-      </div>
     </>
   );
 };

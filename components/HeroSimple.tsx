@@ -36,7 +36,7 @@ const HeroSimple: React.FC = () => {
             {/* Trust Badge - January Offer */}
             <div className="inline-flex items-center gap-2 bg-gradient-to-r from-paulina-primary to-paulina-accent text-white rounded-full px-4 py-2 shadow-md mb-6">
               <Shield className="text-white" size={16} />
-              <span className="text-sm font-semibold">Oferta Noworoczna 2026</span>
+              <span className="text-sm font-semibold">Sprawdzona metoda 24 000+ uczniów</span>
             </div>
 
             {/* Main Headline - Skrócony */}

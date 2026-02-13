@@ -38,7 +38,9 @@ export default function Home() {
     const handleUnload = () => {
       const timeSpent = Date.now() - startTime
       // Send to analytics
-      console.log(`User spent ${Math.floor(timeSpent / 1000)}s on page`)
+      if (process.env.NODE_ENV === 'development') {
+        console.log(`User spent ${Math.floor(timeSpent / 1000)}s on page`)
+      }
     }
 
     window.addEventListener('beforeunload', handleUnload)

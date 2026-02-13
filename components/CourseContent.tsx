@@ -198,7 +198,7 @@ const CourseContent: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
-                className="bg-white rounded-lg shadow-md overflow-hidden"
+                className="bg-white rounded-2xl shadow-md overflow-hidden"
               >
                 <button
                   onClick={() => setExpandedModule(expandedModule === index ? null : index)}

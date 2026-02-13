@@ -203,7 +203,7 @@ const PricingSimple: React.FC = () => {
           viewport={{ once: true }}
           className="text-center"
         >
-          <div className="bg-white rounded-xl p-8 shadow-md max-w-2xl mx-auto">
+          <div className="bg-white rounded-2xl p-8 shadow-md max-w-2xl mx-auto">
             <h3 className="text-xl font-bold text-paulina-primary mb-4">
               💰 Zaoszczędź na korepetycjach
             </h3>
@@ -225,7 +225,7 @@ const PricingSimple: React.FC = () => {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               onClick={() => {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
+                document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' });
               }}
               className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-paulina-accent text-white font-bold rounded-full shadow-xl hover:bg-paulina-primary hover:shadow-2xl transition-all duration-300"
             >

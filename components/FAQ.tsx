@@ -69,7 +69,7 @@ const FAQ: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.05 }}
-              className="bg-paulina-bg-purple rounded-lg overflow-hidden"
+              className="bg-paulina-bg-purple rounded-2xl overflow-hidden"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
@@ -92,7 +92,13 @@ const FAQ: React.FC = () => {
                     transition={{ duration: 0.3 }}
                     className="px-6 pb-6"
                   >
-                    <p className="text-gray-700">{faq.answer}</p>
+                    <div className="text-gray-700">
+                      {faq.answer.split('\n').filter(p => p.trim()).map((paragraph, i) => (
+                        <p key={i} className={i > 0 ? 'mt-2' : ''}>
+                          {paragraph}
+                        </p>
+                      ))}
+                    </div>
                   </motion.div>
                 )}
               </AnimatePresence>
