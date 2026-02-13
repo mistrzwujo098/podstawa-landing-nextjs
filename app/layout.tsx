@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import { Inter, Varela_Round, Montserrat } from 'next/font/google'
 import './globals.css'
 import TrackingScripts from '@/components/tracking/TrackingScripts'
+// Tracking: FB Pixel, Google Ads, TikTok managed by Cloudflare Zaraz (auto-injected on edge)
 
 // Optimized font loading with next/font/google
 const inter = Inter({
@@ -45,11 +46,6 @@ export default function RootLayout({
   return (
     <html lang="pl" className={`${varelaRound.variable} ${inter.variable} ${montserrat.variable}`}>
       <head>
-        {/* Preconnect to external domains for faster requests */}
-        <link rel="preconnect" href="https://tracking-api.kacperczaczyk.workers.dev" />
-        <link rel="preconnect" href="https://connect.facebook.net" />
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://analytics.tiktok.com" />
         <link rel="preconnect" href="https://paulinaodmatematyki.com" />
         <link rel="preconnect" href="https://assets.mailerlite.com" />
 
