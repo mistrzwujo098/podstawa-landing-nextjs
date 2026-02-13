@@ -16,7 +16,7 @@ const TopBar: React.FC = () => {
         </span>
         <span className="flex items-center gap-2">
           <span className="text-paulina-primary font-semibold">✓</span>
-          <span>20 000 kursantów</span>
+          <span>24 000 kursantów</span>
         </span>
         <span className="flex items-center gap-2">
           <span className="text-paulina-primary font-semibold">✓</span>

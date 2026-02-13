@@ -40,7 +40,7 @@ const PossibilityFramework: React.FC = () => {
         headline: 'Rodzice w całej Polsce już podjęli decyzję',
         description: 'Nie jesteś sama/sam. Tysiące polskich rodzin już odkryło sekret spokojnej nauki matematyki. Zobacz, co się dzieje w domach, które wybrały zmianę.',
         stats: [
-          { number: '20,847', label: 'polskich rodzin już z nami' },
+          { number: '24 000+', label: 'polskich rodzin już z nami' },
           { number: '4.9/5', label: 'średnia ocena rodziców' },
           { number: '94%', label: 'poleca znajomym' }
         ],
@@ -237,7 +237,7 @@ const PossibilityFramework: React.FC = () => {
                         </motion.button>
                         <div className="flex items-center justify-center gap-2 text-white/80 text-sm">
                           <Award size={16} />
-                          <span>Dołącz do 20,847 szczęśliwych rodzin</span>
+                          <span>Dołącz do 24 000+ szczęśliwych rodzin</span>
                         </div>
                       </div>
                     </div>

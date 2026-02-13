@@ -23,7 +23,7 @@ test.describe('Responsywność strony', () => {
     await expect(heading).toBeVisible()
 
     // Sprawdź czy wszystkie sekcje są dostępne
-    await expect(page.getByText(/20 000\+ uczniów/i)).toBeVisible()
+    await expect(page.getByText(/24 000\+ uczniów/i)).toBeVisible()
   })
 
   test('menu mobilne powinno działać (jeśli istnieje)', async ({ page }) => {

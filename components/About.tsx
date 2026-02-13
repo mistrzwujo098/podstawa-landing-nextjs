@@ -7,7 +7,7 @@ const About: React.FC = () => {
   const achievements = [
     '🎓 Stypendystka Stypendium Ministra Nauki i Szkolnictwa Wyższego',
     '🏆 Otrzymałam w 2021, 2022, 2023, 2024, 2025 i 2026 roku I miejsce w Opolu w plebiscycie Orły Edukacji',
-    '🎬 Twórca kanału na YouTube „Skuteczne Korepetycje” z ponad 13 mln wyświetleń filmów',
+    '🎬 Twórca kanału na YouTube „Skuteczne Korepetycje” z ponad 20 mln wyświetleń filmów',
     '👟 Pasjonatka sportów (w 2020 roku przebiegłam Nocny Maraton Warszawski)',
     '❤️ Uczniowie mówią, że potrafię tłumaczyć skomplikowane rzeczy w prosty i logiczny sposób'
   ];
@@ -65,7 +65,7 @@ const About: React.FC = () => {
               className="rounded-xl shadow-xl w-full"
             />
             <div className="absolute -bottom-6 -left-6 bg-paulina-accent text-white p-4 rounded-lg shadow-lg">
-              <p className="font-bold text-2xl">13M+</p>
+              <p className="font-bold text-2xl">20M+</p>
               <p className="text-sm">wyświetleń na YouTube</p>
             </div>
           </motion.div>

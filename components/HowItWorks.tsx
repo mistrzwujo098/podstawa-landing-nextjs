@@ -172,7 +172,7 @@ const HowItWorks: React.FC = () => {
 
           <div className="mt-6 p-4 bg-paulina-bg-yellow rounded-lg">
             <p className="text-center text-gray-700">
-              <span className="font-bold text-paulina-primary">Rezultat:</span> 20 000+ uczniów (2018-2024) zrozumiało matematykę i zdało egzamin
+              <span className="font-bold text-paulina-primary">Rezultat:</span> 24 000 uczniów zrozumiało matematykę i zdało egzamin
             </p>
           </div>
         </motion.div>

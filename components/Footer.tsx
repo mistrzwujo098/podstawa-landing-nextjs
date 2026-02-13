@@ -7,13 +7,13 @@ const Footer: React.FC = () => {
     <footer className="bg-paulina-primary text-white py-8">
       <div className="max-w-7xl mx-auto px-4 text-center">
         <p className="mb-4">
-          © 2026 Paulina od Matematyki. Wszelkie prawa zastrzeżone.
+          © {new Date().getFullYear()} Paulina od Matematyki. Wszystkie prawa zastrzeżone.
         </p>
         <div className="flex justify-center gap-6 text-sm">
-          <a href="https://skutecznekorepetycje.com/regulamin" className="hover:text-paulina-accent transition-colors" target="_blank" rel="noopener noreferrer">
+          <a href="https://paulinaodmatematyki.com/regulamin" className="hover:text-paulina-accent transition-colors" target="_blank" rel="noopener noreferrer">
             Regulamin
           </a>
-          <a href="https://skutecznekorepetycje.com/polityka-prywatnosci" className="hover:text-paulina-accent transition-colors" target="_blank" rel="noopener noreferrer">
+          <a href="https://paulinaodmatematyki.com/polityka-prywatnosci" className="hover:text-paulina-accent transition-colors" target="_blank" rel="noopener noreferrer">
             Polityka prywatności
           </a>
         </div>

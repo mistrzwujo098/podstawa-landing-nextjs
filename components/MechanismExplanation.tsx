@@ -102,7 +102,7 @@ const MechanismExplanation: React.FC = () => {
     },
     {
       icon: Users,
-      title: 'Sprawdzone na 20,847 dzieciach',
+      title: 'Sprawdzone na 24 000 dzieciach',
       description: 'Każda reakcja dziecka została przewidziana i przetestowana przez lata.',
       benefit: 'Nie ma niespodzianek - system po prostu działa'
     }
@@ -449,7 +449,7 @@ const MechanismExplanation: React.FC = () => {
               Ten system to efekt <span className="font-bold text-purple-600">5 lat badań</span> nad tym,
               jak dzieci najłatwiej uczą się matematyki.
               <br />
-              <span className="text-lg text-gray-500">Sprawdzone na 20 000+ uczniach (2018-2024). 98% poleca znajomym.</span>
+              <span className="text-lg text-gray-500">Sprawdzone na 24 000+ uczniach. 98% poleca znajomym.</span>
             </p>
             
             <motion.button
