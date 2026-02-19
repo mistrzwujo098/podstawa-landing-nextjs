@@ -38,6 +38,51 @@ export const viewport: Viewport = {
   themeColor: '#571A47',
 }
 
+const courseJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Course',
+  name: 'Matura Podstawowa z Matematyki 2026 – Paulina od Matematyki',
+  description:
+    'Kompleksowy kurs przygotowujący do matury z matematyki na poziomie podstawowym. System LAPS, wideo lekcje, arkusze próbne. Zdaj na ponad 80% bez stresu.',
+  url: 'https://paulinaodmatematyki.com/matura',
+  provider: {
+    '@type': 'EducationalOrganization',
+    name: 'Paulina od Matematyki',
+    sameAs: 'https://paulinaodmatematyki.com',
+  },
+  instructor: {
+    '@type': 'Person',
+    name: 'Paulina Miś',
+    jobTitle: 'Twórca kursów matematycznych',
+    award: [
+      'Orły Edukacji 2019',
+      'Orły Edukacji 2020',
+      'Orły Edukacji 2021',
+      'Orły Edukacji 2022',
+      'Orły Edukacji 2023',
+      'Orły Edukacji 2024',
+    ],
+  },
+  educationalLevel: 'Szkoła ponadpodstawowa',
+  about: { '@type': 'Thing', name: 'Matematyka – matura podstawowa' },
+  hasCourseInstance: {
+    '@type': 'CourseInstance',
+    courseMode: 'online',
+    courseWorkload: 'PT40H',
+  },
+  offers: {
+    '@type': 'Offer',
+    price: '999',
+    priceCurrency: 'PLN',
+    availability: 'https://schema.org/InStock',
+  },
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.9',
+    reviewCount: '24000',
+  },
+}
+
 export default function RootLayout({
   children,
 }: {
@@ -63,6 +108,12 @@ export default function RootLayout({
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"
+        />
+
+        {/* Course structured data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(courseJsonLd) }}
         />
       </head>
       <body>
