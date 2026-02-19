@@ -26,6 +26,8 @@ const montserrat = Montserrat({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://paulinaodmatematyki.com'),
+  alternates: { canonical: '/matura' },
   title: 'Kurs Matura Podstawowa 2026 – zdaj na 80%+ bez korepetycji',
   description:
     'Kurs maturalny z matematyki od Pauliny od Matematyki. 999 zł – wideo lekcje krok po kroku, arkusze próbne, system LAPS. 24 000+ uczniów, 99% zdawalność.',
