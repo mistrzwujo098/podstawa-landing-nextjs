@@ -20,11 +20,12 @@ import WhosItFor from '@/components/WhosItFor'
 import QualifierGate from '@/components/QualifierGate'
 
 // Lazy load components below fold for better LCP
-const RealTestimonials = dynamic(() => import('@/components/RealTestimonials'))
-const RiskReversal = dynamic(() => import('@/components/RiskReversal'))
-const ComparisonTable = dynamic(() => import('@/components/ComparisonTable'))
-const ObjectionHandling = dynamic(() => import('@/components/ObjectionHandling'))
-const Footer = dynamic(() => import('@/components/Footer'))
+const SectionPlaceholder = () => <div className="min-h-[400px]" />;
+const RealTestimonials = dynamic(() => import('@/components/RealTestimonials'), { loading: SectionPlaceholder })
+const RiskReversal = dynamic(() => import('@/components/RiskReversal'), { loading: SectionPlaceholder })
+const ComparisonTable = dynamic(() => import('@/components/ComparisonTable'), { loading: SectionPlaceholder })
+const ObjectionHandling = dynamic(() => import('@/components/ObjectionHandling'), { loading: SectionPlaceholder })
+const Footer = dynamic(() => import('@/components/Footer'), { loading: SectionPlaceholder })
 const ExitPopup = dynamic(() => import('@/components/ExitPopup'))
 
 export default function Home() {

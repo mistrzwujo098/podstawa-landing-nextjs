@@ -2,23 +2,10 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 import { Star, Shield, Users, CheckCircle, ChevronRight } from 'lucide-react';
 import { tracking } from '@/lib/tracking';
-import { useReducedMotion } from '@/hooks/useReducedMotion';
 
 const HeroSimple: React.FC = () => {
-  const shouldReduceMotion = useReducedMotion();
-
-  // Use conditional animation variants - ensure opacity: 1 when animations disabled
-  const fadeIn = shouldReduceMotion
-    ? { initial: { opacity: 1 }, animate: { opacity: 1 } }
-    : { initial: { opacity: 0, y: 20 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.6 } };
-
-  const scaleIn = shouldReduceMotion
-    ? { initial: { opacity: 1 }, animate: { opacity: 1 } }
-    : { initial: { opacity: 0, scale: 0.9 }, animate: { opacity: 1, scale: 1 }, transition: { duration: 0.6, delay: 0.2 } };
-
   const scrollToPricing = () => {
     // Track button click
     tracking.viewContent('Hero CTA - Zobacz pakiety')
@@ -32,7 +19,7 @@ const HeroSimple: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
-          <motion.div {...fadeIn}>
+          <div className="animate-fade-in-up">
             {/* Trust Badge - January Offer */}
             <div className="inline-flex items-center gap-2 bg-gradient-to-r from-paulina-primary to-paulina-accent text-white rounded-full px-4 py-2 shadow-md mb-6">
               <Shield className="text-white" size={16} />
@@ -73,80 +60,66 @@ const HeroSimple: React.FC = () => {
                 'Uczysz się SAM - koniec z kłótniami o naukę',
                 'Zaoszczędzisz 1400 zł (vs 4 miesiące korepetycji)',
                 '30-dniowa gwarancja zwrotu bez pytań'
-              ].map((benefit, index) => {
-                const benefitAnimation = shouldReduceMotion
-                  ? { initial: { opacity: 1 }, animate: { opacity: 1 } }
-                  : { initial: { opacity: 0, x: -20 }, animate: { opacity: 1, x: 0 }, transition: { delay: 0.3 + index * 0.1 } };
-
-                return (
-                <motion.div
+              ].map((benefit, index) => (
+                <div
                   key={index}
-                  {...benefitAnimation}
-                  className="flex items-center gap-3"
+                  className="flex items-center gap-3 animate-slide-in-left"
+                  style={{ animationDelay: `${0.3 + index * 0.1}s` }}
                 >
                   <CheckCircle className="text-paulina-accent flex-shrink-0" size={20} />
                   <span className="text-sm sm:text-base text-gray-700">{benefit}</span>
-                </motion.div>
-                );
-              })}
+                </div>
+              ))}
             </div>
 
             {/* CTA Button */}
-            <motion.button
+            <button
               onClick={scrollToPricing}
-              whileHover={shouldReduceMotion ? {} : { scale: 1.02 }}
-              whileTap={shouldReduceMotion ? {} : { scale: 0.95 }}
-              className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-paulina-accent text-white font-bold rounded-full shadow-2xl transform transition-all duration-300 hover:bg-paulina-primary hover:shadow-3xl group"
+              className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-paulina-accent text-white font-bold rounded-full shadow-2xl transform transition-all duration-300 hover:bg-paulina-primary hover:shadow-3xl hover:scale-[1.02] active:scale-[0.95] group"
             >
               <span className="text-base sm:text-lg">Zobacz pakiety i ceny</span>
               <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </motion.button>
+            </button>
 
             {/* Urgency */}
             <div className="text-sm text-gray-600 mt-4">
               <p>⚠️ Do matury zostało tylko <span className="font-bold text-paulina-accent">{Math.ceil((new Date('2026-05-05').getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24))} dni</span></p>
               <p className="mt-1">Program wymaga minimum 3 miesięcy regularnej nauki. Zapisz się teraz — Twoje dziecko będzie gotowe na czas.</p>
             </div>
-          </motion.div>
+          </div>
 
           {/* Right Column - Image */}
-          <motion.div
-            {...scaleIn}
-            className="relative hidden md:block"
-          >
+          <div className="relative hidden md:block">
             <div className="relative">
               <Image
                 src="https://paulinaodmatematyki.com/wp-content/uploads/2024/12/podstawa-okladka.webp"
                 alt="Paulina od Matematyki - Kurs Matura Podstawowa"
                 width={800}
                 height={800}
+                sizes="(max-width: 768px) 0px, (max-width: 1280px) 45vw, 560px"
                 priority
                 unoptimized
                 className="rounded-2xl shadow-xl w-full max-w-md mx-auto"
               />
-              
-              {/* Floating Stats - desktop only, keep animations */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.8 }}
-                className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-4"
+
+              {/* Floating Stats - desktop only */}
+              <div
+                className="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-xl p-4 animate-fade-in-up"
+                style={{ animationDelay: '0.8s' }}
               >
                 <p className="text-3xl font-bold text-paulina-primary">24 000+</p>
                 <p className="text-xs text-gray-600">Kursantów</p>
-              </motion.div>
+              </div>
 
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1 }}
-                className="absolute -top-6 -right-6 bg-white rounded-xl shadow-xl p-4"
+              <div
+                className="absolute -top-6 -right-6 bg-white rounded-xl shadow-xl p-4 animate-fade-in-up"
+                style={{ animationDelay: '1s' }}
               >
                 <p className="text-2xl font-bold text-paulina-accent">98%</p>
                 <p className="text-xs text-gray-600">Poleca znajomym</p>
-              </motion.div>
+              </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
 

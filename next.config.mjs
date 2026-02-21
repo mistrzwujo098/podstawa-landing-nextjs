@@ -10,6 +10,10 @@ const nextConfig = {
       },
     ],
   },
+  experimental: {
+    inlineCss: true,
+    optimizePackageImports: ['lucide-react'],
+  },
 }
 
 export default nextConfig
