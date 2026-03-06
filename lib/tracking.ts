@@ -29,10 +29,6 @@ function zarazTrack(eventName: string, properties?: Record<string, unknown>): vo
   }
 }
 
-export function pageView() {
-  // PageView is handled automatically by Zaraz
-}
-
 export function viewContent(contentName: string, value?: number) {
   zarazTrack('ViewContent', { content_name: contentName, value, currency: 'PLN' })
 }
@@ -65,12 +61,7 @@ export function custom(eventName: string, data?: Record<string, any>) {
   zarazTrack(eventName, data)
 }
 
-export function initTracking() {
-  // No-op: Zaraz auto-initializes on edge
-}
-
 export const tracking = {
-  pageView,
   viewContent,
   lead,
   initiateCheckout,
