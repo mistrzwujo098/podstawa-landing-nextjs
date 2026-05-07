@@ -7,6 +7,7 @@ import { tracking } from '@/lib/tracking';
 
 const PricingSimple: React.FC = () => {
   const [selectedPackage, setSelectedPackage] = useState(1); // Default to Optymalny
+  const [isLoading, setIsLoading] = useState<number | null>(null);
   
   const packages = [
     {
@@ -139,7 +140,7 @@ const PricingSimple: React.FC = () => {
                 
                 {/* Payment options */}
                 <p className="text-xs text-paulina-primary/60">
-                  lub <span className="font-bold">{Math.round(pkg.price / 10)} zł/mies.</span> (10 rat 0%)
+                  lub <span className="font-bold">{Math.round(pkg.price / 10)} zł/mies.</span> (10 rat 0% przez T-Pay)
                 </p>
                 <p className="text-xs text-paulina-accent font-semibold mt-1">
                   to tylko {(pkg.price / 365).toFixed(2).replace('.', ',')} zł dziennie
@@ -164,9 +165,12 @@ const PricingSimple: React.FC = () => {
               
               {/* CTA Button */}
               <motion.button
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
+                whileHover={isLoading === null ? { scale: 1.02 } : undefined}
+                whileTap={isLoading === null ? { scale: 0.98 } : undefined}
+                disabled={isLoading !== null}
                 onClick={() => {
+                  if (isLoading !== null) return;
+
                   // Track checkout initiation
                   tracking.initiateCheckout(pkg.price, `Pakiet ${pkg.name}`)
 
@@ -176,18 +180,22 @@ const PricingSimple: React.FC = () => {
                     'https://kurs.skutecznekorepetycje.com/zamowienie/?add-to-cart=195824'
                   ];
 
-                  // Małe opóźnienie dla trackingu
-                  setTimeout(() => {
-                    window.location.href = urls[index];
-                  }, 300);
+                  setIsLoading(index);
+                  window.location.href = urls[index];
                 }}
-                className={`w-full py-3 px-6 rounded-full font-bold transition-all duration-300 ${
-                  pkg.popular 
-                    ? 'bg-paulina-accent text-white hover:bg-paulina-primary' 
+                className={`w-full py-3 px-6 rounded-full font-bold transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed ${
+                  pkg.popular
+                    ? 'bg-paulina-accent text-white hover:bg-paulina-primary'
                     : 'bg-paulina-bg-purple text-paulina-primary hover:bg-paulina-accent hover:text-white'
                 }`}
               >
-                {pkg.popular ? 'Wybieram ten pakiet' : 'Wybierz pakiet'}
+                {isLoading === index && (
+                  <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z" />
+                  </svg>
+                )}
+                <span>{pkg.popular ? 'Wybieram ten pakiet' : 'Wybierz pakiet'}</span>
               </motion.button>
               <p className="text-xs text-center text-paulina-primary/60 mt-3 italic">
                 „Najlepsza inwestycja w edukację mojego dziecka"

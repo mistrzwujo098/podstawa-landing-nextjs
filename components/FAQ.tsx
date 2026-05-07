@@ -5,7 +5,19 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const FAQ: React.FC = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [openIndices, setOpenIndices] = useState<Set<number>>(new Set([1]));
+
+  const toggleIndex = (index: number) => {
+    setOpenIndices((prev) => {
+      const next = new Set(prev);
+      if (next.has(index)) {
+        next.delete(index);
+      } else {
+        next.add(index);
+      }
+      return next;
+    });
+  };
 
   const faqs = [
     {
@@ -14,7 +26,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: 'Co jeśli kurs mi się nie spodoba?',
-      answer: 'Masz 30-dniową bezwarunkową gwarancję zwrotu pieniędzy. Jeśli uznasz, że kurs nie spełnia Twoich oczekiwań, wystarczy napisać, a zwrócimy Ci pieniądze bez zadawania pytań.'
+      answer: 'Masz 30-dniową bezwarunkową gwarancję zwrotu pieniędzy. Napisz mail. Bez warunków, bez pytań, bez wyjaśniania. 30 dni od zakupu — pełny zwrot.'
     },
     {
       question: 'Czy kurs jest zgodny z aktualną podstawą programową?',
@@ -62,48 +74,67 @@ const FAQ: React.FC = () => {
         </motion.div>
 
         <div className="space-y-4">
-          {faqs.map((faq, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: index * 0.05 }}
-              className="bg-paulina-bg-purple rounded-2xl overflow-hidden"
-            >
-              <button
-                onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full p-6 text-left flex items-center justify-between hover:bg-paulina-bg-purple/80 transition-colors"
+          {faqs.map((faq, index) => {
+            const isOpen = openIndices.has(index);
+            const answerId = `faq-answer-${index}`;
+            const buttonId = `faq-question-${index}`;
+            return (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.05 }}
+                className="bg-paulina-bg-purple rounded-2xl overflow-hidden"
               >
-                <h3 className="font-semibold text-lg text-gray-900">{faq.question}</h3>
-                {openIndex === index ? (
-                  <ChevronUp className="text-paulina-primary" />
-                ) : (
-                  <ChevronDown className="text-paulina-primary" />
-                )}
-              </button>
-              
-              <AnimatePresence>
-                {openIndex === index && (
-                  <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: 'auto', opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.3 }}
-                    className="px-6 pb-6"
-                  >
-                    <div className="text-gray-700">
-                      {faq.answer.split('\n').filter(p => p.trim()).map((paragraph, i) => (
-                        <p key={i} className={i > 0 ? 'mt-2' : ''}>
-                          {paragraph}
-                        </p>
-                      ))}
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </motion.div>
-          ))}
+                <button
+                  id={buttonId}
+                  aria-expanded={isOpen}
+                  aria-controls={answerId}
+                  onClick={(e) => {
+                    toggleIndex(index);
+                    if (!isOpen) {
+                      const target = e.currentTarget;
+                      requestAnimationFrame(() => {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                      });
+                    }
+                  }}
+                  className="w-full p-6 text-left flex items-center justify-between hover:bg-paulina-bg-purple/80 transition-colors focus-visible:outline-2 focus-visible:outline-paulina-accent focus-visible:outline-offset-2"
+                >
+                  <h3 className="font-semibold text-lg text-gray-900">{faq.question}</h3>
+                  {isOpen ? (
+                    <ChevronUp className="text-paulina-primary" />
+                  ) : (
+                    <ChevronDown className="text-paulina-primary" />
+                  )}
+                </button>
+
+                <AnimatePresence>
+                  {isOpen && (
+                    <motion.div
+                      id={answerId}
+                      role="region"
+                      aria-labelledby={buttonId}
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="px-6 pb-6"
+                    >
+                      <div className="text-gray-700">
+                        {faq.answer.split('\n').filter(p => p.trim()).map((paragraph, i) => (
+                          <p key={i} className={i > 0 ? 'mt-2' : ''}>
+                            {paragraph}
+                          </p>
+                        ))}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>

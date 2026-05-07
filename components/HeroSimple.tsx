@@ -20,6 +20,16 @@ const HeroSimple: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
           <div className="animate-fade-in-up">
+            {/* Mobile photo thumbnail - shown above H1 only on mobile */}
+            <Image
+              src="https://paulinaodmatematyki.com/wp-content/uploads/2024/12/podstawa-okladka.webp"
+              alt="Paulina od Matematyki"
+              width={200}
+              height={200}
+              unoptimized
+              className="md:hidden max-w-[100px] rounded-full mx-auto mb-6 shadow-md"
+            />
+
             {/* Trust Badge - January Offer */}
             <div className="inline-flex items-center gap-2 bg-gradient-to-r from-paulina-primary to-paulina-accent text-white rounded-full px-4 py-2 shadow-md mb-6">
               <Shield className="text-white" size={16} />
@@ -82,10 +92,21 @@ const HeroSimple: React.FC = () => {
             </button>
 
             {/* Urgency */}
-            <div className="text-sm text-gray-600 mt-4">
-              <p>⚠️ Do matury zostało tylko <span className="font-bold text-paulina-accent">{Math.ceil((new Date('2026-05-05').getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24))} dni</span></p>
-              <p className="mt-1">Program wymaga minimum 3 miesięcy regularnej nauki. Zapisz się teraz — Twoje dziecko będzie gotowe na czas.</p>
-            </div>
+            {(() => {
+              const daysToExam = Math.max(0, Math.ceil((new Date('2026-05-05').getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24)));
+              return (
+                <div className="text-sm text-gray-600 mt-4">
+                  {daysToExam === 0 ? (
+                    <p className="font-bold text-paulina-accent">Edycja 2027 startuje wkrótce</p>
+                  ) : (
+                    <>
+                      <p>⚠️ Do matury zostało tylko <span className="font-bold text-paulina-accent">{daysToExam} dni</span></p>
+                      <p className="mt-1">Program wymaga minimum 3 miesięcy regularnej nauki. Zapisz się teraz — Twoje dziecko będzie gotowe na czas.</p>
+                    </>
+                  )}
+                </div>
+              );
+            })()}
           </div>
 
           {/* Right Column - Image */}
@@ -124,7 +145,7 @@ const HeroSimple: React.FC = () => {
       </div>
 
       {/* Sticky Mobile CTA - white background with colored button */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white border-t-2 border-gray-200 p-4 shadow-2xl" data-testid="sticky-cta">
+      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white border-t-2 border-gray-200 pt-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] px-4 shadow-2xl" data-testid="sticky-cta">
         <button
           onClick={scrollToPricing}
           className="w-full py-3 bg-paulina-primary text-white font-bold text-lg rounded-full shadow-xl hover:bg-paulina-accent transition-all duration-300"

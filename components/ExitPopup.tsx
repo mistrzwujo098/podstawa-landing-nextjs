@@ -8,29 +8,67 @@ const ExitPopup: React.FC = () => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    // Only on desktop (exit intent doesn't work on mobile)
-    if (window.innerWidth < 768) return;
-
-    // Check if already shown
+    // Check if already shown (persistent across sessions)
     if (localStorage.getItem('exitPopupShown_stronykursy')) return;
+    // Check if already shown in this session (mobile flow)
+    if (sessionStorage.getItem('exitPopupShown_stronykursy_session')) return;
 
+    const mountTime = Date.now();
+    const isMobile = window.innerWidth < 768;
+
+    const triggerPopup = () => {
+      setShow(true);
+      localStorage.setItem('exitPopupShown_stronykursy', 'true');
+      sessionStorage.setItem('exitPopupShown_stronykursy_session', 'true');
+    };
+
+    // Desktop: exit intent (mouse leaves viewport)
     const handleMouseLeave = (e: MouseEvent) => {
       if (e.clientY <= 0) {
-        setShow(true);
-        localStorage.setItem('exitPopupShown_stronykursy', 'true');
+        triggerPopup();
       }
     };
 
-    // Delay adding listener to avoid triggering on page load
-    const timer = setTimeout(() => {
-      document.addEventListener('mouseleave', handleMouseLeave);
-    }, 5000);
+    // Mobile: scroll > 60% AND on page > 30s
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = docHeight > 0 ? scrollTop / docHeight : 0;
+      const timeOnPage = Date.now() - mountTime;
+      if (scrollPercent > 0.6 && timeOnPage > 30000) {
+        triggerPopup();
+      }
+    };
+
+    let desktopTimer: ReturnType<typeof setTimeout> | null = null;
+
+    if (isMobile) {
+      window.addEventListener('scroll', handleScroll, { passive: true });
+    } else {
+      // Delay adding listener to avoid triggering on page load
+      desktopTimer = setTimeout(() => {
+        document.addEventListener('mouseleave', handleMouseLeave);
+      }, 5000);
+    }
 
     return () => {
-      clearTimeout(timer);
+      if (desktopTimer) clearTimeout(desktopTimer);
       document.removeEventListener('mouseleave', handleMouseLeave);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  // Esc key handler — close popup on escape
+  useEffect(() => {
+    if (!show) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setShow(false);
+      }
+    };
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [show]);
 
   if (!show) return null;
 
@@ -77,7 +115,7 @@ const ExitPopup: React.FC = () => {
 
             {/* CTA Button */}
             <a
-              href="https://paulinaodmatematyki.com/"
+              href="https://paulinaodmatematyki.com/pewniaki"
               className="flex items-center justify-center gap-2 w-full py-4 bg-paulina-accent hover:bg-paulina-primary text-white font-bold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02]"
             >
               Zobacz minikursy od 97 zł
