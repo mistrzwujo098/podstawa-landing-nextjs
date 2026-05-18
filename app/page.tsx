@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import dynamic from 'next/dynamic'
 import HeroSimple from '@/components/HeroSimple'
 import ParentTestimonials from '@/components/ParentTestimonials'
@@ -15,9 +15,7 @@ import ScrollProgress from '@/components/ScrollProgress'
 import WhatYouDiscover from '@/components/WhatYouDiscover'
 import WhyUs from '@/components/WhyUs'
 import PossibilityInWorld from '@/components/PossibilityInWorld'
-import JanuaryOffer from '@/components/JanuaryOffer'
 import WhosItFor from '@/components/WhosItFor'
-import QualifierGate from '@/components/QualifierGate'
 
 // Lazy load components below fold for better LCP
 const SectionPlaceholder = () => <div className="min-h-[400px]" />;
@@ -29,8 +27,6 @@ const Footer = dynamic(() => import('@/components/Footer'), { loading: SectionPl
 const ExitPopup = dynamic(() => import('@/components/ExitPopup'))
 
 export default function Home() {
-  const [showFullPage, setShowFullPage] = useState(false)
-
   // Track user engagement
   useEffect(() => {
     // Track time on page
@@ -50,11 +46,6 @@ export default function Home() {
       window.removeEventListener('beforeunload', handleUnload)
     }
   }, [])
-
-  // Show qualifier gate first
-  if (!showFullPage) {
-    return <QualifierGate onShowFullPage={() => setShowFullPage(true)} courseType="matura" />
-  }
 
   return (
     <div className="App">
@@ -97,9 +88,6 @@ export default function Home() {
 
       {/* Who Is It For - Self-Belief */}
       <WhosItFor />
-
-      {/* January Offer - Value Stacking */}
-      <JanuaryOffer />
 
       {/* Pricing */}
       <PricingSimple />
