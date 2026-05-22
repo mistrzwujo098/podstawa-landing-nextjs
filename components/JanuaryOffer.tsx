@@ -191,7 +191,7 @@ const JanuaryOffer: React.FC = () => {
         >
           <p className="font-bold text-paulina-primary mb-1">30 dni bezwarunkowej gwarancji</p>
           <p className="text-sm text-paulina-primary/60">
-            Jeśli w ciągu 30 dni uznasz, że kurs nie pomaga Twojemu dziecku — oddamy Ci każdą złotówkę. Bez pytań, bez tłumaczeń.
+            Jeśli w ciągu 30 dni uznasz, że kurs nie pomaga Twojemu dziecku - oddamy Ci każdą złotówkę. Bez pytań, bez tłumaczeń.
           </p>
         </motion.div>
       </div>

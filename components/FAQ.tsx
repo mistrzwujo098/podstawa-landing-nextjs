@@ -3,9 +3,42 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, ChevronUp } from 'lucide-react';
+import { useWarmDetect } from '@/lib/useWarmDetect';
+
+const insiderFaqs = [
+  {
+    question: 'Czy materiały z poprzedniej edycji zostają dostępne po kupnie nowej?',
+    answer: 'Tak. Dostęp do poprzedniej edycji nie wygasa. Nowa edycja 2026/27 to osobny dostęp z nowymi spotkaniami LIVE (nowe daty na rok szkolny 2026/27), zaktualizowanymi arkuszami próbnymi i aktualizacjami materiału po maturze 2025/2026.'
+  },
+  {
+    question: 'Co konkretnie zmieniło się w edycji 2026/27 vs poprzednia?',
+    answer: '30 nowych spotkań LIVE (nowe daty na rok 2026/27), zaktualizowane arkusze próbne po maturze 2025 (najświeższe wzorce CKE), drobne aktualizacje materiałów po zmianach podstawy programowej. Lekcje video - te same sprawdzone.'
+  },
+  {
+    question: 'Czy platforma pamięta gdzie poprzednia edycja się skończyła?',
+    answer: 'Tak. Przy zakupie nowej edycji syn może kontynuować od miejsca, w którym skończyliście. Nie zaczynacie od początku.'
+  },
+  {
+    question: 'Czy Live Q&A jest nagrywane jeśli nie będę mogła uczestniczyć?',
+    answer: 'Tak. Nagranie dostępne dla wszystkich uczestników w ciągu 48h. Pytanie możesz przesłać wcześniej formularzem - zostanie uwzględnione nawet jeśli nie będziesz na żywo.'
+  },
+  {
+    question: 'Czy mam zniżkę jako aktywny kursant z poprzedniej edycji?',
+    answer: 'W oknie pre-launch cena wstępna dostępna jest przed otwarciem dla wszystkich nowych. Jeśli macie kod zniżkowy z maila, wpiszcie go w koszyku.'
+  },
+  {
+    question: 'Czy combo PP+PR ma sens jeśli syn idzie do następnej klasy?',
+    answer: 'Tak - to najczęstszy scenariusz. PP daje pełną podstawę (rozumienie mechanizmów), PR buduje na niej zaawansowane myślenie. Pakiet combo PP+PR to 1499 zł razem (normalnie 1997 zł oddzielnie). Jeśli syn jest w klasie maturalnej i celuje wyżej niż 4 - polecam combo od razu.'
+  },
+  {
+    question: 'Czy mogę kupić i dać synowi dostęp, a sama mieć oddzielny dashboard rodzica?',
+    answer: 'Tak. Pakiet Standard i wyższe mają oddzielny widok ucznia (platforma) i widok rodzica (progress tracking). Rejestrujesz syna jako ucznia, Ty masz wgląd w panel - widzisz które moduły przerobił i kiedy.'
+  }
+];
 
 const FAQ: React.FC = () => {
   const [openIndices, setOpenIndices] = useState<Set<number>>(new Set([1]));
+  const isWarm = useWarmDetect();
 
   const toggleIndex = (index: number) => {
     setOpenIndices((prev) => {
@@ -26,7 +59,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: 'Co jeśli kurs mi się nie spodoba?',
-      answer: 'Masz 30-dniową bezwarunkową gwarancję zwrotu pieniędzy. Napisz mail. Bez warunków, bez pytań, bez wyjaśniania. 30 dni od zakupu — pełny zwrot.'
+      answer: 'Masz 30-dniową bezwarunkową gwarancję zwrotu pieniędzy. Napisz mail. Bez warunków, bez pytań, bez wyjaśniania. 30 dni od zakupu - pełny zwrot.'
     },
     {
       question: 'Czy kurs jest zgodny z aktualną podstawą programową?',
@@ -58,6 +91,8 @@ const FAQ: React.FC = () => {
     }
   ];
 
+  const allFaqs = isWarm ? [...insiderFaqs, ...faqs] : faqs;
+
   return (
     <section id="faq" className="py-16 bg-white">
       <div className="max-w-4xl mx-auto px-4">
@@ -74,7 +109,7 @@ const FAQ: React.FC = () => {
         </motion.div>
 
         <div className="space-y-4">
-          {faqs.map((faq, index) => {
+          {allFaqs.map((faq, index) => {
             const isOpen = openIndices.has(index);
             const answerId = `faq-answer-${index}`;
             const buttonId = `faq-question-${index}`;

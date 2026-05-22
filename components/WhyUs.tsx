@@ -117,7 +117,7 @@ const WhyUs: React.FC = () => {
             <div className="bg-white/10 backdrop-blur rounded-xl p-4">
               <h4 className="font-bold mb-2">🧠 Metoda LAPS</h4>
               <p className="text-sm">
-                Jedyna metoda oparta na neurobiologii, która gwarantuje zapamiętywanie 95% materiału
+                Metoda LAPS oparta na neurobiologii. Pomaga zrozumieć zamiast wkuwać - bo wkuwane jednorazowo nie utrzymuje się do egzaminu.
               </p>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-4">
@@ -129,7 +129,7 @@ const WhyUs: React.FC = () => {
             <div className="bg-white/10 backdrop-blur rounded-xl p-4">
               <h4 className="font-bold mb-2">📊 Sprawdzone wyniki</h4>
               <p className="text-sm">
-                Ponad 95% kursantów zdało ze świetnym wynikiem w przeszłości.
+                Średnia krajowa matura PP 2025 to 61%. Większość moich kursantów zdaje wyżej. Dokładnych metryk nie liczę systematycznie - nie chcę obiecywać czegoś, czego nie zmierzyłam (źródło średniej: CKE 2025).
               </p>
             </div>
           </div>

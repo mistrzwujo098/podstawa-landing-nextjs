@@ -75,7 +75,7 @@ const WhosItFor: React.FC = () => {
               ))}
             </ul>
             <p className="mt-6 text-sm text-gray-500 italic">
-              Jeśli Twoje dziecko pasuje do pierwszej kolumny — ten program może zmienić wszystko.
+              Jeśli Twoje dziecko pasuje do pierwszej kolumny - ten program może zmienić wszystko.
             </p>
           </motion.div>
         </div>

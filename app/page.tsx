@@ -3,6 +3,7 @@
 import { useEffect } from 'react'
 import dynamic from 'next/dynamic'
 import HeroSimple from '@/components/HeroSimple'
+import WarmReciprocity from '@/components/WarmReciprocity'
 import ParentTestimonials from '@/components/ParentTestimonials'
 import Problems from '@/components/Problems'
 import MechanismExplanation from '@/components/MechanismExplanation'
@@ -54,6 +55,9 @@ export default function Home() {
 
       {/* Hero Section */}
       <HeroSimple />
+
+      {/* Warm-only: reciprocity dla byłych kursantów (renderowane tylko gdy ?warm=1 lub ?utm_source=email) */}
+      <WarmReciprocity variant="exclusive" />
 
       {/* Possibility in World - Belief Shift Step 1 */}
       <PossibilityInWorld />

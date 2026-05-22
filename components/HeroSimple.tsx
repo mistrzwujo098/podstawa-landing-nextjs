@@ -36,14 +36,17 @@ const HeroSimple: React.FC = () => {
               <span className="text-sm font-semibold">Sprawdzona metoda 24 000+ uczniów</span>
             </div>
 
-            {/* Main Headline - Skrócony */}
+            {/* Main Headline */}
             <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-paulina-primary leading-tight mb-6">
-              Zdaj Maturę Podstawową: <span className="text-paulina-accent">80%+ bez korepetycji</span>
+              Matematyka, którą rozumiesz. <span className="text-paulina-accent">Bez wstydu, bez korepetytora 70 zł/h, bez chaosu YouTube.</span>
             </h1>
 
-            {/* Subheadline - Rozszerzony */}
+            {/* Subheadline z realnymi statami */}
+            <p className="text-base sm:text-lg text-gray-700 mb-3">
+              Średnia krajowa matury podstawowej 2025: <span className="font-bold text-paulina-primary">61%</span> (CKE). W technikum 51%, w liceum 66%. Większość moich kursantów lokuje się wyżej.
+            </p>
             <p className="text-base sm:text-lg text-gray-700 mb-8">
-              Sprawdzona przez <span className="font-bold text-paulina-primary">24 000 uczniów</span> metoda, która sprawia, że dziecko samo siada do nauki. <span className="font-bold text-paulina-accent">Wystarczy 20 minut dziennie</span>
+              Kurs roczny dla rodzin, które chcą przygotować się krok po kroku. <span className="font-bold text-paulina-accent">20 minut dziennie, przez 8-10 miesięcy.</span> Bez paniki w marcu.
             </p>
 
             {/* Social Proof */}
@@ -91,22 +94,11 @@ const HeroSimple: React.FC = () => {
               <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
 
-            {/* Urgency */}
-            {(() => {
-              const daysToExam = Math.max(0, Math.ceil((new Date('2026-05-05').getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24)));
-              return (
-                <div className="text-sm text-gray-600 mt-4">
-                  {daysToExam === 0 ? (
-                    <p className="font-bold text-paulina-accent">Edycja 2027 startuje wkrótce</p>
-                  ) : (
-                    <>
-                      <p>⚠️ Do matury zostało tylko <span className="font-bold text-paulina-accent">{daysToExam} dni</span></p>
-                      <p className="mt-1">Program wymaga minimum 3 miesięcy regularnej nauki. Zapisz się teraz — Twoje dziecko będzie gotowe na czas.</p>
-                    </>
-                  )}
-                </div>
-              );
-            })()}
+            {/* Urgency - pre-launch rok szkolny 2026/27 */}
+            <div className="text-sm text-gray-600 mt-4">
+              <p>Matura podstawowa 2027 to <span className="font-bold text-paulina-accent">początek maja przyszłego roku</span>.</p>
+              <p className="mt-1">Cały materiał to praca na 8-10 miesięcy po 20 minut dziennie. Zaczniesz w wakacje, masz spokojny start. Zaczniesz we wrześniu, rok będzie napięty.</p>
+            </div>
           </div>
 
           {/* Right Column - Image */}
@@ -136,8 +128,8 @@ const HeroSimple: React.FC = () => {
                 className="absolute -top-6 -right-6 bg-white rounded-xl shadow-xl p-4 animate-fade-in-up"
                 style={{ animationDelay: '1s' }}
               >
-                <p className="text-2xl font-bold text-paulina-accent">98%</p>
-                <p className="text-xs text-gray-600">Poleca znajomym</p>
+                <p className="text-2xl font-bold text-paulina-accent">16 lat</p>
+                <p className="text-xs text-gray-600">uczę online</p>
               </div>
             </div>
           </div>

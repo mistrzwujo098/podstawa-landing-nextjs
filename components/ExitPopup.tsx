@@ -58,7 +58,7 @@ const ExitPopup: React.FC = () => {
     };
   }, []);
 
-  // Esc key handler — close popup on escape
+  // Esc key handler - close popup on escape
   useEffect(() => {
     if (!show) return;
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -109,7 +109,7 @@ const ExitPopup: React.FC = () => {
             </h3>
             <p className="text-paulina-primary/70 text-center mb-6">
               Może zacznij od mniejszego kroku? Minikursy od 97 zł to świetny sposób,
-              żeby zobaczyć czy metoda Pauliny działa — przejdziesz szybciej materiał
+              żeby zobaczyć czy metoda Pauliny działa - przejdziesz szybciej materiał
               i szybciej zauważysz efekty.
             </p>
 
