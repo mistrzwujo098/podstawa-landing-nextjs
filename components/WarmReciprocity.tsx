@@ -10,7 +10,7 @@ interface WarmReciprocityProps {
   ctaLabel?: string
 }
 
-const COPY: Record<Variant, { headline: string; body: JSX.Element; closer: string }> = {
+const COPY: Record<Variant, { headline: string; body: React.ReactNode; closer: string }> = {
   continuity: {
     headline: 'Edycja 2026/27 rusza dla Was wcześniej.',
     body: (
