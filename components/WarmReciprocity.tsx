@@ -30,7 +30,7 @@ const COPY: Record<Variant, { headline: string; body: React.ReactNode; closer: s
     body: (
       <>
         <p className="mb-4">
-          Kursanci 2025/26 mają dostęp przed otwarciem dla wszystkich. Cena wstępna do końca wakacji. Start w wakacje (nowi zaczynają we wrześniu).
+          Kursanci z poprzedniego roku szkolnego mają dostęp przed otwarciem dla wszystkich. Cena wstępna do końca wakacji. Start w wakacje (nowi zaczynają we wrześniu).
         </p>
         <p>
           Platforma pamięta gdzie poprzednia edycja się skończyła. Nie zaczynacie od zera.
