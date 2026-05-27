@@ -200,6 +200,9 @@ const PricingSimple: React.FC = () => {
                 )}
                 <span>{pkg.popular ? 'Wybieram ten pakiet' : 'Wybierz pakiet'}</span>
               </motion.button>
+              <p className="text-xs text-center text-paulina-primary/60 mt-3 italic">
+                „Najlepsza inwestycja w edukację mojego dziecka"
+              </p>
             </motion.div>
           ))}
         </div>

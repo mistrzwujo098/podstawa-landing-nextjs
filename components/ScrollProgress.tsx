@@ -11,6 +11,7 @@ const ScrollProgress: React.FC = () => {
   const sections = [
     { id: 'hero', name: 'Start' },
     { id: 'testimonials', name: 'Opinie' },
+    { id: 'problems', name: 'Problem' },
     { id: 'solutions', name: 'Rozwiązanie' },
     { id: 'mechanism', name: 'Jak działa' },
     { id: 'course-content', name: 'Program' },

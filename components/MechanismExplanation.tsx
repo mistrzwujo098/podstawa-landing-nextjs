@@ -164,7 +164,7 @@ const MechanismExplanation: React.FC = () => {
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
             To nie jest magia - to nauka o tym, jak mózg dziecka najłatwiej przyswaja matematykę.
             <br />
-            <span className="font-bold text-purple-600">20 minut dziennie. 4 proste kroki.</span>
+            <span className="font-bold text-purple-600">20 minut dziennie. 4 proste kroki. Gwarantowany efekt.</span>
           </p>
 
           {/* Animation Controls */}
