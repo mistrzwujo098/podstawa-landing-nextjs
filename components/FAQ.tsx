@@ -71,7 +71,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: 'Czy mogę płacić w ratach?',
-      answer: 'Tak! Oferuję możliwość rozpłaty na 10 rat 0% (od 100 zł miesięcznie). Nie płacisz żadnych dodatkowych odsetek.'
+      answer: 'Tak. Dwie opcje: raty Pekao SA - 10x 0% RRSO (100 zł/mies przy pakiecie Standard 999 zł, 5 lub 20 rat też dostępne) lub PayPo - zapłać za 30 dni bez odsetek. Decyzja w 1 minutę w trakcie zakupu.'
     },
     {
       question: 'Czy dostęp do kursu jest natychmiastowy?',

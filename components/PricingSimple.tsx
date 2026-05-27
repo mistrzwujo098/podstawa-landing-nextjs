@@ -140,7 +140,10 @@ const PricingSimple: React.FC = () => {
                 
                 {/* Payment options */}
                 <p className="text-xs text-paulina-primary/60">
-                  lub <span className="font-bold">{Math.round(pkg.price / 10)} zł/mies.</span> (10 rat 0% przez T-Pay)
+                  lub <span className="font-bold">{Math.round(pkg.price / 10)} zł/mies.</span> (raty Pekao SA: 10x 0% RRSO)
+                </p>
+                <p className="text-xs text-paulina-primary/60 mt-0.5">
+                  lub zapłać za 30 dni z PayPo (bez odsetek)
                 </p>
                 <p className="text-xs text-paulina-accent font-semibold mt-1">
                   to tylko {(pkg.price / 365).toFixed(2).replace('.', ',')} zł dziennie
@@ -197,9 +200,6 @@ const PricingSimple: React.FC = () => {
                 )}
                 <span>{pkg.popular ? 'Wybieram ten pakiet' : 'Wybierz pakiet'}</span>
               </motion.button>
-              <p className="text-xs text-center text-paulina-primary/60 mt-3 italic">
-                „Najlepsza inwestycja w edukację mojego dziecka"
-              </p>
             </motion.div>
           ))}
         </div>
