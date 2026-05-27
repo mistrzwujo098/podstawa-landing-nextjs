@@ -28,9 +28,9 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   metadataBase: new URL('https://paulinaodmatematyki.com'),
   alternates: { canonical: '/matura' },
-  title: 'Kurs Matura Podstawowa 2026 – zdaj na 80%+ bez korepetycji',
+  title: 'Kurs Matura Podstawowa 2026 - zdaj na 80%+ bez korepetycji',
   description:
-    'Kurs maturalny z matematyki od Pauliny od Matematyki. 999 zł – wideo lekcje krok po kroku, arkusze próbne, system LAPS. 24 000+ uczniów, 99% zdawalność.',
+    'Kurs maturalny z matematyki od Pauliny od Matematyki. 999 zł - wideo lekcje krok po kroku, arkusze próbne, system LAPS. 24 000+ uczniów, 99% zdawalność.',
   icons: {
     icon: '/matura/favicon.ico',
     apple: '/matura/icon.png',
@@ -44,7 +44,7 @@ export const viewport: Viewport = {
 const courseJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Course',
-  name: 'Matura Podstawowa z Matematyki 2026 – Paulina od Matematyki',
+  name: 'Matura Podstawowa z Matematyki 2026 - Paulina od Matematyki',
   description:
     'Kompleksowy kurs przygotowujący do matury z matematyki na poziomie podstawowym. System LAPS, wideo lekcje, arkusze próbne. Zdaj na ponad 80% bez stresu.',
   url: 'https://paulinaodmatematyki.com/matura',
@@ -67,7 +67,7 @@ const courseJsonLd = {
     ],
   },
   educationalLevel: 'Szkoła ponadpodstawowa',
-  about: { '@type': 'Thing', name: 'Matematyka – matura podstawowa' },
+  about: { '@type': 'Thing', name: 'Matematyka - matura podstawowa' },
   hasCourseInstance: {
     '@type': 'CourseInstance',
     courseMode: 'online',

@@ -105,11 +105,11 @@ const WhatYouDiscover: React.FC = () => {
             <span className="font-bold text-paulina-primary">To nie wszystko!</span> W kursie znajdziesz jeszcze:
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
-            <span className="px-3 py-1 bg-white rounded-full">📊 10 arkuszy egzaminacyjnych</span>
-            <span className="px-3 py-1 bg-white rounded-full">🎯 1000+ zadań z rozwiązaniami</span>
-            <span className="px-3 py-1 bg-white rounded-full">🎬 100+ lekcji video HD</span>
-            <span className="px-3 py-1 bg-white rounded-full">📱 Aplikacja mobilna</span>
-            <span className="px-3 py-1 bg-white rounded-full">👥 Grupa wsparcia</span>
+            <span className="px-3 py-1 bg-white rounded-full">10 arkuszy egzaminacyjnych</span>
+            <span className="px-3 py-1 bg-white rounded-full">1000+ zadań z rozwiązaniami</span>
+            <span className="px-3 py-1 bg-white rounded-full">100+ lekcji video HD</span>
+            <span className="px-3 py-1 bg-white rounded-full">Aplikacja mobilna</span>
+            <span className="px-3 py-1 bg-white rounded-full">Grupa wsparcia</span>
           </div>
           <p className="mt-6 text-paulina-accent font-bold text-xl">
             Wartość dodatków: 2794 zł

@@ -5,7 +5,6 @@ import dynamic from 'next/dynamic'
 import HeroSimple from '@/components/HeroSimple'
 import WarmReciprocity from '@/components/WarmReciprocity'
 import ParentTestimonials from '@/components/ParentTestimonials'
-import Problems from '@/components/Problems'
 import MechanismExplanation from '@/components/MechanismExplanation'
 import Solutions from '@/components/Solutions'
 import CourseContent from '@/components/CourseContent'
@@ -65,8 +64,7 @@ export default function Home() {
       {/* Social Proof */}
       <ParentTestimonials />
 
-      {/* Problem & Solution */}
-      <Problems />
+      {/* Solution */}
       <Solutions />
 
       {/* How It Works - LAPS Method - DISABLED (duplicates MechanismExplanation) */}

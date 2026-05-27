@@ -85,7 +85,7 @@ const CourseContent: React.FC = () => {
     {
       title: 'MODUŁ 8. FUNKCJA KWADRATOWA',
       content: `- dowiesz się dlaczego jest to najważniejszy dział który MUSISZ mieć perfekcyjnie opanowany aby przystąpić do matury
-- otrzymasz „ściągę" zawierającą wszystkie informacje i wzory z działu funkcja kwadratowa – również te, których nie ma w tablicach maturalnych
+- otrzymasz „ściągę" zawierającą wszystkie informacje i wzory z działu funkcja kwadratowa - również te, których nie ma w tablicach maturalnych
 - nauczysz się bezbłędnie odczytywać własności funkcji kwadratowej z każdej postaci funkcji
 - pokażę Ci jak najprościej zamieniać postacie funkcji z ogólnej na kanoniczną i iloczynową i na odwrót
 - zobaczysz czym różnią się postacie: ogólna, kanoniczna i iloczynowa i jakie informacje możemy odczytać z każdego wzoru
@@ -114,7 +114,7 @@ const CourseContent: React.FC = () => {
     {
       title: 'MODUŁ 11. TRYGONOMETRIA',
       content: `- w końcu polubisz funkcje trygonometryczne:)
-- pokażę Ci proste sposoby jak obliczać funkcje trygonometryczne dla dowolnych kątów – zarówno ostrych jak i rozwartych
+- pokażę Ci proste sposoby jak obliczać funkcje trygonometryczne dla dowolnych kątów - zarówno ostrych jak i rozwartych
 - pokażę Ci jak zastosować trygonometrię do obliczeń w różnych figurach
 - nauczysz się stosowania wzorów redukcyjnych
 - otrzymasz „ściągę" z zależnościami trygonometrycznymi, które bardzo ułatwią Ci obliczenia

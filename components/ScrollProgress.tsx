@@ -9,14 +9,13 @@ const ScrollProgress: React.FC = () => {
   const [activeSection, setActiveSection] = useState('');
 
   const sections = [
-    { id: 'hero', name: 'Start', icon: '🏠' },
-    { id: 'testimonials', name: 'Opinie', icon: '⭐' },
-    { id: 'problems', name: 'Problem', icon: '❓' },
-    { id: 'solutions', name: 'Rozwiązanie', icon: '✅' },
-    { id: 'mechanism', name: 'Jak działa', icon: '⚙️' },
-    { id: 'course-content', name: 'Program', icon: '📚' },
-    { id: 'pricing', name: 'Cennik', icon: '💳' },
-    { id: 'faq', name: 'FAQ', icon: '💬' },
+    { id: 'hero', name: 'Start' },
+    { id: 'testimonials', name: 'Opinie' },
+    { id: 'solutions', name: 'Rozwiązanie' },
+    { id: 'mechanism', name: 'Jak działa' },
+    { id: 'course-content', name: 'Program' },
+    { id: 'pricing', name: 'Cennik' },
+    { id: 'faq', name: 'FAQ' },
   ];
 
   useEffect(() => {
@@ -89,9 +88,8 @@ const ScrollProgress: React.FC = () => {
               }`}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
+              aria-label={`Przejdź do sekcji ${section.name}`}
             >
-              <span className="text-sm">{section.icon}</span>
-              
               {/* Tooltip */}
               <div className="absolute right-full mr-2 top-1/2 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">
                 <div className="bg-gray-900 text-white text-xs px-2 py-1 rounded whitespace-nowrap">
