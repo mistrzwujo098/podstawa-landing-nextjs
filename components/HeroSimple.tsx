@@ -20,12 +20,14 @@ const HeroSimple: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
           <div className="animate-fade-in-up">
-            {/* Mobile photo thumbnail - shown above H1 only on mobile */}
+            {/* Mobile photo thumbnail - shown above H1 only on mobile - LCP element on mobile */}
             <Image
               src="https://paulinaodmatematyki.com/wp-content/uploads/2024/12/podstawa-okladka.webp"
               alt="Paulina od Matematyki"
               width={200}
               height={200}
+              priority
+              fetchPriority="high"
               unoptimized
               className="md:hidden max-w-[100px] rounded-full mx-auto mb-6 shadow-md"
             />
@@ -93,6 +95,11 @@ const HeroSimple: React.FC = () => {
               <span className="text-base sm:text-lg">Zobacz pakiety i ceny</span>
               <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
+
+            {/* Price transparency ATF - reflects PricingSimple Standard package */}
+            <p className="text-sm text-gray-700 mt-3">
+              Pakiety od <span className="font-bold text-paulina-primary">999 zł</span> lub <span className="font-bold text-paulina-primary">100 zł/mies.</span> (raty 0%)
+            </p>
 
             {/* Urgency - pre-launch rok szkolny 2026/27 */}
             <div className="text-sm text-gray-600 mt-4">

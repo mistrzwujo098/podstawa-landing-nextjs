@@ -8,6 +8,7 @@ import { useReducedMotion } from '@/hooks/useReducedMotion';
 const PossibilityInWorld: React.FC = () => {
   const shouldReduceMotion = useReducedMotion();
 
+  // Consolidated 4 -> 3 stats: removed duplicate 98% (Zadowolonych rodziców) - was identical to 98% Poleca
   const stats = [
     {
       icon: Users,
@@ -26,12 +27,6 @@ const PossibilityInWorld: React.FC = () => {
       number: '+40 pkt',
       label: 'Średni wzrost wyniku',
       detail: 'Pierwszy vs ostatni test próbny'
-    },
-    {
-      icon: CheckCircle,
-      number: '98%',
-      label: 'Zadowolonych rodziców',
-      detail: 'Na podstawie ankiet z 2024'
     }
   ];
 
@@ -52,7 +47,7 @@ const PossibilityInWorld: React.FC = () => {
           {...headerAnimation}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-paulina-primary mb-4">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-paulina-primary mb-4 leading-tight">
             To NIE jest teoria. To działa TERAZ.
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -60,8 +55,8 @@ const PossibilityInWorld: React.FC = () => {
           </p>
         </motion.div>
 
-        {/* Stats Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        {/* Stats Grid - 3 cards (was 4, removed duplicate 98%) */}
+        <div className="grid md:grid-cols-3 gap-6 mb-12">
           {stats.map((stat, index) => {
             const animation = shouldReduceMotion
               ? { initial: { opacity: 1 }, animate: { opacity: 1 } }

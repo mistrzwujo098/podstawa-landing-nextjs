@@ -96,6 +96,15 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://paulinaodmatematyki.com" />
         <link rel="preconnect" href="https://assets.mailerlite.com" />
+        <link rel="dns-prefetch" href="https://paulinaodmatematyki.com" />
+
+        {/* LCP preload: hero image (mobile uses smaller fetch via srcset, desktop full size) */}
+        <link
+          rel="preload"
+          as="image"
+          href="https://paulinaodmatematyki.com/wp-content/uploads/2024/12/podstawa-okladka.webp"
+          fetchPriority="high"
+        />
 
         {/* Course structured data */}
         <script
