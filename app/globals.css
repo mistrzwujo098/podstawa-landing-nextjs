@@ -5,6 +5,8 @@
 :root {
   --paulina-primary: #571A47;
   --paulina-accent: #EC9A4F;
+  /* Ciemniejszy wariant accentu wylacznie do TEKSTU na jasnym tle (kontrast >=4.5:1 WCAG AA). */
+  --paulina-accent-text: #9A5A1E;
   --paulina-blue: #06AEEF;
   --paulina-bg-purple: #F7EEF4;
   --paulina-bg-yellow: #FEF1D3;
@@ -53,7 +55,7 @@ code {
   background: var(--paulina-purple);
 }
 
-/* Accessibility — Design System */
+/* Accessibility - Design System */
 *:focus-visible {
   outline: 3px solid #EC9A4F;
   outline-offset: 2px;

@@ -40,7 +40,7 @@ const HeroSimple: React.FC = () => {
 
             {/* Main Headline */}
             <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-paulina-primary leading-tight mb-6">
-              Matematyka, którą rozumiesz. <span className="text-paulina-accent">Bez wstydu, bez korepetytora 70 zł/h, bez chaosu YouTube.</span>
+              Matematyka, którą rozumiesz. <span className="text-paulina-accent-text">Bez wstydu, bez korepetytora 150 zł/h, bez chaosu YouTube.</span>
             </h1>
 
             {/* Subheadline z realnymi statami */}
@@ -48,7 +48,7 @@ const HeroSimple: React.FC = () => {
               Średnia krajowa matury podstawowej 2025: <span className="font-bold text-paulina-primary">61%</span> (CKE). W technikum 51%, w liceum 66%. Większość moich kursantów lokuje się wyżej.
             </p>
             <p className="text-base sm:text-lg text-gray-700 mb-8">
-              Kurs roczny dla rodzin, które chcą przygotować się krok po kroku. <span className="font-bold text-paulina-accent">20 minut dziennie, przez 8-10 miesięcy.</span> Bez paniki w marcu.
+              Kurs roczny dla rodzin, które chcą przygotować się krok po kroku. <span className="font-bold text-paulina-accent-text">20 minut dziennie, przez 8-10 miesięcy.</span> Bez paniki w marcu.
             </p>
 
             {/* Social Proof */}
@@ -72,8 +72,8 @@ const HeroSimple: React.FC = () => {
             {/* Key Benefits */}
             <div className="space-y-3 mb-8">
               {[
-                'Uczysz się SAM - koniec z kłótniami o naukę',
-                'Zaoszczędzisz 1400 zł (vs 4 miesiące korepetycji)',
+                'Uczysz się samodzielnie - koniec wieczornego siedzenia nad zadaniami',
+                'Zaoszczędzisz około 1400 zł (vs 4 miesiące korepetycji po 150 zł/h)',
                 '30-dniowa gwarancja zwrotu bez pytań'
               ].map((benefit, index) => (
                 <div
@@ -92,7 +92,7 @@ const HeroSimple: React.FC = () => {
               onClick={scrollToPricing}
               className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-paulina-accent text-white font-bold rounded-full shadow-2xl transform transition-all duration-300 hover:bg-paulina-primary hover:shadow-3xl hover:scale-[1.02] active:scale-[0.95] group"
             >
-              <span className="text-base sm:text-lg">Zobacz pakiety i ceny</span>
+              <span className="text-base sm:text-lg">Pokaż mi plan na maturę PP</span>
               <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
 
@@ -103,7 +103,7 @@ const HeroSimple: React.FC = () => {
 
             {/* Urgency - pre-launch rok szkolny 2026/27 */}
             <div className="text-sm text-gray-600 mt-4">
-              <p>Matura podstawowa 2027 to <span className="font-bold text-paulina-accent">początek maja przyszłego roku</span>.</p>
+              <p>Matura podstawowa 2027 to <span className="font-bold text-paulina-accent-text">początek maja przyszłego roku</span>.</p>
               <p className="mt-1">Cały materiał to praca na 8-10 miesięcy po 20 minut dziennie. Zaczniesz w wakacje, masz spokojny start. Zaczniesz we wrześniu, rok będzie napięty.</p>
             </div>
           </div>
@@ -135,7 +135,7 @@ const HeroSimple: React.FC = () => {
                 className="absolute -top-6 -right-6 bg-white rounded-xl shadow-xl p-4 animate-fade-in-up"
                 style={{ animationDelay: '1s' }}
               >
-                <p className="text-2xl font-bold text-paulina-accent">16 lat</p>
+                <p className="text-2xl font-bold text-paulina-accent-text">16 lat</p>
                 <p className="text-xs text-gray-600">uczę online</p>
               </div>
             </div>
@@ -149,7 +149,7 @@ const HeroSimple: React.FC = () => {
           onClick={scrollToPricing}
           className="w-full py-3 bg-paulina-primary text-white font-bold text-lg rounded-full shadow-xl hover:bg-paulina-accent transition-all duration-300"
         >
-          Zobacz pakiety i ceny
+          Pokaż mi plan na maturę PP
         </button>
       </div>
     </section>

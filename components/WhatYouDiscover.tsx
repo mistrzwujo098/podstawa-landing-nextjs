@@ -8,42 +8,42 @@ const WhatYouDiscover: React.FC = () => {
   const discoveries = [
     {
       icon: Brain,
-      title: "Metodę 'Szybkich Ułamków'",
-      description: "która sprawia, że najtrudniejsze działania stają się proste jak dodawanie"
+      title: "Szybkie liczenie na ułamkach",
+      description: "jak rozłożyć najtrudniejsze działania na proste kroki, które maturzysta rozumie"
     },
     {
       icon: Zap,
-      title: "Trik '3 Kroki do Procentów'",
-      description: "dzięki któremu każde zadanie z procentami zajmie max 2 minuty"
+      title: "Procenty w 3 krokach",
+      description: "powtarzalny schemat, dzięki któremu zadania z procentami przestają być zagadką"
     },
     {
       icon: Target,
-      title: "System 'Pewniaki na Start'",
-      description: "10 typów zadań, które ZAWSZE są na egzaminie (i jak je rozwiązać)"
+      title: "Typy zadań, które wracają na maturze",
+      description: "10 typów zadań, które najczęściej są na egzaminie (i jak je rozwiązać)"
     },
     {
       icon: Clock,
-      title: "Technikę 'Time-Boxing'",
+      title: "Rozkład czasu na egzaminie",
       description: "jak zarządzać czasem na egzaminie, żeby starczyło na sprawdzenie"
     },
     {
       icon: Trophy,
-      title: "Algorytm 'Zero Błędów'",
-      description: "sprawdzony sposób na unikanie głupich pomyłek (strata 20% punktów!)"
+      title: "Sprawdzanie bez głupich pomyłek",
+      description: "sprawdzony sposób na wyłapanie błędów rachunkowych przed oddaniem arkusza"
     },
     {
       icon: Shield,
-      title: "Metodę 'Anty-Stres'",
+      title: "Spokój zamiast stresu na egzaminie",
       description: "3 techniki oddechowe, które działają nawet podczas egzaminu"
     },
     {
       icon: Sparkles,
-      title: "Wzory w 'Pamięci Długotrwałej'",
-      description: "system zapamiętywania, dzięki któremu wzory zostają w głowie na zawsze"
+      title: "Wzory w pamięci długotrwałej",
+      description: "system zapamiętywania, dzięki któremu wzory zostają w głowie do egzaminu"
     },
     {
       icon: Gift,
-      title: "BONUS: 'Ściąga Legalna'",
+      title: "Bonus: legalna ściąga",
       description: "jak zorganizować kartkę z obliczeniami, żeby nie zgubić punktów"
     }
   ];
@@ -58,11 +58,11 @@ const WhatYouDiscover: React.FC = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-paulina-primary mb-4">
-            Co <span className="text-paulina-accent">dokładnie</span> odkryje Twoje dziecko?
+            Co <span className="text-paulina-accent-text">odkryje</span> Twój maturzysta?
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Oto tylko niektóre z <span className="font-bold">67 technik i trików</span>, 
-            które sprawiają, że uczniowie mówią: <span className="italic">"Czemu nikt wcześniej mi tego nie pokazał?!"</span>
+            Oto część metod,
+            które sprawiają, że uczniowie mówią: <span className="italic">"Czemu nikt wcześniej mi tego nie pokazał?"</span>
           </p>
         </motion.div>
 
@@ -105,13 +105,13 @@ const WhatYouDiscover: React.FC = () => {
             <span className="font-bold text-paulina-primary">To nie wszystko!</span> W kursie znajdziesz jeszcze:
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
-            <span className="px-3 py-1 bg-white rounded-full">10 arkuszy egzaminacyjnych</span>
-            <span className="px-3 py-1 bg-white rounded-full">1000+ zadań z rozwiązaniami</span>
+            <span className="px-3 py-1 bg-white rounded-full">9 próbnych arkuszy egzaminacyjnych</span>
+            <span className="px-3 py-1 bg-white rounded-full">ponad 1500 zadań z rozwiązaniami</span>
             <span className="px-3 py-1 bg-white rounded-full">100+ lekcji video HD</span>
             <span className="px-3 py-1 bg-white rounded-full">Aplikacja mobilna</span>
             <span className="px-3 py-1 bg-white rounded-full">Grupa wsparcia</span>
           </div>
-          <p className="mt-6 text-paulina-accent font-bold text-xl">
+          <p className="mt-6 text-paulina-accent-text font-bold text-xl">
             Wartość dodatków: 2794 zł
           </p>
         </motion.div>

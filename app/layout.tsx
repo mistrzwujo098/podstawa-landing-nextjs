@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   alternates: { canonical: '/matura' },
   title: 'Kurs Matura Podstawowa 2026 - zdaj na 80%+ bez korepetycji',
   description:
-    'Kurs maturalny z matematyki od Pauliny od Matematyki. 999 zł - wideo lekcje krok po kroku, arkusze próbne, system LAPS. 24 000+ uczniów, 99% zdawalność.',
+    'Kurs maturalny z matematyki od Pauliny od Matematyki. 999 zł - wideo lekcje krok po kroku, arkusze próbne, system LAPS. 24 000+ uczniów, 4,9/5 z 693 opinii, 30 dni gwarancji zwrotu.',
   icons: {
     icon: '/matura/favicon.ico',
     apple: '/matura/icon.png',
@@ -82,7 +82,7 @@ const courseJsonLd = {
   aggregateRating: {
     '@type': 'AggregateRating',
     ratingValue: '4.9',
-    reviewCount: '24000',
+    reviewCount: '693',
   },
 }
 
@@ -95,7 +95,6 @@ export default function RootLayout({
     <html lang="pl" className={`${varelaRound.variable} ${inter.variable} ${montserrat.variable}`}>
       <head>
         <link rel="preconnect" href="https://paulinaodmatematyki.com" />
-        <link rel="preconnect" href="https://assets.mailerlite.com" />
         <link rel="dns-prefetch" href="https://paulinaodmatematyki.com" />
 
         {/* LCP preload: hero image (mobile uses smaller fetch via srcset, desktop full size) */}

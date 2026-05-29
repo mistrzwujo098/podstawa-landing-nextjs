@@ -25,8 +25,8 @@ const PossibilityInWorld: React.FC = () => {
     {
       icon: TrendingUp,
       number: '+40 pkt',
-      label: 'Średni wzrost wyniku',
-      detail: 'Pierwszy vs ostatni test próbny'
+      label: 'Tak potrafi urosnąć wynik',
+      detail: 'Realna historia kursantki: pierwszy vs ostatni test próbny'
     }
   ];
 
@@ -48,7 +48,7 @@ const PossibilityInWorld: React.FC = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-5xl font-extrabold text-paulina-primary mb-4 leading-tight">
-            To NIE jest teoria. To działa TERAZ.
+            To nie jest teoria. Metoda małych kroków, sprawdzona od 2019 roku.
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Metoda małych kroków + systematyczność = wyniki, które były niemożliwe 5 lat temu
@@ -71,7 +71,7 @@ const PossibilityInWorld: React.FC = () => {
               <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-br from-paulina-primary to-paulina-purple flex items-center justify-center">
                 <stat.icon className="text-white" size={32} />
               </div>
-              <div className="text-4xl font-bold text-paulina-accent mb-2">
+              <div className="text-4xl font-bold text-paulina-accent-text mb-2">
                 {stat.number}
               </div>
               <div className="text-gray-900 font-semibold mb-2">
@@ -119,7 +119,7 @@ const PossibilityInWorld: React.FC = () => {
                     Systematyczna nauka małymi krokami
                   </h4>
                   <p className="text-gray-700">
-                    20 minut dziennie przez 6-8 miesięcy. <span className="font-bold text-green-600">Mózg ma czas na zrozumienie</span>. Wiedza buduje się powoli, ale zostaje na lata. Większość moich uczniów po roku pamięta więcej niż ci, którzy wkuwali na ostatnią chwilę.
+                    20 minut dziennie przez 8-10 miesięcy. <span className="font-bold text-green-600">Mózg ma czas na zrozumienie</span>. Wiedza buduje się powoli, ale zostaje na lata. Większość moich uczniów po roku pamięta więcej niż ci, którzy wkuwali na ostatnią chwilę.
                   </p>
                 </div>
               </div>

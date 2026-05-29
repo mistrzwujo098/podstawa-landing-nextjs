@@ -91,20 +91,20 @@ const MechanismExplanation: React.FC = () => {
     {
       icon: Clock,
       title: 'Tylko 20 minut dziennie',
-      description: 'Mózg dziecka może się skupić maksymalnie 15-20 minut. Wykorzystujemy to okno na maksimum.',
-      benefit: 'Dziecko nie ma czasu się znudzić czy zgubić'
+      description: 'Skupiona uwaga utrzymuje się najlepiej przez 15-20 minut. Wykorzystujemy to okno na maksimum.',
+      benefit: 'Krótka, skupiona sesja zamiast godzin bez efektu'
     },
     {
       icon: Brain,
-      title: 'Respektuje sposób uczenia się mózgu',
-      description: 'Każdy krok LAPS odpowiada naturalnym procesom neurologicznym uczenia się.',
-      benefit: 'Nauka jest łatwa, bo jest naturalna'
+      title: 'Powtórki w dobrych odstępach',
+      description: 'Każdy krok LAPS opiera się na tym, jak realnie zapamiętujemy: powtórki w dobrych odstępach i zrozumienie zamiast wkuwania.',
+      benefit: 'Nauka idzie płynnie, bo jest zgodna z tym, jak działa mózg'
     },
     {
       icon: Users,
-      title: 'Sprawdzone na 24 000 dzieciach',
-      description: 'Każda reakcja dziecka została przewidziana i przetestowana przez lata.',
-      benefit: 'Nie ma niespodzianek - system po prostu działa'
+      title: 'Sprawdzone z 24 000+ kursantami',
+      description: '16 lat uczenia online - widziałam, co realnie działa, a co nie.',
+      benefit: 'Nie ma niespodzianek - metoda po prostu działa'
     }
   ];
 
@@ -164,7 +164,7 @@ const MechanismExplanation: React.FC = () => {
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
             To nie jest magia - to nauka o tym, jak mózg dziecka najłatwiej przyswaja matematykę.
             <br />
-            <span className="font-bold text-purple-600">20 minut dziennie. 4 proste kroki. Gwarantowany efekt.</span>
+            <span className="font-bold text-purple-600">20 minut dziennie. 4 proste kroki. Metoda sprawdzona z 24 000 kursantami.</span>
           </p>
 
           {/* Animation Controls */}
@@ -446,10 +446,10 @@ const MechanismExplanation: React.FC = () => {
               Teraz rozumiesz mechanizm
             </h3>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Ten system to efekt <span className="font-bold text-purple-600">5 lat badań</span> nad tym,
-              jak dzieci najłatwiej uczą się matematyki.
+              Ten system to efekt <span className="font-bold text-purple-600">16 lat uczenia matematyki</span> i obserwacji,
+              co naprawdę działa, a co nie.
               <br />
-              <span className="text-lg text-gray-500">Sprawdzone na 24 000+ uczniach. 98% poleca znajomym.</span>
+              <span className="text-lg text-gray-500">Sprawdzone z 24 000+ kursantami. 98% poleca znajomym (ankieta wewnętrzna).</span>
             </p>
             
             <motion.button

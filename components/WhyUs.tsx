@@ -13,18 +13,18 @@ const WhyUs: React.FC = () => {
     },
     {
       feature: "Koszt miesięczny",
-      others: "600 zł (4 korepetycje)",
-      us: "150 zł (lub jednorazowo taniej)"
+      others: "około 600 zł (4 korepetycje po 150 zł)",
+      us: "jednorazowo 999 zł na cały rok"
     },
     {
       feature: "Kto się uczy",
-      others: "Rodzic musi pomagać",
-      us: "Dziecko uczy się SAMO"
+      others: "Rodzic musi pilnować",
+      us: "Maturzysta uczy się samodzielnie"
     },
     {
       feature: "Motywacja",
-      others: "Kłótnie i przymus",
-      us: "System nagród jak w grze"
+      others: "Trzeba pilnować i przypominać",
+      us: "Jasny plan i widoczne postępy"
     },
     {
       feature: "Postępy",
@@ -53,11 +53,11 @@ const WhyUs: React.FC = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-paulina-primary mb-4">
-            Dlaczego <span className="text-paulina-accent">ponad 24 000 rodziców</span> wybrało właśnie mnie?
+            Dlaczego <span className="text-paulina-accent-text">ponad 24 000 rodziców</span> wybrało właśnie mnie?
           </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            Porównaj sam i zobacz, dlaczego tradycyjne metody <span className="font-bold">nie działają</span>,
-            a mój system <span className="font-bold text-paulina-accent">gwarantuje sukces</span>
+            Porównaj sam i zobacz, dlaczego tradycyjne metody często <span className="font-bold">zawodzą</span>,
+            a sprawdzona metoda oparta na <span className="font-bold text-paulina-accent-text">16 latach uczenia</span> daje konkretny plan
           </p>
         </motion.div>
 
@@ -106,11 +106,11 @@ const WhyUs: React.FC = () => {
         >
           <AlertTriangle className="mx-auto mb-4" size={48} />
           <h3 className="text-2xl font-bold mb-4">
-            To NIE jest kolejny kurs online!
+            To nie jest kolejny kurs online.
           </h3>
           <p className="text-lg mb-6 max-w-3xl mx-auto">
-            To kompletny <span className="font-bold">SYSTEM TRANSFORMACJI</span>, który zamienia 
-            dziecko przerażone matematyką w pewnego siebie ucznia z wynikiem 80%+
+            To kompletny <span className="font-bold">program przygotowania do matury PP</span>, który prowadzi
+            maturzystę od niepewności do spokojnej pracy nad zadaniami krok po kroku
           </p>
           
           <div className="grid md:grid-cols-3 gap-6 text-left">

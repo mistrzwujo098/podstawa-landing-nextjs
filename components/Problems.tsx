@@ -9,7 +9,7 @@ const Problems: React.FC = () => {
     'Nieefektywne metody uczenia się',
     'Problemy z organizacją materiału',
     'Narastający stres i presja',
-    'Konflikty rodzic-dziecko o naukę',
+    'Wieczorne siedzenie nad zadaniami bez efektu',
     'Brak systematyczności',
     'Marnowanie czasu na złe metody',
     'Rosnąca frustracja',
@@ -34,8 +34,7 @@ const Problems: React.FC = () => {
     'Rozczarowanie wynikiem',
     'Żal do siebie i innych',
     'Stracone szanse',
-    'Gorszy start na studiach',
-    'Nadszarpnięte relacje w rodzinie'
+    'Gorszy start na studiach'
   ];
 
   return (
@@ -52,7 +51,7 @@ const Problems: React.FC = () => {
             <span className="text-red-600">UWAGA:</span> Czy Twoje dziecko też...
           </h2>
           <p className="text-lg text-gray-700">
-            <span className="font-bold">Większość rodziców nie umie pomóc</span> dziecku z matematyką.
+            <span className="font-bold">Matematyka zmieniła się od czasów naszej szkoły</span>, więc to zupełnie normalne, że ciężko pomóc dziecku.
             <span className="block text-base mt-2">Każdy dzień zwlekania to większy stres przed maturą.</span>
           </p>
         </motion.div>

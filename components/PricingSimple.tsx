@@ -20,10 +20,9 @@ const PricingSimple: React.FC = () => {
         '>100 lekcji video HD',
         '>1500 zadań z rozwiązaniami',
         '9 próbnych arkuszy egzaminacyjnych',
-        '9 spotkań online z rozwiązywaniem',
-        '30 x 90-minutowych spotkań na żywo',
+        '30 x 90-minutowych spotkań na żywo z rozwiązywaniem',
         'Dostęp na 12 miesięcy',
-        'Gwarancja satysfakcji 30 dni',
+        '30 dni gwarancji zwrotu',
         '+ 3 bonusy (591 zł wartości)',
       ],
       notIncluded: [
@@ -78,10 +77,10 @@ const PricingSimple: React.FC = () => {
           className="text-center mb-12"
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-paulina-primary mb-4">
-            Wybierz pakiet dla swojego dziecka
+            Wybierz pakiet dla swojego maturzysty
           </h2>
           <p className="text-lg text-paulina-primary/60">
-            Wybierz pakiet dopasowany do potrzeb Twojego dziecka
+            Pakiet dopasowany do potrzeb Twojego syna lub córki
           </p>
           
           {/* Trust badges */}
@@ -133,7 +132,7 @@ const PricingSimple: React.FC = () => {
                   <div className="text-3xl font-bold text-paulina-primary">
                     {pkg.price} zł
                   </div>
-                  <p className="text-sm text-paulina-accent font-semibold">
+                  <p className="text-sm text-paulina-accent-text font-semibold">
                     Oszczędzasz {pkg.originalPrice - pkg.price} zł
                   </p>
                 </div>
@@ -145,7 +144,7 @@ const PricingSimple: React.FC = () => {
                 <p className="text-xs text-paulina-primary/60 mt-0.5">
                   lub zapłać za 30 dni z PayPo (bez odsetek)
                 </p>
-                <p className="text-xs text-paulina-accent font-semibold mt-1">
+                <p className="text-xs text-paulina-accent-text font-semibold mt-1">
                   to tylko {(pkg.price / 365).toFixed(2).replace('.', ',')} zł dziennie
                 </p>
               </div>
@@ -198,7 +197,7 @@ const PricingSimple: React.FC = () => {
                     <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z" />
                   </svg>
                 )}
-                <span>{pkg.popular ? 'Wybieram ten pakiet' : 'Wybierz pakiet'}</span>
+                <span>{pkg.popular ? `Biorę ${pkg.name} (najczęściej wybierany)` : `Biorę ${pkg.name}`}</span>
               </motion.button>
               <p className="text-xs text-center text-paulina-primary/60 mt-3 italic">
                 „Najlepsza inwestycja w edukację mojego dziecka"
@@ -229,9 +228,12 @@ const PricingSimple: React.FC = () => {
               </div>
               <div className="border-t pt-3 flex items-center justify-between">
                 <span className="font-bold text-lg">Twoja oszczędność:</span>
-                <span className="font-bold text-2xl text-paulina-accent">{2400 - packages[0].price} zł!</span>
+                <span className="font-bold text-2xl text-paulina-accent-text">{2400 - packages[0].price} zł</span>
               </div>
             </div>
+            <p className="text-xs text-paulina-primary/60 mb-6">
+              Scenariusz szacunkowy przy stawce 150 zł/h. Indywidualne koszty i wyniki mogą się różnić.
+            </p>
             <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
@@ -240,7 +242,7 @@ const PricingSimple: React.FC = () => {
               }}
               className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-paulina-accent text-white font-bold rounded-full shadow-xl hover:bg-paulina-primary hover:shadow-2xl transition-all duration-300"
             >
-              <span>Zapisz dziecko teraz</span>
+              <span>Zaczynam przygotowania</span>
               <ChevronRight size={20} />
             </motion.button>
           </div>

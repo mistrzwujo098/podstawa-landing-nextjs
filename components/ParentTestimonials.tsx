@@ -148,10 +148,10 @@ const ParentTestimonials: React.FC = () => {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            <span className="text-paulina-accent">Ponad 24 000 rodziców</span> już pomogło swoim dzieciom
+            <span className="text-paulina-accent-text">Ponad 24 000 uczniów i rodziców</span> już przeszło przez kurs
           </h2>
           <p className="text-xl text-gray-700 font-semibold">
-            Zobacz, co mówią po <span className="text-paulina-primary">2-3 miesiącach</span> kursu:
+            Zobacz, co mówią po kursie:
           </p>
         </motion.div>
 
@@ -211,7 +211,7 @@ const ParentTestimonials: React.FC = () => {
               <div className="flex items-center gap-4">
                 <div>
                   <p className="font-bold text-gray-900">{current.parent}</p>
-                  <p className="text-gray-600">Rodzic</p>
+                  <p className="text-gray-600">Opinia kursanta</p>
                 </div>
               </div>
             </div>
@@ -230,13 +230,17 @@ const ParentTestimonials: React.FC = () => {
                   <button
                     key={index}
                     onClick={() => setCurrentIndex(index)}
-                    className={`w-2 h-2 rounded-full transition-all ${
-                      index === currentIndex
-                        ? 'bg-paulina-accent w-8'
-                        : 'bg-gray-300 hover:bg-gray-400'
-                    }`}
+                    className="min-w-[24px] min-h-[24px] flex items-center justify-center"
                     aria-label={`Opinia ${index + 1}`}
-                  />
+                  >
+                    <span
+                      className={`block h-2 rounded-full transition-all ${
+                        index === currentIndex
+                          ? 'bg-paulina-accent w-8'
+                          : 'bg-gray-300 hover:bg-gray-400 w-2'
+                      }`}
+                    />
+                  </button>
                 ))}
               </div>
               <button
@@ -263,9 +267,9 @@ const ParentTestimonials: React.FC = () => {
               </h3>
               <div className="space-y-3">
                 {[
-                  { label: 'Średnia poprawa wyniku', value: '+43pp', color: 'text-green-600' },
-                  { label: 'Poleca znajomym', value: '98%', color: 'text-blue-600' },
-                  { label: 'Oszczędność vs korepetycje', value: '3600 zł', color: 'text-paulina-accent' },
+                  { label: 'Tak potrafi urosnąć wynik (realna historia)', value: '+43pp', color: 'text-green-600' },
+                  { label: 'Poleca znajomym (ankieta wewnętrzna)', value: '98%', color: 'text-blue-600' },
+                  { label: 'Od 2019 roku', value: '24 000+ kursantów', color: 'text-paulina-accent-text' },
                 ].map((stat, index) => (
                   <motion.div
                     key={index}
@@ -299,7 +303,7 @@ const ParentTestimonials: React.FC = () => {
               </p>
               <div className="flex items-center gap-2">
                 <CheckCircle size={20} />
-                <span className="font-semibold">100% gwarancja satysfakcji</span>
+                <span className="font-semibold">30 dni gwarancji zwrotu - bez pytań</span>
               </div>
             </motion.div>
 

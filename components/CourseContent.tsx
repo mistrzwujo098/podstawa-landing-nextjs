@@ -235,17 +235,20 @@ const CourseContent: React.FC = () => {
               <img
                 src={platformImages[currentImageIndex]}
                 alt="Widok platformy kursu"
+                loading="lazy"
                 className="rounded-xl shadow-xl w-full"
               />
               <button
                 onClick={() => setCurrentImageIndex((prev) => (prev - 1 + platformImages.length) % platformImages.length)}
                 className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 rounded-full p-2 shadow-lg hover:bg-white transition-colors"
+                aria-label="Poprzednie zdjęcie platformy"
               >
                 <ChevronLeft size={24} />
               </button>
               <button
                 onClick={() => setCurrentImageIndex((prev) => (prev + 1) % platformImages.length)}
                 className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 rounded-full p-2 shadow-lg hover:bg-white transition-colors"
+                aria-label="Następne zdjęcie platformy"
               >
                 <ChevronRight size={24} />
               </button>
@@ -254,12 +257,17 @@ const CourseContent: React.FC = () => {
                   <button
                     key={index}
                     onClick={() => setCurrentImageIndex(index)}
-                    className={`w-2 h-2 rounded-full transition-all ${
-                      index === currentImageIndex
-                        ? 'bg-paulina-accent w-6'
-                        : 'bg-white/60 hover:bg-white/80'
-                    }`}
-                  />
+                    className="min-w-[24px] min-h-[24px] flex items-center justify-center"
+                    aria-label={`Zdjęcie platformy ${index + 1}`}
+                  >
+                    <span
+                      className={`block h-2 rounded-full transition-all ${
+                        index === currentImageIndex
+                          ? 'bg-paulina-accent w-6'
+                          : 'bg-white/60 hover:bg-white/80 w-2'
+                      }`}
+                    />
+                  </button>
                 ))}
               </div>
             </div>

@@ -79,11 +79,11 @@ const FAQ: React.FC = () => {
     },
     {
       question: 'Czy to dla dziecka, które ma słabą ocenę z matematyki (2-3)?',
-      answer: 'TAK! Kurs działa nawet z oceną 2-3. Zobacz prawdziwe wyniki z matur 2024:\n\n• Kacper (ocena końcowa 2) → matura 72%\n• Agnieszka (zero od lipca, duże zaległości) → matura 62%\n• Małgorzata (45 lat, nauka od podstaw) → matura 60%\n\nDlaczego to działa? Bo uczysz się przez ZROZUMIENIE, nie wkuwanie wzorów. Zaczynasz od podstaw, małymi krokami. A jeśli po 30 dniach uznasz że nie dla Ciebie - zwrot bez pytań.'
+      answer: 'Tak, kurs działa nawet z oceną 2-3. Zobacz prawdziwe wyniki z ostatnich matur:\n\n• Kacper (ocena końcowa 2) → matura 72%\n• Agnieszka (zero od lipca, duże zaległości) → matura 62%\n• Małgorzata (45 lat, nauka od podstaw) → matura 60%\n\nDlaczego to działa? Bo uczysz się przez zrozumienie, nie wkuwanie wzorów. Zaczynasz od podstaw, małymi krokami. A jeśli po 30 dniach uznasz że nie dla Ciebie - zwrot bez pytań.'
     },
     {
       question: 'Jak to się ma do korepetycji?',
-      answer: 'Korepetycje: 150 zł/h, raz w tygodniu, dziecko musi CZEKAĆ na następne spotkanie (łącznie ~3600 zł za 6 miesięcy).\n\nKurs: 1499 zł (cały rok), dostęp 24/7, dziecko uczy się WTEDY kiedy CHCE. Pytanie ma o 22:00? Zadaje w grupie, odpowiedź w 10 minut.\n\nNajlepszy wynik: kurs + korepetycje 1x/miesiąc = najskuteczniejsza kombinacja (jeśli dziecko potrzebuje indywidualnego wsparcia).'
+      answer: 'Korepetycje: około 150 zł/h, raz w tygodniu, trzeba czekać na następne spotkanie (łącznie około 2 400 zł za 4 miesiące, scenariusz szacunkowy).\n\nKurs: 999 zł (pakiet Standard, cały rok), dostęp 24/7, maturzysta uczy się wtedy, kiedy chce. Pytanie ma o 22:00? Zadaje w grupie, odpowiedź szybko.\n\nNajlepszy wynik: kurs + korepetycje 1x/miesiąc - skuteczna kombinacja, jeśli maturzysta potrzebuje indywidualnego wsparcia.'
     },
     {
       question: 'Co jeśli dziecko nie skończy kursu?',

@@ -55,6 +55,7 @@ export default function Home() {
       {/* Scroll Progress & Navigation */}
       <ScrollProgress />
 
+      <main>
       {/* Hero Section */}
       <HeroSimple />
 
@@ -104,6 +105,7 @@ export default function Home() {
       {/* Objections & FAQ */}
       <ObjectionHandling />
       <FAQ />
+      </main>
 
       {/* Footer & Persistent CTA */}
       <Footer />

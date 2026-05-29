@@ -11,6 +11,9 @@ const config: Config = {
       colors: {
         'paulina-primary': '#571A47',
         'paulina-accent': '#EC9A4F',
+        // Ciemniejszy wariant accentu wylacznie do TEKSTU na jasnym tle (kontrast >=4.5:1 WCAG AA).
+        // #EC9A4F zostaje na tla przyciskow CTA z bialym tekstem oraz ikony dekoracyjne.
+        'paulina-accent-text': '#9A5A1E',
         'paulina-blue': '#06AEEF',
         'paulina-bg-purple': '#F7EEF4',
         'paulina-bg-yellow': '#FEF1D3',
