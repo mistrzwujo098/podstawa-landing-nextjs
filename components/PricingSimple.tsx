@@ -135,6 +135,9 @@ const PricingSimple: React.FC = () => {
                   <p className="text-sm text-paulina-accent-text font-semibold">
                     Oszczędzasz {pkg.originalPrice - pkg.price} zł
                   </p>
+                  <p className="text-xs text-paulina-primary/50 mt-1">
+                    Najniższa cena z 30 dni przed obniżką: {pkg.price} zł
+                  </p>
                 </div>
                 
                 {/* Payment options */}
